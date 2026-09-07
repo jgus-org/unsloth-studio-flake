@@ -5,96 +5,96 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flake-utils.url = "github:numtide/flake-utils";
     flake-lib = {
-      url = "github:jgus/flake-lib/v1";
+      url = "github:jgus-org/flake-lib/v1";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
     typer = {
-      url = "github:jgus/typer-flake";
+      url = "github:jgus-org/typer-flake";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
       inputs.flake-lib.follows = "flake-lib";
     };
     fastapi = {
-      url = "github:jgus/fastapi-flake";
+      url = "github:jgus-org/fastapi-flake";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
       inputs.flake-lib.follows = "flake-lib";
     };
     uvicorn = {
-      url = "github:jgus/uvicorn-flake";
+      url = "github:jgus-org/uvicorn-flake";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
       inputs.flake-lib.follows = "flake-lib";
     };
     pydantic = {
-      url = "github:jgus/pydantic-flake";
+      url = "github:jgus-org/pydantic-flake";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
       inputs.flake-lib.follows = "flake-lib";
     };
     packaging = {
-      url = "github:jgus/packaging-flake";
+      url = "github:jgus-org/packaging-flake";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
       inputs.flake-lib.follows = "flake-lib";
     };
     matplotlib = {
-      url = "github:jgus/matplotlib-flake";
+      url = "github:jgus-org/matplotlib-flake";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
       inputs.flake-lib.follows = "flake-lib";
     };
     pandas = {
-      url = "github:jgus/pandas-flake";
+      url = "github:jgus-org/pandas-flake";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
       inputs.flake-lib.follows = "flake-lib";
     };
     datasets = {
-      url = "github:jgus/datasets-flake";
+      url = "github:jgus-org/datasets-flake";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
       inputs.flake-lib.follows = "flake-lib";
     };
     ddgs = {
-      url = "github:jgus/ddgs-flake";
+      url = "github:jgus-org/ddgs-flake";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
       inputs.flake-lib.follows = "flake-lib";
     };
     gguf = {
-      url = "github:jgus/gguf-flake";
+      url = "github:jgus-org/gguf-flake";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
       inputs.flake-lib.follows = "flake-lib";
     };
     sqlite-vec = {
-      url = "github:jgus/sqlite-vec-flake";
+      url = "github:jgus-org/sqlite-vec-flake";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
       inputs.flake-lib.follows = "flake-lib";
     };
     nest-asyncio = {
-      url = "github:jgus/nest-asyncio-flake";
+      url = "github:jgus-org/nest-asyncio-flake";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
       inputs.flake-lib.follows = "flake-lib";
     };
     diffusers = {
-      url = "github:jgus/diffusers-flake";
+      url = "github:jgus-org/diffusers-flake";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
       inputs.flake-lib.follows = "flake-lib";
     };
     transformers = {
-      url = "github:jgus/transformers-flake";
+      url = "github:jgus-org/transformers-flake";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
       inputs.flake-lib.follows = "flake-lib";
     };
     unsloth = {
-      url = "github:jgus/unsloth-flake";
+      url = "github:jgus-org/unsloth-flake";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
       inputs.flake-lib.follows = "flake-lib";
@@ -253,7 +253,7 @@
         pyprojectSibling = reqName: {
           inherit reqName;
           pypiName = reqName;
-          flakeRepo = "jgus/${reqName}-flake";
+          flakeRepo = "jgus-org/${reqName}-flake";
           reqFile = "pyproject.toml";
           reqFormat = "pyproject";
           reqGroups = [ "studio" "huggingfacenotorch" ];
@@ -261,7 +261,7 @@
         studioRequirementsSibling = reqName: {
           inherit reqName;
           pypiName = reqName;
-          flakeRepo = "jgus/${reqName}-flake";
+          flakeRepo = "jgus-org/${reqName}-flake";
           reqFile = "studio/backend/requirements/studio.txt";
           mode = "exact";
         };
