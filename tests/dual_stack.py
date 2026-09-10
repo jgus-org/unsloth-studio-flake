@@ -58,7 +58,7 @@ class DualStackTests(unittest.TestCase):
         )
         self.assertEqual((arguments.host, arguments.port, arguments.parallel), ("::", 8000, 2))
 
-    def test_truthy_v6only_is_suppressed_only_in_variant(self):
+    def test_truthy_v6only_is_suppressed_by_patch(self):
         with socket.socket(socket.AF_INET6) as listener:
             native_setsockopt(listener, socket.IPPROTO_IPV6, socket.IPV6_V6ONLY, 0)
             for value in (1, True):

@@ -1,4 +1,4 @@
-name: Check dual-stack variant
+name: Check dual-stack behavior
 
 on:
   pull_request:

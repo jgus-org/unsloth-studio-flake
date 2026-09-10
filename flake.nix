@@ -199,20 +199,17 @@
                     export PYTHONPATH="${packagingForPython}/${pyfinal.python.sitePackages}:''${PYTHONPATH}"
                   '';
                 })).overrideAttrs (oldAttrs: {
+                  src = final.applyPatches {
+                    name = "unsloth-studio-dual-stack-source-${version}";
+                    src = oldAttrs.src;
+                    patches = [ ./patches/dual-stack-ipv6.patch ];
+                  };
                   passthru = oldAttrs.passthru // {
                     requiredPythonModules =
                       [ packagingForPython ]
                         ++ final.lib.filter
                         (module: (module.pname or null) != "packaging")
                         oldAttrs.passthru.requiredPythonModules;
-                  };
-                });
-                # Opt in per consumer; the default package retains upstream socket behavior.
-                unsloth-studio-dual-stack = pyfinal.unsloth-studio.overrideAttrs (oldAttrs: {
-                  src = final.applyPatches {
-                    name = "unsloth-studio-dual-stack-source-${version}";
-                    src = oldAttrs.src;
-                    patches = [ ./patches/dual-stack-ipv6.patch ];
                   };
                 });
               })
@@ -298,15 +295,15 @@
         };
         dualStackRegression = pkgs.callPackage ./tests/dual-stack.nix {
           python = pkgs.python313;
-          stockSrc = pkgs.python313.pkgs.unsloth-studio.src;
-          src = pkgs.python313.pkgs.unsloth-studio-dual-stack.src;
+          upstreamSrc = pkgs.unsloth-studio-frontend.src;
+          src = pkgs.python313.pkgs.unsloth-studio.src;
         };
       in
       {
         checks.dual-stack = dualStackRegression;
         packages = {
           inherit (pkgs) unsloth-studio-frontend;
-          inherit (pkgs.python313.pkgs) unsloth-studio unsloth-studio-dual-stack;
+          inherit (pkgs.python313.pkgs) unsloth-studio;
           dual-stack-regression = dualStackRegression;
           # flake-lib skips build verification for unchanged pins. Run this focused check after every invocation, including each branch in update-branches, before its commit or publication.
           update-version = pkgs.writeShellApplication {
