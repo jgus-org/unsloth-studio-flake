@@ -1,0 +1,24 @@
+--- a/studio/__init__.py
++++ b/studio/__init__.py
+@@ -1,2 +1,21 @@
+ # SPDX-License-Identifier: AGPL-3.0-only
+ # Copyright 2026-present the Unsloth AI Inc. team. All rights reserved. See /studio/LICENSE.AGPL-3.0
++
++# Keep IPv6 wildcard listeners reachable by IPv4 clients. asyncio otherwise
++# sets IPV6_V6ONLY before binding, overriding the system's dual-stack default.
++def _install_dual_stack_ipv6():
++    import socket
++
++    original = socket.socket.setsockopt
++    ipv6, v6only = socket.IPPROTO_IPV6, socket.IPV6_V6ONLY
++
++    def setsockopt(self, level, optname, value, *args, **kwargs):
++        if level == ipv6 and optname == v6only and value:
++            return
++        return original(self, level, optname, value, *args, **kwargs)
++
++    socket.socket.setsockopt = setsockopt
++
++
++_install_dual_stack_ipv6()
++del _install_dual_stack_ipv6

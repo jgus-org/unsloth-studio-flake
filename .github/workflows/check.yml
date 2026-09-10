@@ -1,0 +1,17 @@
+name: Check dual-stack variant
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  dual-stack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DeterminateSystems/nix-installer-action@main
+      - run: nix build --no-link .#checks.x86_64-linux.dual-stack
