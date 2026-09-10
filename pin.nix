@@ -1,9 +1,9 @@
 # Auto-managed by `nix run .#update-version`. Manual edits will be overwritten by the next bump.
 {
-  version = "0.1.80.7-beta";
-  sourceRev = "cedbb58e4a49befe12d4f28f385abc4393c763e5";
-  sourceHash = "sha256-SLTKjfaBkmM3gfEz/zqrwmL5SKuf0LPYrgwmOe9k2ok=";
-  npmDepsHash = "sha256-02mADuBAzc+ykX7MKnN5SHOnMl1D5gyXG39FWTQ6VlU=";
+  version = "0.1.80.6-beta";
+  sourceRev = "d90c0320664ef9812a1fb1d2a31f0977feaf7916";
+  sourceHash = "sha256-oREdZTK1qdkJGhgTwIrQqKpmP3CRjUDsCx13oq6HDpY=";
+  npmDepsHash = "sha256-+nKtQIbuWTHrifoPhjBjAXA+CqY+EFDJgYVgGidNo7E=";
   dependencies = {
     "typer" = "v0.27.1";
     "fastapi" = "v0.141.1";
