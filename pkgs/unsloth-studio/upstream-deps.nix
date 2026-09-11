@@ -52,7 +52,7 @@
   { name = "typer"; requirement = "typer==0.27.1; python_version >= \"3.10\""; marker = { expression = "python_version"; operator = ">="; version = "3.10"; }; }
   { name = "typer"; requirement = "typer>=0.12.0"; marker = null; }
   { name = "tyro"; requirement = "tyro"; marker = null; }
-  { name = "unsloth-zoo"; requirement = "unsloth_zoo>=2026.9.2"; marker = null; }
+  { name = "unsloth-zoo"; requirement = "unsloth_zoo>=2026.9.3"; marker = null; }
   { name = "urllib3"; requirement = "urllib3>=2.3.0"; marker = null; }
   { name = "uvicorn"; requirement = "uvicorn==0.39.0; python_version < \"3.10\""; marker = { expression = "python_version"; operator = "<"; version = "3.10"; }; }
   { name = "uvicorn"; requirement = "uvicorn==0.52.1; python_version >= \"3.10\""; marker = { expression = "python_version"; operator = ">="; version = "3.10"; }; }
