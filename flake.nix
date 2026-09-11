@@ -199,6 +199,11 @@
                     export PYTHONPATH="${packagingForPython}/${pyfinal.python.sitePackages}:''${PYTHONPATH}"
                   '';
                 })).overrideAttrs (oldAttrs: {
+                  src = final.applyPatches {
+                    name = "unsloth-studio-dual-stack-source-${version}";
+                    src = oldAttrs.src;
+                    patches = [ ./patches/dual-stack-ipv6.patch ];
+                  };
                   passthru = oldAttrs.passthru // {
                     requiredPythonModules =
                       [ packagingForPython ]
@@ -265,33 +270,49 @@
           reqFile = "studio/backend/requirements/studio.txt";
           mode = "exact";
         };
+        updateVersion = flake-lib.lib.mkUpdateVersion {
+          inherit pkgs source;
+          buildAttr = "unsloth-studio";
+          extraHashes = [ "npmDepsHash" ];
+          artifactHook = pkgs.lib.getExe regenArtifacts;
+          siblings =
+            map pyprojectSibling [
+              "typer"
+              "fastapi"
+              "uvicorn"
+              "pydantic"
+              "packaging"
+              "datasets"
+              "ddgs"
+              "gguf"
+              "sqlite-vec"
+              "nest-asyncio"
+              "diffusers"
+              "transformers"
+            ]
+            ++ map studioRequirementsSibling [ "matplotlib" "pandas" ];
+          siblingRefsInPin = true;
+        };
+        dualStackRegression = pkgs.callPackage ./tests/dual-stack.nix {
+          python = pkgs.python313;
+          upstreamSrc = pkgs.unsloth-studio-frontend.src;
+          src = pkgs.python313.pkgs.unsloth-studio.src;
+        };
       in
       {
+        checks.dual-stack = dualStackRegression;
         packages = {
           inherit (pkgs) unsloth-studio-frontend;
           inherit (pkgs.python313.pkgs) unsloth-studio;
-          update-version = flake-lib.lib.mkUpdateVersion {
-            inherit pkgs source;
-            buildAttr = "unsloth-studio";
-            extraHashes = [ "npmDepsHash" ];
-            artifactHook = pkgs.lib.getExe regenArtifacts;
-            siblings =
-              map pyprojectSibling [
-                "typer"
-                "fastapi"
-                "uvicorn"
-                "pydantic"
-                "packaging"
-                "datasets"
-                "ddgs"
-                "gguf"
-                "sqlite-vec"
-                "nest-asyncio"
-                "diffusers"
-                "transformers"
-              ]
-              ++ map studioRequirementsSibling [ "matplotlib" "pandas" ];
-            siblingRefsInPin = true;
+          dual-stack-regression = dualStackRegression;
+          # flake-lib skips build verification for unchanged pins. Run this focused check after every invocation, including each branch in update-branches, before its commit or publication.
+          update-version = pkgs.writeShellApplication {
+            name = "update-version";
+            runtimeInputs = [ pkgs.nix ];
+            text = ''
+              ${pkgs.lib.getExe updateVersion} "$@"
+              nix build --option post-build-hook "" "''${FLAKE_ROOT:-.}#dual-stack-regression" --no-link
+            '';
           };
           update-branches = flake-lib.lib.mkUpdateBranches {
             inherit pkgs source;
