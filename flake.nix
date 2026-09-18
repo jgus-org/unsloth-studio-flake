@@ -190,7 +190,8 @@
                 });
                 unsloth-studio = ((pyfinal.callPackage ./pkgs/unsloth-studio {
                   inherit src version unsloth-studio-frontend;
-                  inherit (flake-lib.lib) versionMatchesComparison;
+                  hostPlatform = final.stdenv.hostPlatform;
+                  inherit (flake-lib.lib) evalMarkerTree;
                   dependencyOverrides.packaging = packagingForPython;
                 }).overridePythonAttrs (oldAttrs: {
                   catchConflicts = false;
@@ -253,6 +254,9 @@
             pkgs.prefetch-npm-deps
             (pkgs.python3.withPackages (pythonPackages: [ pythonPackages.packaging ]))
           ];
+          runtimeEnv = {
+            DEPS_CORE = flake-lib.lib.depsCore;
+          };
           text = ''exec ${pkgs.lib.getExe pkgs.bash} ${./regen-artifacts.sh}'';
         };
         pyprojectSibling = reqName: {
