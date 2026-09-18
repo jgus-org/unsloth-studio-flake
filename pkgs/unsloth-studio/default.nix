@@ -6,7 +6,8 @@
 , unsloth-studio-frontend
 , writeText
 , python
-, versionMatchesComparison
+, hostPlatform
+, evalMarkerTree
 , dependencyOverrides ? { }
 }:
 # Combined unsloth_cli + studio Python package, AGPL. The two are tightly coupled (CLI imports studio.backend) so we ship them together. The Apache-licensed `unsloth/` python lib is supplied by nixpkgs and stripped from our source tree to avoid duplication.
@@ -42,8 +43,13 @@ let
     "tabulate"
     "unsloth"
   ];
-  markerApplies = marker: versionMatchesComparison python.pythonVersion marker;
-  activeUpstreamRequirements = lib.filter (requirement: requirement.marker == null || markerApplies requirement.marker) upstreamRequirements;
+  markerBindings = {
+    sys_platform = "linux";
+    platform_machine = hostPlatform.parsed.cpu.name;
+    python_version = python.pythonVersion;
+  };
+  markerApplies = marker: evalMarkerTree markerBindings marker;
+  activeUpstreamRequirements = lib.filter (requirement: markerApplies requirement.marker) upstreamRequirements;
   dependencyFor = name: dependencyOverrides.${name} or python.pkgs.${name};
   projectRequirements =
     map (requirement: requirement.requirement) upstreamRequirements

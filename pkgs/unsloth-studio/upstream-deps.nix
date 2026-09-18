@@ -6,20 +6,20 @@
   { name = "cryptography"; requirement = "cryptography>=42.0.0"; marker = null; }
   { name = "datasets"; requirement = "datasets!=4.0.*,!=4.1.0,<4.4.0,>=3.4.1"; marker = null; }
   { name = "datasets"; requirement = "datasets==4.3.0"; marker = null; }
-  { name = "ddgs"; requirement = "ddgs==9.14.4; python_version >= \"3.10\""; marker = { expression = "python_version"; operator = ">="; version = "3.10"; }; }
-  { name = "ddgs"; requirement = "ddgs==9.8.0; python_version < \"3.10\""; marker = { expression = "python_version"; operator = "<"; version = "3.10"; }; }
+  { name = "ddgs"; requirement = "ddgs==9.14.4; python_version >= \"3.10\""; marker = { kind = "cmp"; variable = "python_version"; operator = ">="; literal = "3.10"; }; }
+  { name = "ddgs"; requirement = "ddgs==9.8.0; python_version < \"3.10\""; marker = { kind = "cmp"; variable = "python_version"; operator = "<"; literal = "3.10"; }; }
   { name = "diceware"; requirement = "diceware==1.0.1"; marker = null; }
-  { name = "diffusers"; requirement = "diffusers; python_version < \"3.10\""; marker = { expression = "python_version"; operator = "<"; version = "3.10"; }; }
-  { name = "diffusers"; requirement = "diffusers>=0.39.0; python_version >= \"3.10\""; marker = { expression = "python_version"; operator = ">="; version = "3.10"; }; }
-  { name = "fastapi"; requirement = "fastapi==0.128.8; python_version < \"3.10\""; marker = { expression = "python_version"; operator = "<"; version = "3.10"; }; }
-  { name = "fastapi"; requirement = "fastapi==0.141.1; python_version >= \"3.10\""; marker = { expression = "python_version"; operator = ">="; version = "3.10"; }; }
+  { name = "diffusers"; requirement = "diffusers; python_version < \"3.10\""; marker = { kind = "cmp"; variable = "python_version"; operator = "<"; literal = "3.10"; }; }
+  { name = "diffusers"; requirement = "diffusers>=0.39.0; python_version >= \"3.10\""; marker = { kind = "cmp"; variable = "python_version"; operator = ">="; literal = "3.10"; }; }
+  { name = "fastapi"; requirement = "fastapi==0.128.8; python_version < \"3.10\""; marker = { kind = "cmp"; variable = "python_version"; operator = "<"; literal = "3.10"; }; }
+  { name = "fastapi"; requirement = "fastapi==0.141.1; python_version >= \"3.10\""; marker = { kind = "cmp"; variable = "python_version"; operator = ">="; literal = "3.10"; }; }
   { name = "fastmcp"; requirement = "fastmcp>=3.0.2"; marker = null; }
-  { name = "gguf"; requirement = "gguf==0.18.0; python_version < \"3.10\""; marker = { expression = "python_version"; operator = "<"; version = "3.10"; }; }
-  { name = "gguf"; requirement = "gguf==0.19.0; python_version >= \"3.10\""; marker = { expression = "python_version"; operator = ">="; version = "3.10"; }; }
+  { name = "gguf"; requirement = "gguf==0.18.0; python_version < \"3.10\""; marker = { kind = "cmp"; variable = "python_version"; operator = "<"; literal = "3.10"; }; }
+  { name = "gguf"; requirement = "gguf==0.19.0; python_version >= \"3.10\""; marker = { kind = "cmp"; variable = "python_version"; operator = ">="; literal = "3.10"; }; }
   { name = "hf-transfer"; requirement = "hf_transfer"; marker = null; }
   { name = "httpx"; requirement = "httpx>=0.27.0"; marker = null; }
-  { name = "huggingface-hub"; requirement = "huggingface-hub<2.0,>=1.23.0; python_version >= \"3.10\""; marker = { expression = "python_version"; operator = ">="; version = "3.10"; }; }
-  { name = "huggingface-hub"; requirement = "huggingface-hub==0.36.2; python_version < \"3.10\""; marker = { expression = "python_version"; operator = "<"; version = "3.10"; }; }
+  { name = "huggingface-hub"; requirement = "huggingface-hub<2.0,>=1.23.0; python_version >= \"3.10\""; marker = { kind = "cmp"; variable = "python_version"; operator = ">="; literal = "3.10"; }; }
+  { name = "huggingface-hub"; requirement = "huggingface-hub==0.36.2; python_version < \"3.10\""; marker = { kind = "cmp"; variable = "python_version"; operator = "<"; literal = "3.10"; }; }
   { name = "huggingface-hub"; requirement = "huggingface-hub>=0.34.0"; marker = null; }
   { name = "huggingface-hub"; requirement = "huggingface_hub>=0.34.0"; marker = null; }
   { name = "jinja2"; requirement = "jinja2>=3.1.0"; marker = null; }
@@ -48,13 +48,13 @@
   { name = "tqdm"; requirement = "tqdm"; marker = null; }
   { name = "transformers"; requirement = "transformers!=4.52.0,!=4.52.1,!=4.52.2,!=4.52.3,!=4.53.0,!=4.54.0,!=4.55.0,!=4.55.1,!=4.57.0,!=4.57.4,!=4.57.5,!=5.0.0,!=5.1.0,<=5.5.0,>=4.51.3"; marker = null; }
   { name = "trl"; requirement = "trl!=0.19.0,<=0.24.0,>=0.18.2"; marker = null; }
-  { name = "typer"; requirement = "typer==0.23.2; python_version < \"3.10\""; marker = { expression = "python_version"; operator = "<"; version = "3.10"; }; }
-  { name = "typer"; requirement = "typer==0.27.1; python_version >= \"3.10\""; marker = { expression = "python_version"; operator = ">="; version = "3.10"; }; }
+  { name = "typer"; requirement = "typer==0.23.2; python_version < \"3.10\""; marker = { kind = "cmp"; variable = "python_version"; operator = "<"; literal = "3.10"; }; }
+  { name = "typer"; requirement = "typer==0.27.1; python_version >= \"3.10\""; marker = { kind = "cmp"; variable = "python_version"; operator = ">="; literal = "3.10"; }; }
   { name = "typer"; requirement = "typer>=0.12.0"; marker = null; }
   { name = "tyro"; requirement = "tyro"; marker = null; }
   { name = "unsloth-zoo"; requirement = "unsloth_zoo>=2026.9.3"; marker = null; }
   { name = "urllib3"; requirement = "urllib3>=2.3.0"; marker = null; }
-  { name = "uvicorn"; requirement = "uvicorn==0.39.0; python_version < \"3.10\""; marker = { expression = "python_version"; operator = "<"; version = "3.10"; }; }
-  { name = "uvicorn"; requirement = "uvicorn==0.52.1; python_version >= \"3.10\""; marker = { expression = "python_version"; operator = ">="; version = "3.10"; }; }
+  { name = "uvicorn"; requirement = "uvicorn==0.39.0; python_version < \"3.10\""; marker = { kind = "cmp"; variable = "python_version"; operator = "<"; literal = "3.10"; }; }
+  { name = "uvicorn"; requirement = "uvicorn==0.52.1; python_version >= \"3.10\""; marker = { kind = "cmp"; variable = "python_version"; operator = ">="; literal = "3.10"; }; }
   { name = "wheel"; requirement = "wheel>=0.42.0"; marker = null; }
 ]
