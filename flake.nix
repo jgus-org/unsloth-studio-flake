@@ -255,7 +255,7 @@
             (pkgs.python3.withPackages (pythonPackages: [ pythonPackages.packaging ]))
           ];
           runtimeEnv = {
-            DEPS_CORE = "${flake-lib}/scripts/deps_core.py";
+            DEPS_CORE = flake-lib.lib.depsCore;
           };
           text = ''exec ${pkgs.lib.getExe pkgs.bash} ${./regen-artifacts.sh}'';
         };
