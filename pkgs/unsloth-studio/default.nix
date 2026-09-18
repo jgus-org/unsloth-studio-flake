@@ -48,7 +48,13 @@ let
     platform_machine = hostPlatform.parsed.cpu.name;
     python_version = python.pythonVersion;
   };
-  markerApplies = marker: evalMarkerTree markerBindings marker;
+  normalizeMarker =
+    marker:
+    if marker ? expression then
+      { kind = "cmp"; variable = marker.expression; inherit (marker) operator; literal = marker.version; }
+    else
+      marker;
+  markerApplies = marker: evalMarkerTree markerBindings (normalizeMarker marker);
   activeUpstreamRequirements = lib.filter (requirement: markerApplies requirement.marker) upstreamRequirements;
   dependencyFor = name: dependencyOverrides.${name} or python.pkgs.${name};
   projectRequirements =
