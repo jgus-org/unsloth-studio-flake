@@ -4,20 +4,7 @@
   sourceRev = "8c43aed2038721050ca0620f02967e03a9d5aa23";
   sourceHash = "sha256-HPQu2gdFx5AMPkejUf5zIZqtx8FTwU+ZG7cxmm6tcp8=";
   npmDepsHash = "sha256-NGjhUKkpHmxfbjX+wwR3WTjvXj/Jf3BOb2ImCqJ3rKY=";
-  dependencies = {
-    "typer" = "v0.27.1";
-    "fastapi" = "v0.141.1";
-    "uvicorn" = "v0.52.1";
-    "pydantic" = "v2.13.4";
-    "packaging" = "v26.3";
-    "datasets" = "v4.3.0";
-    "ddgs" = "v9.14.4";
-    "gguf" = "v0.19.0";
-    "sqlite-vec" = "v0.1.9";
-    "nest-asyncio" = "v1.6.0";
-    "diffusers" = "main";
-    "transformers" = "v5.5.0";
-    "matplotlib" = "v3.10.9";
-    "pandas" = "v2.3.3";
-  };
+  pythonEnvironment = "3.13";
+  requirementsHash = "02ee390c104911c88bcab0ad28fce5622b93e58b02ec5d9ae673da863e41663d";
+  wheelManifestHash = "49ed4065e4ae7b00a5c6eb631f04d615ed89c146609dcc1b218b6aed9b171bd0";
 }
