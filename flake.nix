@@ -117,16 +117,16 @@
           };
         };
         dualStackRegression = pkgs.callPackage ./tests/dual-stack.nix {
-          python = pkgs.python313;
+          python = pkgs.python3;
           upstreamSrc = pkgs.unsloth-studio-frontend.src;
-          src = pkgs.python313.pkgs.unsloth-studio.src;
+          src = pkgs.python3.pkgs.unsloth-studio.src;
         };
       in
       {
         checks.dual-stack = dualStackRegression;
         packages = {
           inherit (pkgs) unsloth-studio-frontend;
-          inherit (pkgs.python313.pkgs) unsloth-studio;
+          inherit (pkgs.python3.pkgs) unsloth-studio;
           dual-stack-regression = dualStackRegression;
           # flake-lib skips build verification for unchanged pins. Run this focused check after every invocation, including each branch in update-branches, before its commit or publication.
           update-version = pkgs.writeShellApplication {
@@ -154,7 +154,7 @@
             ];
             versionCanon = [ ''s/^0\.1\.([0-9]{2})([0-9])-beta$/0.1.\1.\2-beta/'' ];
           };
-          default = pkgs.python313.pkgs.unsloth-studio;
+          default = pkgs.python3.pkgs.unsloth-studio;
         };
       }) // {
       overlays.default = overlay;
