@@ -21,6 +21,8 @@
       pin = import ./pin.nix;
       inherit (pin) version sourceRev sourceHash npmDepsHash;
       source = { type = "github"; owner = "unslothai"; repo = "unsloth"; };
+      pythonVersions = flake-lib.lib.pythonPolicy.pythonVersions;
+      currentPython = builtins.head pythonVersions;
 
       overlay = final: prev:
         let
@@ -43,7 +45,7 @@
           pythonPackagesExtensions = prev.pythonPackagesExtensions ++ [
             (pyfinal: pyprev: {
               unsloth-studio = pyfinal.callPackage ./pkgs/unsloth-studio {
-                inherit version unsloth-studio-frontend wheelhouse;
+                inherit version unsloth-studio-frontend wheelhouse currentPython;
                 src = patchedSrc;
                 python = pyfinal.python;
                 inherit (flake-lib.lib) installWheelhouse;
@@ -71,10 +73,8 @@
           ];
           text = ''exec ${pkgs.lib.getExe pkgs.bash} ${./regen-frontend-artifacts.sh}'';
         };
-        pythonWheelhouseHook = flake-lib.lib.mkPythonWheelhouse {
-          inherit pkgs;
-          pythonVersion = "3.13";
-          platform = "x86_64-manylinux_2_28";
+        pythonWheelhouse = flake-lib.lib.mkPythonWheelhouse {
+          inherit pkgs pythonVersions;
           sources = [
             { kind = "source-pyproject"; groups = [ "studio" "huggingfacenotorch" ]; }
             { kind = "source-file"; path = "studio/backend/requirements/studio.txt"; }
@@ -109,10 +109,11 @@
         updateVersion = flake-lib.lib.mkUpdateVersion {
           inherit pkgs source;
           buildAttr = "unsloth-studio";
-          extraHashes = [ "npmDepsHash" "requirementsHash" "wheelManifestHash" ];
+          extraHashes = [ "npmDepsHash" "pythonEnvironment" "requirementsHash" "wheelManifestHash" ];
+          environmentFingerprint = pythonWheelhouse.currentEnvironment.fingerprint;
           artifactHook = flake-lib.lib.mkComposedHook {
             inherit pkgs;
-            hooks = [ frontendRegen pythonWheelhouseHook ];
+            hooks = [ frontendRegen pythonWheelhouse.hook ];
           };
         };
         dualStackRegression = pkgs.callPackage ./tests/dual-stack.nix {
@@ -146,7 +147,10 @@
               "pkgs/unsloth-studio-frontend"
               "requirements.in"
               "requirements.lock"
+              "requirements-*.lock"
               "wheels.json"
+              "wheels-*.json"
+              "python-readiness.json"
             ];
             versionCanon = [ ''s/^0\.1\.([0-9]{2})([0-9])-beta$/0.1.\1.\2-beta/'' ];
           };

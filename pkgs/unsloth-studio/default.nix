@@ -10,9 +10,10 @@
 , zlib
 , wheelhouse
 , installWheelhouse
+, currentPython
 }:
-assert lib.strings.hasPrefix "3.13" python.pythonVersion
-  || throw "unsloth-studio: the vendored wheelhouse is resolved for CPython 3.13, but the composing python package set is ${python.pythonVersion}";
+assert python.pythonVersion == currentPython
+  || throw "unsloth-studio: no vendored wheelhouse for CPython ${python.pythonVersion} (current: ${currentPython}; readiness: see python-readiness.json)";
 let
   siteDir = "$out/${python.sitePackages}";
   # Replaces upstream's pyproject.toml so we drop:

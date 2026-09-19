@@ -1,0 +1,9 @@
+{
+  "3.14": {
+    "status": "ok"
+  },
+  "3.15": {
+    "reason": "hint: You require CPython 3.15 (`cp315`), but we only found wheels for `torch` (v2.12.1) with the following Python ABI tags: `cp310`, `cp311`, `cp312`, `cp313`, `cp314`, `cp314t`",
+    "status": "blocked"
+  }
+}
