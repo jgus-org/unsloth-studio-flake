@@ -21,8 +21,13 @@
       pin = import ./pin.nix;
       inherit (pin) version sourceRev sourceHash npmDepsHash;
       source = { type = "github"; owner = "unslothai"; repo = "unsloth"; };
-      pythonVersions = flake-lib.lib.pythonPolicy.pythonVersions;
-      currentPython = builtins.head pythonVersions;
+      currentPython = builtins.head flake-lib.lib.pythonPolicy.pythonVersions;
+      wheelsFileFor = pythonVersion:
+        if pythonVersion == currentPython then ./wheels.json
+        else ./. + "/wheels-${pythonVersion}.json";
+      vendoredPythonVersions = builtins.filter
+        (pythonVersion: pythonVersion == currentPython || builtins.pathExists (wheelsFileFor pythonVersion))
+        flake-lib.lib.pythonPolicy.pythonVersions;
 
       overlay = final: prev:
         let
@@ -38,16 +43,20 @@
             patches = [ ./patches/dual-stack-ipv6.patch ];
           };
           unsloth-studio-frontend = final.callPackage ./pkgs/unsloth-studio-frontend { inherit src version npmDepsHash; };
-          wheelhouse = (flake-lib.lib.mkWheelhouse { pkgs = final; wheels = ./wheels.json; }).wheelhouse;
         in
         {
           inherit unsloth-studio-frontend;
           pythonPackagesExtensions = prev.pythonPackagesExtensions ++ [
             (pyfinal: pyprev: {
               unsloth-studio = pyfinal.callPackage ./pkgs/unsloth-studio {
-                inherit version unsloth-studio-frontend wheelhouse currentPython;
+                inherit version unsloth-studio-frontend;
                 src = patchedSrc;
                 python = pyfinal.python;
+                wheelhouse =
+                  if builtins.elem pyfinal.python.pythonVersion vendoredPythonVersions then
+                    (flake-lib.lib.mkWheelhouse { pkgs = final; wheels = wheelsFileFor pyfinal.python.pythonVersion; }).wheelhouse
+                  else
+                    throw "unsloth-studio: no vendored wheelhouse for CPython ${pyfinal.python.pythonVersion} (vendored: ${toString vendoredPythonVersions})";
                 inherit (flake-lib.lib) installWheelhouse;
               };
             })
@@ -74,7 +83,7 @@
           text = ''exec ${pkgs.lib.getExe pkgs.bash} ${./regen-frontend-artifacts.sh}'';
         };
         pythonWheelhouse = flake-lib.lib.mkPythonWheelhouse {
-          inherit pkgs pythonVersions;
+          inherit pkgs;
           sources = [
             { kind = "source-pyproject"; groups = [ "studio" "huggingfacenotorch" ]; }
             { kind = "source-file"; path = "studio/backend/requirements/studio.txt"; }
