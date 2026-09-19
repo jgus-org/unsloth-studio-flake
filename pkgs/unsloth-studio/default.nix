@@ -1,69 +1,25 @@
 { lib
-, buildPythonPackage
-, setuptools
+, makeWrapper
+, stdenv
 , src
 , version
 , unsloth-studio-frontend
 , writeText
 , python
-, hostPlatform
-, evalMarkerTree
-, dependencyOverrides ? { }
+, uv
+, zlib
+, wheelhouse
+, installWheelhouse
+, currentPython
 }:
-# Combined unsloth_cli + studio Python package, AGPL. The two are tightly coupled (CLI imports studio.backend) so we ship them together. The Apache-licensed `unsloth/` python lib is supplied by nixpkgs and stripped from our source tree to avoid duplication.
+assert python.pythonVersion == currentPython
+  || throw "unsloth-studio: no vendored wheelhouse for CPython ${python.pythonVersion} (current: ${currentPython}; readiness: see python-readiness.json)";
 let
-  upstreamRequirements = import ./upstream-deps.nix;
-  upstreamNames = map (requirement: requirement.name) upstreamRequirements;
-  extraDeps = [
-    "aiohttp"
-    "python-multipart"
-    "sse-starlette"
-    "starlette"
-    "websockets"
-
-    "hf-xet"
-    "safetensors"
-    "tokenizers"
-
-    "tiktoken"
-
-    "torch"
-    "torchaudio"
-    "torchvision"
-    "triton"
-
-    "pillow"
-    "scikit-learn"
-    "scipy"
-
-    "gitpython"
-    "jinja2"
-    "msgspec"
-    "requests"
-    "tabulate"
-    "unsloth"
-  ];
-  markerBindings = {
-    sys_platform = "linux";
-    platform_machine = hostPlatform.parsed.cpu.name;
-    python_version = python.pythonVersion;
-  };
-  normalizeMarker =
-    marker:
-    if marker ? expression then
-      { kind = "cmp"; variable = marker.expression; inherit (marker) operator; literal = marker.version; }
-    else
-      marker;
-  markerApplies = marker: evalMarkerTree markerBindings (normalizeMarker marker);
-  activeUpstreamRequirements = lib.filter (requirement: markerApplies requirement.marker) upstreamRequirements;
-  dependencyFor = name: dependencyOverrides.${name} or python.pkgs.${name};
-  projectRequirements =
-    map (requirement: requirement.requirement) upstreamRequirements
-    ++ lib.filter (name: !(builtins.elem name upstreamNames)) extraDeps;
+  siteDir = "$out/${python.sitePackages}";
   # Replaces upstream's pyproject.toml so we drop:
   #   - the dynamic version attr that read unsloth.models._utils.__version__ (we rm the unsloth/ subtree below)
   #   - everything except the unsloth_cli + studio packages
-  #   - obsolete runtime dep version pins
+  #   - upstream's dependency list entirely: the runtime closure is the vendored wheelhouse
   pyprojectFile = writeText "pyproject.toml" ''
     [build-system]
     requires = ["setuptools"]
@@ -76,7 +32,7 @@ let
     readme = "README.md"
     license = "AGPL-3.0-only"
     requires-python = ">=3.9,<3.15"
-    dependencies = ${builtins.toJSON projectRequirements}
+    dependencies = []
 
     [project.scripts]
     unsloth = "unsloth_cli:app"
@@ -104,16 +60,28 @@ let
     ]
   '';
 in
-buildPythonPackage {
+stdenv.mkDerivation {
   pname = "unsloth-studio";
   inherit version;
-  pyproject = true;
 
   inherit src;
 
+  nativeBuildInputs = [
+    makeWrapper
+    python
+    uv
+  ];
+  buildInputs = [
+    stdenv.cc.cc.lib
+    zlib
+  ];
+
+  dontBuild = true;
+  doInstallCheck = true;
+
   postPatch = ''
     # Strip out upstream pieces we don't ship from this derivation:
-    #   unsloth/        — nixpkgs Apache lib supplies it
+    #   unsloth/        — the PyPI unsloth wheel in the wheelhouse supplies it
     #   tests/          — not relevant to a runtime image
     #   images/         — repo-level docs assets
     #   scripts/        — local-dev helpers
@@ -137,12 +105,58 @@ buildPythonPackage {
     cp ${pyprojectFile} pyproject.toml
   '';
 
-  build-system = [ setuptools ];
+  installPhase = ''
+    runHook preInstall
+    export HOME="$TMPDIR"
+    export PYTHONNOUSERSITE=1
+    mkdir -p "${siteDir}" "$out/bin"
+    ${installWheelhouse { inherit python; target = siteDir; inherit wheelhouse; }}
+    export PYTHONPATH="${siteDir}"
+    uv pip install \
+      --python ${python.interpreter} \
+      --target "${siteDir}" \
+      --no-index \
+      --no-deps \
+      --no-build-isolation \
+      "$PWD"
+    runHook postInstall
+  '';
 
-  dependencies = map dependencyFor (lib.unique (map (requirement: requirement.name) activeUpstreamRequirements ++ extraDeps));
+  postInstall = ''
+    # Optional multi-node transport/bootstrap plugins (MPI, pmix, libfabric, UCX,
+    # IBGDA) whose dependencies nothing in the single-host runtime loads. nvshmem's
+    # default bootstrap and the CUDA transport stay.
+    rm -f \
+      "${siteDir}"/nvidia/nvshmem/lib/nvshmem_bootstrap_mpi.so.3 \
+      "${siteDir}"/nvidia/nvshmem/lib/nvshmem_bootstrap_pmix.so.3 \
+      "${siteDir}"/nvidia/nvshmem/lib/nvshmem_transport_libfabric.so.3 \
+      "${siteDir}"/nvidia/nvshmem/lib/nvshmem_transport_ucx.so.3 \
+      "${siteDir}"/nvidia/nvshmem/lib/nvshmem_transport_ibgda.so.3
+  '';
+
+  postFixup = ''
+    for script in "${siteDir}"/bin/*; do
+      name=$(basename "$script")
+      makeWrapper "$script" "$out/bin/$name" \
+        --set PYTHONNOUSERSITE 1 \
+        --set LD_LIBRARY_PATH "${stdenv.cc.cc.lib}/lib:${zlib}/lib:/run/opengl-driver/lib:${siteDir}/torch/lib" \
+        --prefix PYTHONPATH : "${siteDir}"
+    done
+  '';
 
   # The CLI module is a typer app that imports studio.backend at invoke time; importing it eagerly here pulls in ~200MB of torch/transformers init paths for no real verification value.
-  pythonImportsCheck = [ "unsloth_cli" "studio" ];
+  installCheckPhase = ''
+    runHook preInstallCheck
+    export PYTHONPATH="${siteDir}"
+    ${python.interpreter} -c "import unsloth_cli, studio"
+    runHook postInstallCheck
+  '';
+
+  passthru = {
+    inherit src;
+    pythonModule = python;
+    sitePackages = python.sitePackages;
+  };
 
   meta = {
     description = "Unsloth Studio: web UI + CLI for training and running open models locally";
