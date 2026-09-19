@@ -147,11 +147,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1789755220,
-        "narHash": "sha256-+0oUIfwO+8XXoZfMKw45jQ8a1+pVawH9ULD1hZJtfxs=",
+        "lastModified": 1789833752,
+        "narHash": "sha256-NuOz3mTK0/HWpJ/1fheEW+gLds1o/HYCcI4R0Y8ODiw=",
         "owner": "jgus-org",
         "repo": "flake-lib",
-        "rev": "6b75336447852e88fd765d0e80438f083ca1a592",
+        "rev": "1ef8887e5c571f6b32e9f873fcd5f0c9c2484e0d",
         "type": "github"
       },
       "original": {
@@ -446,10 +446,6 @@
     },
     "root": {
       "inputs": {
-        "datasets": "datasets",
-        "ddgs": "ddgs",
-        "diffusers": "diffusers",
-        "fastapi": "fastapi",
         "flake-lib": "flake-lib",
         "flake-utils": "flake-utils",
         "gguf": "gguf",
