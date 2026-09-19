@@ -113,7 +113,7 @@
           environmentFingerprint = pythonWheelhouse.currentEnvironment.fingerprint;
           artifactHook = flake-lib.lib.mkComposedHook {
             inherit pkgs;
-            hooks = [ frontendRegen pythonWheelhouse.hook ];
+            hooks = [ (pkgs.lib.getExe frontendRegen) (pkgs.lib.getExe pythonWheelhouse.hook) ];
           };
         };
         dualStackRegression = pkgs.callPackage ./tests/dual-stack.nix {
