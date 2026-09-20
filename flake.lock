@@ -10,16 +10,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1789855612,
-        "narHash": "sha256-nZm9ZRpfzVDzHEUxfz/zNbu1nYxLK+j3LvYqjEOwMkM=",
+        "lastModified": 1789876000,
+        "narHash": "sha256-V0G5aboEa1sdBUq2jP1xiRToAfiYgDiI/klxqaedIKE=",
         "owner": "jgus-org",
         "repo": "flake-lib",
-        "rev": "ac78d1dfe2d46e7f741c1319b2efb3f74c37551e",
+        "rev": "47bdafcd933c385086181f877f203fa0da6134f7",
         "type": "github"
       },
       "original": {
         "owner": "jgus-org",
-        "ref": "agent/uniform-wheelhouse-names",
+        "ref": "v1",
         "repo": "flake-lib",
         "type": "github"
       }
