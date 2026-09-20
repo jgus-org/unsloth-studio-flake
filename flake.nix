@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flake-utils.url = "github:numtide/flake-utils";
     flake-lib = {
-      url = "github:jgus-org/flake-lib/v1";
+      url = "github:jgus-org/flake-lib/agent/uniform-wheelhouse-names";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
@@ -21,12 +21,9 @@
       pin = import ./pin.nix;
       inherit (pin) version sourceRev sourceHash npmDepsHash;
       source = { type = "github"; owner = "unslothai"; repo = "unsloth"; };
-      currentPython = builtins.head flake-lib.lib.pythonPolicy.pythonVersions;
-      wheelsFileFor = pythonVersion:
-        if pythonVersion == currentPython then ./wheels.json
-        else ./. + "/wheels-${pythonVersion}.json";
+      wheelsFileFor = pythonVersion: ./. + "/wheels-${pythonVersion}.json";
       vendoredPythonVersions = builtins.filter
-        (pythonVersion: pythonVersion == currentPython || builtins.pathExists (wheelsFileFor pythonVersion))
+        (pythonVersion: builtins.pathExists (wheelsFileFor pythonVersion))
         flake-lib.lib.pythonPolicy.pythonVersions;
 
       overlay = final: prev:
@@ -155,9 +152,7 @@
               "flake.lock"
               "pkgs/unsloth-studio-frontend"
               "requirements.in"
-              "requirements.lock"
               "requirements-*.lock"
-              "wheels.json"
               "wheels-*.json"
               "python-readiness.json"
             ];
