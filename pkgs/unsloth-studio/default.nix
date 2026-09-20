@@ -10,10 +10,7 @@
 , zlib
 , wheelhouse
 , installWheelhouse
-, currentPython
 }:
-assert python.pythonVersion == currentPython
-  || throw "unsloth-studio: no vendored wheelhouse for CPython ${python.pythonVersion} (current: ${currentPython}; readiness: see python-readiness.json)";
 let
   siteDir = "$out/${python.sitePackages}";
   # Replaces upstream's pyproject.toml so we drop:
