@@ -147,15 +147,7 @@
             inherit pkgs source;
             pinSchema = "github-npm";
             extraHashes = [ "npmDepsHash" "requirementsHash" "wheelManifestHash" ];
-            branchOwnedFiles = [
-              "pin.nix"
-              "flake.lock"
-              "pkgs/unsloth-studio-frontend"
-              "requirements.in"
-              "requirements-*.lock"
-              "wheels-*.json"
-              "python-readiness.json"
-            ];
+            extraBranchOwnedFiles = [ "pkgs/unsloth-studio-frontend" ];
             versionCanon = [ ''s/^0\.1\.([0-9]{2})([0-9])-beta$/0.1.\1.\2-beta/'' ];
           };
           default = pkgs.python313.pkgs.unsloth-studio;
