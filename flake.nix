@@ -12,21 +12,32 @@
   };
 
   outputs =
-    { nixpkgs
-    , flake-utils
-    , flake-lib
-    , ...
+    {
+      nixpkgs,
+      flake-utils,
+      flake-lib,
+      ...
     }:
     let
       pin = import ./pin.nix;
-      inherit (pin) version sourceRev sourceHash npmDepsHash;
-      source = { type = "github"; owner = "unslothai"; repo = "unsloth"; };
+      inherit (pin)
+        version
+        sourceRev
+        sourceHash
+        npmDepsHash
+        ;
+      source = {
+        type = "github";
+        owner = "unslothai";
+        repo = "unsloth";
+      };
       wheelsFileFor = pythonVersion: ./. + "/wheels-${pythonVersion}.json";
-      vendoredPythonVersions = builtins.filter
-        (pythonVersion: builtins.pathExists (wheelsFileFor pythonVersion))
-        flake-lib.lib.pythonEnvironments.pythonVersions;
+      vendoredPythonVersions = builtins.filter (
+        pythonVersion: builtins.pathExists (wheelsFileFor pythonVersion)
+      ) flake-lib.lib.pythonEnvironments.pythonVersions;
 
-      overlay = final: prev:
+      overlay =
+        final: prev:
         let
           src = final.fetchFromGitHub {
             owner = "unslothai";
@@ -39,7 +50,9 @@
             inherit src;
             patches = [ ./patches/dual-stack-ipv6.patch ];
           };
-          unsloth-studio-frontend = final.callPackage ./pkgs/unsloth-studio-frontend { inherit src version npmDepsHash; };
+          unsloth-studio-frontend = final.callPackage ./pkgs/unsloth-studio-frontend {
+            inherit src version npmDepsHash;
+          };
         in
         {
           inherit unsloth-studio-frontend;
@@ -51,7 +64,10 @@
                 python = pyfinal.python;
                 wheelhouse =
                   if builtins.elem pyfinal.python.pythonVersion vendoredPythonVersions then
-                    (flake-lib.lib.mkWheelhouse { pkgs = final; wheels = wheelsFileFor pyfinal.python.pythonVersion; }).wheelhouse
+                    (flake-lib.lib.mkWheelhouse {
+                      pkgs = final;
+                      wheels = wheelsFileFor pyfinal.python.pythonVersion;
+                    }).wheelhouse
                   else
                     throw "unsloth-studio: no vendored wheelhouse for CPython ${pyfinal.python.pythonVersion} (vendored: ${toString vendoredPythonVersions})";
                 inherit (flake-lib.lib) installWheelhouse;
@@ -60,8 +76,8 @@
           ];
         };
     in
-    flake-utils.lib.eachDefaultSystem
-      (system:
+    flake-utils.lib.eachDefaultSystem (
+      system:
       let
         pkgs = import nixpkgs {
           inherit system;
@@ -77,14 +93,26 @@
             pkgs.moreutils
             pkgs.prefetch-npm-deps
           ];
-          text = ''exec ${pkgs.lib.getExe pkgs.bash} ${./regen-frontend-artifacts.sh}'';
+          text = "exec ${pkgs.lib.getExe pkgs.bash} ${./regen-frontend-artifacts.sh}";
         };
         pythonWheelhouse = flake-lib.lib.mkPythonWheelhouse {
           inherit pkgs;
           sources = [
-            { kind = "source-pyproject"; groups = [ "studio" "huggingfacenotorch" ]; }
-            { kind = "source-file"; path = "studio/backend/requirements/studio.txt"; }
-            { kind = "source-file"; path = "studio/backend/requirements/base.txt"; }
+            {
+              kind = "source-pyproject";
+              groups = [
+                "studio"
+                "huggingfacenotorch"
+              ];
+            }
+            {
+              kind = "source-file";
+              path = "studio/backend/requirements/studio.txt";
+            }
+            {
+              kind = "source-file";
+              path = "studio/backend/requirements/base.txt";
+            }
           ];
           extraRequirements = [
             "aiohttp"
@@ -115,24 +143,31 @@
         updateVersion = flake-lib.lib.mkUpdateVersion {
           inherit pkgs source;
           buildAttr = "unsloth-studio";
-          extraHashes = [ "npmDepsHash" "pythonEnvironment" "requirementsHash" "wheelManifestHash" ];
-          environmentFingerprint = pythonWheelhouse.pinnedEnvironment.fingerprint;
+          extraHashes = [
+            "npmDepsHash"
+            "requirementsHash"
+            "wheelManifestHash"
+          ];
+          artifactFingerprint = pythonWheelhouse.fingerprint;
           artifactHook = flake-lib.lib.mkComposedHook {
             inherit pkgs;
-            hooks = [ (pkgs.lib.getExe frontendRegen) (pkgs.lib.getExe pythonWheelhouse.hook) ];
+            hooks = [
+              (pkgs.lib.getExe frontendRegen)
+              (pkgs.lib.getExe pythonWheelhouse.hook)
+            ];
           };
         };
         dualStackRegression = pkgs.callPackage ./tests/dual-stack.nix {
-          python = pkgs.python313;
+          python = pkgs.python3;
           upstreamSrc = pkgs.unsloth-studio-frontend.src;
-          src = pkgs.python313.pkgs.unsloth-studio.src;
+          src = pkgs.python3.pkgs.unsloth-studio.src;
         };
       in
       {
         checks.dual-stack = dualStackRegression;
         packages = {
           inherit (pkgs) unsloth-studio-frontend;
-          inherit (pkgs.python313.pkgs) unsloth-studio;
+          inherit (pkgs.python3.pkgs) unsloth-studio;
           dual-stack-regression = dualStackRegression;
           # flake-lib skips build verification for unchanged pins. Run this focused check after every invocation, including each branch in update-branches, before its commit or publication.
           update-version = pkgs.writeShellApplication {
@@ -146,13 +181,19 @@
           update-branches = flake-lib.lib.mkUpdateBranches {
             inherit pkgs source;
             pinSchema = "github-npm";
-            extraHashes = [ "npmDepsHash" "requirementsHash" "wheelManifestHash" ];
+            extraHashes = [
+              "npmDepsHash"
+              "requirementsHash"
+              "wheelManifestHash"
+            ];
             extraBranchOwnedFiles = [ "pkgs/unsloth-studio-frontend" ];
             versionCanon = [ ''s/^0\.1\.([0-9]{2})([0-9])-beta$/0.1.\1.\2-beta/'' ];
           };
-          default = pkgs.python313.pkgs.unsloth-studio;
+          default = pkgs.python3.pkgs.unsloth-studio;
         };
-      }) // {
+      }
+    )
+    // {
       overlays.default = overlay;
     };
 }
