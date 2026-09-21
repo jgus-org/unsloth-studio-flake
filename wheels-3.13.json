@@ -105,19 +105,19 @@
   },
   {
     "name": "boto3",
-    "version": "1.43.98",
-    "filename": "boto3-1.43.98-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/bc/46/d29efd46ecac6637065a39418c5fb95500d70ec63e76065b5a72c936172f/boto3-1.43.98-py3-none-any.whl",
-    "sha256": "7454f666a9e852a56db0a7fa23be33a899f64e27828930eac43c3edba7b34e17",
-    "size": 140033
+    "version": "1.43.99",
+    "filename": "boto3-1.43.99-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/6f/37/d59247c882bc078b73cfa6f6bb247ac51bedc7637f6a8800def385dcfbba/boto3-1.43.99-py3-none-any.whl",
+    "sha256": "3becba8d7bdf80ea0010c68bc6b0772adb8be344f06bdcea77629002be19beb7",
+    "size": 140029
   },
   {
     "name": "botocore",
-    "version": "1.43.98",
-    "filename": "botocore-1.43.98-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/65/ca/c7617e99c3247f545233ab2181840d142c5f72034e22864172866fb1369a/botocore-1.43.98-py3-none-any.whl",
-    "sha256": "84b35b10402c2fc0c265f634fbf86336eecc6489ee23f55074b329924b2cfd6f",
-    "size": 15817751
+    "version": "1.43.99",
+    "filename": "botocore-1.43.99-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/49/9a/2a62da42bc8bd55d99e5b9599c112260dfe9872bedf335bdc5a10dbb653a/botocore-1.43.99-py3-none-any.whl",
+    "sha256": "6c9d66621b31c9f9af2b85a0b4c0c208e17d59d7d49f91c9111baca6d41d0299",
+    "size": 15820432
   },
   {
     "name": "brotli",
@@ -713,11 +713,11 @@
   },
   {
     "name": "multidict",
-    "version": "6.9.0",
-    "filename": "multidict-6.9.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
-    "url": "https://files.pythonhosted.org/packages/82/fc/19deb0d051c694dbc2d5008ec89b341f7ee42c4412b38630a47a14339115/multidict-6.9.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
-    "sha256": "c51fd8d59e72e45c64907bf7f81fbd94f4c8dcd1c8b2f23f4c2d7ede788fcfc3",
-    "size": 316918
+    "version": "6.9.1",
+    "filename": "multidict-6.9.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "url": "https://files.pythonhosted.org/packages/93/f2/e06c8e42074d0a4b8419bfe92afbd1d262190b69549ecbcd2dffa4f103c2/multidict-6.9.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "7fd79c521f6290c69125fa2b85fa65d9e657e6a8ffaf722dc881b926bef4aa5c",
+    "size": 336213
   },
   {
     "name": "multiprocess",
@@ -745,11 +745,11 @@
   },
   {
     "name": "networkx",
-    "version": "3.6.1",
-    "filename": "networkx-3.6.1-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/9e/c9/b2622292ea83fbb4ec318f5b9ab867d0a28ab43c5717bb85b0a5f6b3b0a4/networkx-3.6.1-py3-none-any.whl",
-    "sha256": "d47fbf302e7d9cbbb9e2555a0d267983d2aa476bac30e90dfbe5669bd57f3762",
-    "size": 2068504
+    "version": "3.7",
+    "filename": "networkx-3.7-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/7e/cd/fe58041e9011f307c490e3e17dd48cc516448f7c698a3f2d9d9d65d7e6a8/networkx-3.7-py3-none-any.whl",
+    "sha256": "e3fd2c13a7814cee3746340d8d7f8598a67f16a58bf47fb7f8793fab6efca1b0",
+    "size": 2142205
   },
   {
     "name": "numpy",
@@ -1057,11 +1057,11 @@
   },
   {
     "name": "pyparsing",
-    "version": "3.3.2",
-    "filename": "pyparsing-3.3.2-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/10/bd/c038d7cc38edc1aa5bf91ab8068b63d4308c66c4c8bb3cbba7dfbc049f9c/pyparsing-3.3.2-py3-none-any.whl",
-    "sha256": "850ba148bd908d7e2411587e247a1e4f0327839c40e2e5e6d05a007ecc69911d",
-    "size": 122781
+    "version": "3.3.3",
+    "filename": "pyparsing-3.3.3-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/38/bb/d215ee7c73b61497b28a5503f9f53523f294fcc936762b7caf90e0c1c2b5/pyparsing-3.3.3-py3-none-any.whl",
+    "sha256": "ece8c00a69cf01b45d0b1dedabb469c90d8caf996d4fda40f147627a122849a4",
+    "size": 126420
   },
   {
     "name": "pyperclip",
@@ -1497,11 +1497,11 @@
   },
   {
     "name": "watchfiles",
-    "version": "1.2.0",
-    "filename": "watchfiles-1.2.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-    "url": "https://files.pythonhosted.org/packages/a7/6c/89b1a230a78f57c52dd8893adb1f92f94411721b6ec12596c56d98c74356/watchfiles-1.2.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-    "sha256": "ca148d73dea36c9763aaa351e4d7a51780ec1584217c45276f4fe8239c768b71",
-    "size": 454782
+    "version": "1.3.0",
+    "filename": "watchfiles-1.3.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "url": "https://files.pythonhosted.org/packages/8a/cf/e3ad894ed5909a7c44b0707e89bc25d19a3d78b3a7aec846119443b6ae56/watchfiles-1.3.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "b5768b49e426fd5b550b012c866db347cdf15c398ef98dc557b6e6b72fa74cd1",
+    "size": 458353
   },
   {
     "name": "websockets",
