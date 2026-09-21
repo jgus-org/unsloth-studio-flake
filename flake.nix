@@ -24,7 +24,7 @@
       wheelsFileFor = pythonVersion: ./. + "/wheels-${pythonVersion}.json";
       vendoredPythonVersions = builtins.filter
         (pythonVersion: builtins.pathExists (wheelsFileFor pythonVersion))
-        flake-lib.lib.pythonPolicy.pythonVersions;
+        flake-lib.lib.pythonEnvironments.pythonVersions;
 
       overlay = final: prev:
         let
@@ -116,7 +116,7 @@
           inherit pkgs source;
           buildAttr = "unsloth-studio";
           extraHashes = [ "npmDepsHash" "pythonEnvironment" "requirementsHash" "wheelManifestHash" ];
-          environmentFingerprint = pythonWheelhouse.currentEnvironment.fingerprint;
+          environmentFingerprint = pythonWheelhouse.pinnedEnvironment.fingerprint;
           artifactHook = flake-lib.lib.mkComposedHook {
             inherit pkgs;
             hooks = [ (pkgs.lib.getExe frontendRegen) (pkgs.lib.getExe pythonWheelhouse.hook) ];
