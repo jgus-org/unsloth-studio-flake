@@ -4,7 +4,7 @@
   sourceRev = "cedbb58e4a49befe12d4f28f385abc4393c763e5";
   sourceHash = "sha256-SLTKjfaBkmM3gfEz/zqrwmL5SKuf0LPYrgwmOe9k2ok=";
   npmDepsHash = "sha256-02mADuBAzc+ykX7MKnN5SHOnMl1D5gyXG39FWTQ6VlU=";
-  pythonEnvironment = "3.13";
-  requirementsHash = "02ee390c104911c88bcab0ad28fce5622b93e58b02ec5d9ae673da863e41663d";
-  wheelManifestHash = "49ed4065e4ae7b00a5c6eb631f04d615ed89c146609dcc1b218b6aed9b171bd0";
+  requirementsHash = "0204990e7d2413f8de6d2321ca4d2e4f12e7589dfae7a02b112f5a9db63553b5";
+  wheelManifestHash = "d1c38d38cac0678f83c255533fe35cdd545ebbe65da967e547f8383f278858e8";
+  artifactFingerprint = "af8df89eafdd407052c544d19095eb5c9356009ab0eb33f0b6a09bc2b75d7606";
 }
