@@ -105,19 +105,19 @@
   },
   {
     "name": "boto3",
-    "version": "1.43.99",
-    "filename": "boto3-1.43.99-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/6f/37/d59247c882bc078b73cfa6f6bb247ac51bedc7637f6a8800def385dcfbba/boto3-1.43.99-py3-none-any.whl",
-    "sha256": "3becba8d7bdf80ea0010c68bc6b0772adb8be344f06bdcea77629002be19beb7",
-    "size": 140029
+    "version": "1.43.100",
+    "filename": "boto3-1.43.100-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/98/37/0ffe0ceb6227381f852f51777c9338115958d24d436bef990c73b6660bf4/boto3-1.43.100-py3-none-any.whl",
+    "sha256": "49785c310057c2c650d62ca3ba28e88ad87c3827b490312711e81968a9d21fd8",
+    "size": 140042
   },
   {
     "name": "botocore",
-    "version": "1.43.99",
-    "filename": "botocore-1.43.99-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/49/9a/2a62da42bc8bd55d99e5b9599c112260dfe9872bedf335bdc5a10dbb653a/botocore-1.43.99-py3-none-any.whl",
-    "sha256": "6c9d66621b31c9f9af2b85a0b4c0c208e17d59d7d49f91c9111baca6d41d0299",
-    "size": 15820432
+    "version": "1.43.100",
+    "filename": "botocore-1.43.100-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/c4/f2/93ce07251665ed422d4ae175b65741d3c02495acbc183b84df6ca5a850c8/botocore-1.43.100-py3-none-any.whl",
+    "sha256": "34c3232bc0f895091a15249903b3cab1148f5787f12389caa2d54a9175428d51",
+    "size": 15860706
   },
   {
     "name": "brotli",
@@ -217,11 +217,11 @@
   },
   {
     "name": "cuda-toolkit",
-    "version": "13.0.2",
-    "filename": "cuda_toolkit-13.0.2-py2.py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/57/b2/453099f5f3b698d7d0eab38916aac44c7f76229f451709e2eb9db6615dcd/cuda_toolkit-13.0.2-py2.py3-none-any.whl",
-    "sha256": "b198824cf2f54003f50d64ada3a0f184b42ca0846c1c94192fa269ecd97a66eb",
-    "size": 2364
+    "version": "13.0.3.0",
+    "filename": "cuda_toolkit-13.0.3.0-py2.py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/d1/c7/a79086a62c98befcdb8349656c6f114e2db3b8b2422f6e25c97a7f2a9a3c/cuda_toolkit-13.0.3.0-py2.py3-none-any.whl",
+    "sha256": "d693caaa261214ddd7dbb60d68e71cbed884e68c2be7509778f3051da0b91c3f",
+    "size": 2512
   },
   {
     "name": "cut-cross-entropy",
@@ -793,11 +793,11 @@
   },
   {
     "name": "nvidia-cudnn-cu13",
-    "version": "9.20.0.48",
-    "filename": "nvidia_cudnn_cu13-9.20.0.48-py3-none-manylinux_2_27_x86_64.whl",
-    "url": "https://files.pythonhosted.org/packages/6e/5e/edb9c0ae051602c3ccaffe424256463636d639e27d7f302dde9975ef9e7a/nvidia_cudnn_cu13-9.20.0.48-py3-none-manylinux_2_27_x86_64.whl",
-    "sha256": "0c45dd8eeb50b603f07995b1b300c62ffe6a1980482b82b3bcf94a4ca9d49304",
-    "size": 366173588
+    "version": "9.24.0.43",
+    "filename": "nvidia_cudnn_cu13-9.24.0.43-py3-none-manylinux_2_27_x86_64.whl",
+    "url": "https://files.pythonhosted.org/packages/5c/ba/791cffd048fe5b044e620df55267e3e95c0e6e07d50b41e377c03dfc910f/nvidia_cudnn_cu13-9.24.0.43-py3-none-manylinux_2_27_x86_64.whl",
+    "sha256": "71f181cd810e90f9b6023b01186fe82d13d65f0ec098581ee201d39fad769e4b",
+    "size": 553099438
   },
   {
     "name": "nvidia-cufft",
@@ -849,19 +849,19 @@
   },
   {
     "name": "nvidia-nccl-cu13",
-    "version": "2.29.7",
-    "filename": "nvidia_nccl_cu13-2.29.7-py3-none-manylinux_2_18_x86_64.whl",
-    "url": "https://files.pythonhosted.org/packages/67/f4/58e4e91b6919367c7aafb8e36fce9aad1a3047e536bf7e2fd560927d3a4c/nvidia_nccl_cu13-2.29.7-py3-none-manylinux_2_18_x86_64.whl",
-    "sha256": "edd81538446786ec3b73972543e53bb43bcaf0bfc8ef76cb679fcc390ffe136d",
-    "size": 205976000
+    "version": "2.30.7",
+    "filename": "nvidia_nccl_cu13-2.30.7-py3-none-manylinux_2_18_x86_64.whl",
+    "url": "https://files.pythonhosted.org/packages/3f/34/c500f90c7ae641b8e0f98965b36b8a7ac79cc8b296e8d251fe3eb592ee54/nvidia_nccl_cu13-2.30.7-py3-none-manylinux_2_18_x86_64.whl",
+    "sha256": "cefa7fdb9710efd0f39c5f1be1d61ff6fc9a996c451265bd7fbdcf9455ed4b50",
+    "size": 215965170
   },
   {
     "name": "nvidia-nvjitlink",
-    "version": "13.0.88",
-    "filename": "nvidia_nvjitlink-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl",
-    "url": "https://files.pythonhosted.org/packages/56/7a/123e033aaff487c77107195fa5a2b8686795ca537935a24efae476c41f05/nvidia_nvjitlink-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl",
-    "sha256": "13a74f429e23b921c1109976abefacc69835f2f433ebd323d3946e11d804e47b",
-    "size": 40713933
+    "version": "13.4.92",
+    "filename": "nvidia_nvjitlink-13.4.92-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl",
+    "url": "https://files.pythonhosted.org/packages/1d/6b/eef7a9e32872b8f41e145bf10cddc9af26e153c338852811fe9a9baddf9e/nvidia_nvjitlink-13.4.92-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl",
+    "sha256": "e0391f24ed94ec879b84e3da4d4ec320c879aff681f2c7a638462f7199284323",
+    "size": 42452378
   },
   {
     "name": "nvidia-nvshmem-cu13",
@@ -937,11 +937,11 @@
   },
   {
     "name": "platformdirs",
-    "version": "4.11.11",
-    "filename": "platformdirs-4.11.11-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/39/be/3ae887e84c38c4dd1c549cd5825adc93f48069a94fe1cb8ac52a9da16f15/platformdirs-4.11.11-py3-none-any.whl",
-    "sha256": "972ea6b2b387155a536226a0750e46923d731d459a387c4a255c583ed2f64547",
-    "size": 24992
+    "version": "4.11.12",
+    "filename": "platformdirs-4.11.12-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/ec/2b/69de6317fbf48865bb12aa56c9cfcfff46b3add0cd45250725d96146dce0/platformdirs-4.11.12-py3-none-any.whl",
+    "sha256": "b1ba966ac76153d9985a0787ffab951e7c18416189873d4e4ddb2c8a04a0a254",
+    "size": 24976
   },
   {
     "name": "primp",
@@ -1225,11 +1225,11 @@
   },
   {
     "name": "setuptools",
-    "version": "81.0.0",
-    "filename": "setuptools-81.0.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/e1/e3/c164c88b2e5ce7b24d667b9bd83589cf4f3520d97cad01534cd3c4f55fdb/setuptools-81.0.0-py3-none-any.whl",
-    "sha256": "fdd925d5c5d9f62e4b74b30d6dd7828ce236fd6ed998a08d81de62ce5a6310d6",
-    "size": 1062021
+    "version": "84.0.0",
+    "filename": "setuptools-84.0.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/95/9c/c510029fc6ef33a6275cd2c5d3cecd6613dfd6aa401d57c54f1c18852ccf/setuptools-84.0.0-py3-none-any.whl",
+    "sha256": "51a52592b3b99e102b609654876bd65f19f999935166d1352678931132b0c670",
+    "size": 818216
   },
   {
     "name": "shellingham",
@@ -1337,11 +1337,11 @@
   },
   {
     "name": "torch",
-    "version": "2.12.1",
-    "filename": "torch-2.12.1-cp313-cp313-manylinux_2_28_x86_64.whl",
-    "url": "https://files.pythonhosted.org/packages/e1/75/20bb8fe9c1ad6538cce8cd0391b51927ae5af0b17ed1eab44b8824465dc1/torch-2.12.1-cp313-cp313-manylinux_2_28_x86_64.whl",
-    "sha256": "f4afc8083dff08719edbea346644476e3cec0cf40ebe256be0ee5d5b7c7e8c0d",
-    "size": 532268019
+    "version": "2.14.0",
+    "filename": "torch-2.14.0-cp313-cp313-manylinux_2_28_x86_64.whl",
+    "url": "https://files.pythonhosted.org/packages/21/f1/39bd13b21f57d1982b7f3ddf663f01c7266e2957714880744eba9e8c8d11/torch-2.14.0-cp313-cp313-manylinux_2_28_x86_64.whl",
+    "sha256": "84bf384779a10c02fc3c6bdbab71a9cb66b0dd93c652d1ed5d6dfc0cb37e5962",
+    "size": 554619993
   },
   {
     "name": "torchao",
@@ -1361,11 +1361,11 @@
   },
   {
     "name": "torchvision",
-    "version": "0.27.1",
-    "filename": "torchvision-0.27.1-cp313-cp313-manylinux_2_28_x86_64.whl",
-    "url": "https://files.pythonhosted.org/packages/b8/dc/b21d7801562c23a770e7037989814582f22ca4db479204293561de4b62e8/torchvision-0.27.1-cp313-cp313-manylinux_2_28_x86_64.whl",
-    "sha256": "916448be4b19676677b0dbf47d08f68b7955ea0abec7fc79340c31e217a824ba",
-    "size": 7664256
+    "version": "0.29.0",
+    "filename": "torchvision-0.29.0-cp313-cp313-manylinux_2_28_x86_64.whl",
+    "url": "https://files.pythonhosted.org/packages/34/78/afa8f85e1f3cb276202ad3af9e36765feee1f0c5ec2942d8522b321e5afc/torchvision-0.29.0-cp313-cp313-manylinux_2_28_x86_64.whl",
+    "sha256": "942a3b3fb4e981e1abb7846679ee3882dfc733533a30b68df0dadf6c06f238a9",
+    "size": 7430683
   },
   {
     "name": "tqdm",
@@ -1377,19 +1377,19 @@
   },
   {
     "name": "transformers",
-    "version": "5.5.0",
-    "filename": "transformers-5.5.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/e7/28/35f7411ff80a3640c1f4fc907dcbb6a65061ebb82f66950e38bfc9f7f740/transformers-5.5.0-py3-none-any.whl",
-    "sha256": "821a9ff0961abbb29eb1eb686d78df1c85929fdf213a3fe49dc6bd94f9efa944",
-    "size": 10245591
+    "version": "5.3.0",
+    "filename": "transformers-5.3.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/b8/88/ae8320064e32679a5429a2c9ebbc05c2bf32cefb6e076f9b07f6d685a9b4/transformers-5.3.0-py3-none-any.whl",
+    "sha256": "50ac8c89c3c7033444fb3f9f53138096b997ebb70d4b5e50a2e810bf12d3d29a",
+    "size": 10661827
   },
   {
     "name": "triton",
-    "version": "3.7.1",
-    "filename": "triton-3.7.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
-    "url": "https://files.pythonhosted.org/packages/07/42/2c3ac59253ae8892b6f307875263dd23dc875cdf732d3aea40d6d41fb7cb/triton-3.7.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
-    "sha256": "58c0e131da05134a2a4788ccbcc0c1105cf0f54c8e98f19e34cd465396dc15eb",
-    "size": 197729241
+    "version": "3.8.0",
+    "filename": "triton-3.8.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "url": "https://files.pythonhosted.org/packages/b0/b6/3394d5548404c1cabd1dadadd28d0b3f9478db1dff8180da53bb3f0a1e19/triton-3.8.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "1f0497218e26b7d79773ad9c2a3fa3b539ee69f587a13fac2e552b1d322a8015",
+    "size": 247975122
   },
   {
     "name": "trl",
@@ -1465,19 +1465,19 @@
   },
   {
     "name": "unsloth",
-    "version": "2026.9.7",
-    "filename": "unsloth-2026.9.7-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/88/61/397164dc7ff518954864294f91265dbcd732f3c73900d744b9198b2c5e32/unsloth-2026.9.7-py3-none-any.whl",
-    "sha256": "2349145cf684e6dc0dab1b11ea455477469271b18f24a58c9d4f5e1ef665f10a",
-    "size": 23148450
+    "version": "2026.3.11",
+    "filename": "unsloth-2026.3.11-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/75/f1/f0e475694650857d1e0904df7c162a285f38cac56999b62c25b92cecd0fa/unsloth-2026.3.11-py3-none-any.whl",
+    "sha256": "54976106753a581298cf76f9978bf29a74d33d945badc4dc8a50d18688ca5aa2",
+    "size": 62730669
   },
   {
     "name": "unsloth-zoo",
-    "version": "2026.9.6",
-    "filename": "unsloth_zoo-2026.9.6-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/46/57/e493a8a2ba4d3870aec9972cf404e1d0d874e98c63bd97bf4442cd8d555b/unsloth_zoo-2026.9.6-py3-none-any.whl",
-    "sha256": "fd464e419e9912707d1f4a3b9d636d060fc3dd8b7195da1add320006e0dfe34b",
-    "size": 1674473
+    "version": "2026.9.7",
+    "filename": "unsloth_zoo-2026.9.7-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/5f/fb/c23a8ccb271bb094ae7d1d073e6772099547ef1f146e3246e7416dae284c/unsloth_zoo-2026.9.7-py3-none-any.whl",
+    "sha256": "cbfe5f9d22a65e45725929443202cb7d6634d33f0e15d29f17c16ae5b679658d",
+    "size": 1795255
   },
   {
     "name": "urllib3",
