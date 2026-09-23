@@ -10,11 +10,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1790116878,
-        "narHash": "sha256-dqo4lS36s61GHbED/cZj22ZMZ0YkuYLh/AZU9H72nas=",
+        "lastModified": 1790128545,
+        "narHash": "sha256-3WZ3W11O3/1oXu6NlP4BBDZI7gwcQSF31GlHP3V7HJg=",
         "owner": "jgus-org",
         "repo": "flake-lib",
-        "rev": "f7e35d30e8cfcc19e1c4f01948c8f6cb079f558c",
+        "rev": "eeef8c51b9eb9a119943da1b75d015f7b7908664",
         "type": "github"
       },
       "original": {
