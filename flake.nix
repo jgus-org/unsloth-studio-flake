@@ -31,11 +31,6 @@
         owner = "unslothai";
         repo = "unsloth";
       };
-      wheelsFileFor = pythonVersion: ./. + "/wheels-${pythonVersion}.json";
-      vendoredPythonVersions = builtins.filter (
-        pythonVersion: builtins.pathExists (wheelsFileFor pythonVersion)
-      ) flake-lib.lib.pythonEnvironments.pythonVersions;
-
       overlay =
         final: prev:
         let
@@ -63,20 +58,25 @@
                 src = patchedSrc;
                 python = pyfinal.python;
                 wheelhouse =
-                  if builtins.elem pyfinal.python.pythonVersion vendoredPythonVersions then
-                    (flake-lib.lib.mkWheelhouse {
-                      pkgs = final;
-                      wheels = wheelsFileFor pyfinal.python.pythonVersion;
-                    }).wheelhouse
-                  else
-                    throw "unsloth-studio: no vendored wheelhouse for CPython ${pyfinal.python.pythonVersion} (vendored: ${toString vendoredPythonVersions})";
+                  (flake-lib.lib.mkWheelhouse {
+                    pkgs = final;
+                    wheels =
+                      (flake-lib.lib.wheelhouseArtifactPaths {
+                        root = ./.;
+                        pythonVersion = pyfinal.python.pythonVersion;
+                        system = final.stdenv.hostPlatform.system;
+                      }).wheelManifest;
+                  }).wheelhouse;
                 inherit (flake-lib.lib) installWheelhouse;
               };
             })
           ];
         };
     in
-    flake-utils.lib.eachDefaultSystem (
+    flake-utils.lib.eachSystem [
+      "x86_64-linux"
+      "aarch64-linux"
+    ] (
       system:
       let
         pkgs = import nixpkgs {
@@ -97,6 +97,10 @@
         };
         pythonWheelhouse = flake-lib.lib.mkPythonWheelhouse {
           inherit pkgs;
+          systems = [
+            "x86_64-linux"
+            "aarch64-linux"
+          ];
           sources = [
             {
               kind = "source-pyproject";
