@@ -105,19 +105,19 @@
   },
   {
     "name": "boto3",
-    "version": "1.43.101",
-    "filename": "boto3-1.43.101-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/d7/73/8dd65374f88b1b2a33656d9c808dc36aef0cb4a22c74d618ba6fe0092cd2/boto3-1.43.101-py3-none-any.whl",
-    "sha256": "8a899b0ea94df3f2fab6d0c69caf2791f2971449696834374d8e88ced01c7ef3",
-    "size": 140041
+    "version": "1.43.103",
+    "filename": "boto3-1.43.103-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/f2/66/6eb2e92c57b30e54c87fe14c8cd71de3aed9184f3cec95c39132a3fcc61f/boto3-1.43.103-py3-none-any.whl",
+    "sha256": "574796187eb4e4fcaaf5c1b88c1724a1ba5a95bc27aeae5573676178666acc71",
+    "size": 140044
   },
   {
     "name": "botocore",
-    "version": "1.43.101",
-    "filename": "botocore-1.43.101-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/dd/0d/6679253333d6ba74b8ad7077560687096629255ef526e106bb3accceffcc/botocore-1.43.101-py3-none-any.whl",
-    "sha256": "f380237ffecc3f887265cd09c4d7e9c8e8dd9ba6162af83b1fc9e5d24622e461",
-    "size": 15897867
+    "version": "1.43.103",
+    "filename": "botocore-1.43.103-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/8c/47/790ba88ec849d1e07b5866458b67e79b291164f3de7f23429b4dcb7e2ced/botocore-1.43.103-py3-none-any.whl",
+    "sha256": "6a6a561a6de43845ae42bc7ff7e2c798742bfa277f5215398f9c15ed9b1bd67c",
+    "size": 15938608
   },
   {
     "name": "brotli",
@@ -137,11 +137,11 @@
   },
   {
     "name": "caio",
-    "version": "0.12.4",
-    "filename": "caio-0.12.4-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/e8/e6/07100a694613344d22958fb6d803fdf914ee9395278fe58ad1b1b9c59e52/caio-0.12.4-py3-none-any.whl",
-    "sha256": "7a5e231bbf81eaed269f99afa9ef46457f51f9407952a1795c0795b3a62c23c0",
-    "size": 25628
+    "version": "0.12.9",
+    "filename": "caio-0.12.9-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/c0/99/96888ad510c9adf42bfbad9ba139831b58055fd61e1301f6268e9bb490b8/caio-0.12.9-py3-none-any.whl",
+    "sha256": "bf12d4f014b2a33e642ed7905b5787656ede2fc24be21f7c086826ff0d32cec3",
+    "size": 26154
   },
   {
     "name": "certifi",
@@ -337,27 +337,27 @@
   },
   {
     "name": "fastmcp",
-    "version": "4.0.8",
-    "filename": "fastmcp-4.0.8-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/4d/28/0f98de5596c73baf53661d0ea1c5a34cb95751fe509982ef668212049349/fastmcp-4.0.8-py3-none-any.whl",
-    "sha256": "672c7f2a483551f84e1b965c19003ff3d8e87ff681612374ad40bb4e860c726e",
-    "size": 8089
+    "version": "4.0.10",
+    "filename": "fastmcp-4.0.10-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/5d/04/897d9e48e653793a3e6ef5b8cb190bb194e0a8756d8051f6d7c214acba97/fastmcp-4.0.10-py3-none-any.whl",
+    "sha256": "1f8462e3d97394a637e1b0f1eaea0002da661c8d98000ad43f0aa3fa1ff523e8",
+    "size": 8100
   },
   {
     "name": "fastmcp-slim",
-    "version": "4.0.8",
-    "filename": "fastmcp_slim-4.0.8-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/5d/9d/0d02a91cc908e70c18d210ab7cb6ddd213506cb97b1a17ceb55d8e2ad16b/fastmcp_slim-4.0.8-py3-none-any.whl",
-    "sha256": "1411cec585b2024309d5e01780c91a16ff4e2e070a5c0a8ede653af90d3ac3fb",
-    "size": 875447
+    "version": "4.0.10",
+    "filename": "fastmcp_slim-4.0.10-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/0e/86/9f99555e7b41d123c9c9f5fa9697e713129e43240de66b475f2324930c4c/fastmcp_slim-4.0.10-py3-none-any.whl",
+    "sha256": "c2abd40302b8f06b0291413cf537d57bc0f171b5fd98af5cfef3b2b6b506122f",
+    "size": 876165
   },
   {
     "name": "filelock",
-    "version": "4.0.3",
-    "filename": "filelock-4.0.3-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/7a/6d/db8b86e168fef0cf904737e275bccb683558088ef971e92d3b41ce980699/filelock-4.0.3-py3-none-any.whl",
-    "sha256": "30cd166e2aee2c7534ce2c33c6367c4cd051b8368e20e2c4eb0c34f699bacfab",
-    "size": 108444
+    "version": "4.0.5",
+    "filename": "filelock-4.0.5-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/62/34/d90d7e7ef972900e09f45b9c0661376dd03e77fece26ee83ec93b7719bae/filelock-4.0.5-py3-none-any.whl",
+    "sha256": "be9166068623636cedcad7b2ef735b04e5fb4344d978e09fd6fbd6ede06f14f0",
+    "size": 108976
   },
   {
     "name": "fonttools",
@@ -889,11 +889,11 @@
   },
   {
     "name": "opentelemetry-api",
-    "version": "1.44.0",
-    "filename": "opentelemetry_api-1.44.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/ca/6f/a04e900f465ff3221ccc395522503e2d10e79fa21f2723c8e177aae1e0d1/opentelemetry_api-1.44.0-py3-none-any.whl",
-    "sha256": "94b98c893a91b88657eaac1e3ba89618cdb85be6918196705354f34728b2cdef",
-    "size": 60018
+    "version": "1.45.0",
+    "filename": "opentelemetry_api-1.45.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/44/b9/040d1a1c7836922828e6480cd2366bb8fe0ebf75b413d2bb51a9b0e7f78f/opentelemetry_api-1.45.0-py3-none-any.whl",
+    "sha256": "80e068aba7cd56c8b58512d6a36f8d25cb1dfaa0c0a4cc1c938ccf9f362d9cb3",
+    "size": 60020
   },
   {
     "name": "packaging",
@@ -937,11 +937,11 @@
   },
   {
     "name": "platformdirs",
-    "version": "4.11.12",
-    "filename": "platformdirs-4.11.12-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/ec/2b/69de6317fbf48865bb12aa56c9cfcfff46b3add0cd45250725d96146dce0/platformdirs-4.11.12-py3-none-any.whl",
-    "sha256": "b1ba966ac76153d9985a0787ffab951e7c18416189873d4e4ddb2c8a04a0a254",
-    "size": 24976
+    "version": "4.12.1",
+    "filename": "platformdirs-4.12.1-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/40/31/1521c38d175108ac395941adbcb9f11e085340bed81ad166e8ad8c21c17b/platformdirs-4.12.1-py3-none-any.whl",
+    "sha256": "7f251621befae78b2cb74616f9fc99d3fa3db0afba5035987731f8dcd430337d",
+    "size": 33011
   },
   {
     "name": "primp",
@@ -1153,11 +1153,11 @@
   },
   {
     "name": "rich-rst",
-    "version": "2.1.0",
-    "filename": "rich_rst-2.1.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/2a/68/1fc93dd759605b5d00fc98b50200739e41ed32bd22d6ba35ca6c3932371b/rich_rst-2.1.0-py3-none-any.whl",
-    "sha256": "7ecd1343ee12c879d0e7ae74c3eb6d263b023d2929c6d114212eb1fd91057255",
-    "size": 272987
+    "version": "2.2.0",
+    "filename": "rich_rst-2.2.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/d1/4e/716b42bf066e180c1235783b46f095a5d871d05dca7006d2295aac29c491/rich_rst-2.2.0-py3-none-any.whl",
+    "sha256": "1ea1c43813dc4a8d86475fce27ffb74e0ada3d4656c9f8130ba2a59868055fe9",
+    "size": 279274
   },
   {
     "name": "rpds-py",
@@ -1473,11 +1473,11 @@
   },
   {
     "name": "unsloth-zoo",
-    "version": "2026.9.7",
-    "filename": "unsloth_zoo-2026.9.7-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/5f/fb/c23a8ccb271bb094ae7d1d073e6772099547ef1f146e3246e7416dae284c/unsloth_zoo-2026.9.7-py3-none-any.whl",
-    "sha256": "cbfe5f9d22a65e45725929443202cb7d6634d33f0e15d29f17c16ae5b679658d",
-    "size": 1795255
+    "version": "2026.9.8",
+    "filename": "unsloth_zoo-2026.9.8-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/be/d9/e493106d1f4331dd61283ea9bcf1a0e0c6f9ec9568e3e2bf9c7af9ac9ce0/unsloth_zoo-2026.9.8-py3-none-any.whl",
+    "sha256": "740aacbb70f6f735ef367905cd753d321b3088aaff404ebfb4f1cdf9f62e56e8",
+    "size": 1993630
   },
   {
     "name": "urllib3",
