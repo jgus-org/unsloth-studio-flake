@@ -25,11 +25,11 @@
   },
   {
     "name": "aiohttp",
-    "version": "3.14.3",
-    "filename": "aiohttp-3.14.3-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/47/d1/8aba53f15ccb2238405f5e9d30e2a8ca44f93878c26e7165ade00d374b1c/aiohttp-3.14.3-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
-    "sha256": "25bd2708db6bdf6a6630dd37bdcdfcb47c4434d22ac69c64665b802910140b30",
-    "size": 1750149
+    "version": "3.14.4",
+    "filename": "aiohttp-3.14.4-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/a7/bc/6c733a1c71300293471ac7ef1dffd12b5b4dc9a43c53461224b2b8a7f667/aiohttp-3.14.4-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+    "sha256": "f8f61a9b5fa56c58e3441f9dc64137f786232d40fb89127190d0e0f84e1e5865",
+    "size": 1883165
   },
   {
     "name": "aiosignal",
