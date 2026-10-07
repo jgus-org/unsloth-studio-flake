@@ -25,11 +25,11 @@
   },
   {
     "name": "aiohttp",
-    "version": "3.14.3",
-    "filename": "aiohttp-3.14.3-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/47/d1/8aba53f15ccb2238405f5e9d30e2a8ca44f93878c26e7165ade00d374b1c/aiohttp-3.14.3-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
-    "sha256": "25bd2708db6bdf6a6630dd37bdcdfcb47c4434d22ac69c64665b802910140b30",
-    "size": 1750149
+    "version": "3.14.4",
+    "filename": "aiohttp-3.14.4-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/a7/bc/6c733a1c71300293471ac7ef1dffd12b5b4dc9a43c53461224b2b8a7f667/aiohttp-3.14.4-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+    "sha256": "f8f61a9b5fa56c58e3441f9dc64137f786232d40fb89127190d0e0f84e1e5865",
+    "size": 1883165
   },
   {
     "name": "aiosignal",
@@ -105,19 +105,19 @@
   },
   {
     "name": "boto3",
-    "version": "1.43.108",
-    "filename": "boto3-1.43.108-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/74/e4/7e88c40e9f61888e12dac0de41a5fddc2bcd1c3992d9b28e17d915cce0df/boto3-1.43.108-py3-none-any.whl",
-    "sha256": "19e9da95ef0c494e27052049a42137550e66730509bb613e76eaa30ddf9a7170",
-    "size": 140045
+    "version": "1.43.109",
+    "filename": "boto3-1.43.109-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/a1/56/c83a8fdadf06f631d1a0c4d82fc8daa9e1a40f6354264fba20c186363f49/boto3-1.43.109-py3-none-any.whl",
+    "sha256": "703a81baed186d31e27cf50065d25a9faeb704f009e7c56b0f002ca52a328896",
+    "size": 140044
   },
   {
     "name": "botocore",
-    "version": "1.43.108",
-    "filename": "botocore-1.43.108-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/7a/0b/4670b7e23914b5cc357be5ca45fae503b57d98ecff4b3eabea70412809fd/botocore-1.43.108-py3-none-any.whl",
-    "sha256": "ab9d16c6b4350aaa54ed28202dfa2998b2d735fdbf3247eb60af469d8d48a5b8",
-    "size": 16008194
+    "version": "1.43.109",
+    "filename": "botocore-1.43.109-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/7c/d7/bf9e5988baf1245f3ac373e09f3204f641e7a2db170f512f236aa90961d6/botocore-1.43.109-py3-none-any.whl",
+    "sha256": "cd00edff465264fb448e36acc9ee29a828f738fff3746270b3f685a19194a5a6",
+    "size": 15998671
   },
   {
     "name": "brotli",
@@ -129,11 +129,11 @@
   },
   {
     "name": "cachetools",
-    "version": "7.2.0",
-    "filename": "cachetools-7.2.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/cc/bb/1c6e7a89b11da19f137e4ef5a5c5fe47a5bb686449ba343944ccf8fb34b2/cachetools-7.2.0-py3-none-any.whl",
-    "sha256": "3045213f186b89fdd95d94441354c4bd87c570b7a38d8c3fd1d9dd37f6dc90d8",
-    "size": 16918
+    "version": "7.2.1",
+    "filename": "cachetools-7.2.1-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/f0/c9/2a61d784caf0d869a3326728c57c7203f50cc53f3cca2ee76bf924769eb4/cachetools-7.2.1-py3-none-any.whl",
+    "sha256": "63aa53dfe7473c10cccdd5a01dedf76ef2c4b73a58840d9396e7d0752cbdac3b",
+    "size": 17006
   },
   {
     "name": "caio",
@@ -241,11 +241,11 @@
   },
   {
     "name": "cyclopts",
-    "version": "5.1.1",
-    "filename": "cyclopts-5.1.1-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/2a/37/1afff6923395f2f0ce730bae8851371b7418be17dc44d90ba80f72799240/cyclopts-5.1.1-py3-none-any.whl",
-    "sha256": "ff0da67b2d2d8fe716d20ab82c698277ef30a8fb75d24e9b38a06f56c44931fd",
-    "size": 279527
+    "version": "5.2.0",
+    "filename": "cyclopts-5.2.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/d4/dd/3f73d04c95f6acc6a54700011637e49362e337139b518be895edf4786f87/cyclopts-5.2.0-py3-none-any.whl",
+    "sha256": "5da2a5d65164e03008621fc4795946b88a722b881398b5dfa58afa6218342cff",
+    "size": 289196
   },
   {
     "name": "datasets",
@@ -273,11 +273,11 @@
   },
   {
     "name": "diffusers",
-    "version": "0.40.0",
-    "filename": "diffusers-0.40.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/db/df/ffb593ebed2a068d2d6be44261283f39a6b809c0fcdfdcafbd448cbeec77/diffusers-0.40.0-py3-none-any.whl",
-    "sha256": "5b5da7c3ddb62152fa4afc577f02e050af688c797375c34fb2d01006da3f3541",
-    "size": 5911654
+    "version": "0.41.0",
+    "filename": "diffusers-0.41.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/fe/c4/5bf8afd1ff3a8d99da7a18b1067ae0b4e2a037c38f3851890a989c511fd3/diffusers-0.41.0-py3-none-any.whl",
+    "sha256": "ea8918b7dfd92ce793b6db689a551b8cd25d52c6c0fcd3ade0706a5fd2a25990",
+    "size": 6063887
   },
   {
     "name": "dill",
@@ -409,11 +409,11 @@
   },
   {
     "name": "griffelib",
-    "version": "2.3.0",
-    "filename": "griffelib-2.3.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/41/63/e876e789525063c840ccfa8857febdabd6523bcef9ce7eb979b9305ea895/griffelib-2.3.0-py3-none-any.whl",
-    "sha256": "1b8f9cd525681c26b1d6d574faa1371651e8459ca51d209684f50b8096ae06e0",
-    "size": 169423
+    "version": "2.3.2",
+    "filename": "griffelib-2.3.2-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/04/e5/0ae74c83c1cab2c14daadf28bd0143eb14bb81503834af987b66badc7b61/griffelib-2.3.2-py3-none-any.whl",
+    "sha256": "8e710afededd5607f95bf3c8ccc175ee306e7084459faf27b9f9f44ef2a7a274",
+    "size": 169420
   },
   {
     "name": "h11",
@@ -441,11 +441,11 @@
   },
   {
     "name": "hf-xet",
-    "version": "1.6.0",
-    "filename": "hf_xet-1.6.0-cp38-abi3-manylinux_2_28_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/9a/69/1f0cbc2fb22ae6082d094f743d1b8945a3f36f6089cb95f42b7ee348cda7/hf_xet-1.6.0-cp38-abi3-manylinux_2_28_aarch64.whl",
-    "sha256": "0e6e21fa3cdfcdcd76748564bf593870a5e013f47d97cf10aed63aa222cff5b7",
-    "size": 4262538
+    "version": "1.7.0",
+    "filename": "hf_xet-1.7.0-cp38-abi3-manylinux_2_28_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/49/0c/a2f703a5a78267556e89e03316fa0805c86b72b50829bc67665746e8ebf0/hf_xet-1.7.0-cp38-abi3-manylinux_2_28_aarch64.whl",
+    "sha256": "fcfd6c22418e57dd5b3aea649e813b2e2cfb2aebf317b210d90f1fe4b3018b52",
+    "size": 3990011
   },
   {
     "name": "hpack",
@@ -889,11 +889,11 @@
   },
   {
     "name": "opentelemetry-api",
-    "version": "1.45.0",
-    "filename": "opentelemetry_api-1.45.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/44/b9/040d1a1c7836922828e6480cd2366bb8fe0ebf75b413d2bb51a9b0e7f78f/opentelemetry_api-1.45.0-py3-none-any.whl",
-    "sha256": "80e068aba7cd56c8b58512d6a36f8d25cb1dfaa0c0a4cc1c938ccf9f362d9cb3",
-    "size": 60020
+    "version": "1.45.1",
+    "filename": "opentelemetry_api-1.45.1-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/1e/41/f7dcf80b81ee8e71c1a2b59f14208bc723edbd89ed027a73b175abf6348e/opentelemetry_api-1.45.1-py3-none-any.whl",
+    "sha256": "b31553efa588ae44bc306f863c785c5333a9ecc091248c6ee68b4b6c87fdedfb",
+    "size": 60256
   },
   {
     "name": "packaging",
@@ -1033,11 +1033,11 @@
   },
   {
     "name": "pyjwt",
-    "version": "2.13.0",
-    "filename": "pyjwt-2.13.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/a3/5e/ecf12fdb62546d64385c158514e9b2b671f7832108ef2ecd2020ce0af2d1/pyjwt-2.13.0-py3-none-any.whl",
-    "sha256": "66adcc2aff09b3f1bbd95fc1e1577df8ac8723c978552fd43304c8a290ac5728",
-    "size": 31274
+    "version": "2.15.1",
+    "filename": "pyjwt-2.15.1-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/50/ca/44de4e75f8aadc457f0634be3b542815078ded46dca30efb960edeecad6e/pyjwt-2.15.1-py3-none-any.whl",
+    "sha256": "42d59d631f7768a1028a64c7ff581a9bf7519804daf91fc5b6c56e30eec5e193",
+    "size": 33860
   },
   {
     "name": "pymupdf",
@@ -1329,11 +1329,11 @@
   },
   {
     "name": "tokenizers",
-    "version": "0.22.2",
-    "filename": "tokenizers-0.22.2-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/d6/84/7990e799f1309a8b87af6b948f31edaa12a3ed22d11b352eaf4f4b2e5753/tokenizers-0.22.2-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
-    "sha256": "2249487018adec45d6e3554c71d46eb39fa8ea67156c640f7513eb26f318cec7",
-    "size": 3290736
+    "version": "0.23.2",
+    "filename": "tokenizers-0.23.2-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/2e/4d/8f569ed49372a3ed8e57099bd515055fd48d7c95912c4307cda6973c2168/tokenizers-0.23.2-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+    "sha256": "a37039b5dfc4af84eb3ef0a92f4307e28936c8f9adccba2629d36f652e9bf7a2",
+    "size": 3516830
   },
   {
     "name": "torch",
@@ -1377,11 +1377,11 @@
   },
   {
     "name": "transformers",
-    "version": "5.3.0",
-    "filename": "transformers-5.3.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/b8/88/ae8320064e32679a5429a2c9ebbc05c2bf32cefb6e076f9b07f6d685a9b4/transformers-5.3.0-py3-none-any.whl",
-    "sha256": "50ac8c89c3c7033444fb3f9f53138096b997ebb70d4b5e50a2e810bf12d3d29a",
-    "size": 10661827
+    "version": "5.17.0",
+    "filename": "transformers-5.17.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/e8/d0/c502b60d684adbd98a8dc7d5bb866842772b816ac4354e4608be240041ae/transformers-5.17.0-py3-none-any.whl",
+    "sha256": "78ec1ce21579b38dfb83950a0658cd119f87212a2fcfdff478096ce9d6c03801",
+    "size": 12295140
   },
   {
     "name": "triton",
@@ -1393,11 +1393,11 @@
   },
   {
     "name": "trl",
-    "version": "0.24.0",
-    "filename": "trl-0.24.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/87/5f/c647fedde9d59ae35ee189cc49e419da5ac1d9ad9933cb69401a7eac4705/trl-0.24.0-py3-none-any.whl",
-    "sha256": "a9145b7d4a4a33778de117bda48530f0cf5b2ac25acc07db80ad04836f490dfc",
-    "size": 423143
+    "version": "0.29.1",
+    "filename": "trl-0.29.1-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/c7/3b/33226ae50a36f718e1107ece0c91b016457bb4b956d1cb5bd7078c04de9c/trl-0.29.1-py3-none-any.whl",
+    "sha256": "f9490cd1af93f3dce1cfdfe0fa1de108dbc46a2f6c2f90485cc2b4021c43eef3",
+    "size": 530959
   },
   {
     "name": "truststore",
@@ -1465,19 +1465,19 @@
   },
   {
     "name": "unsloth",
-    "version": "2026.3.11",
-    "filename": "unsloth-2026.3.11-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/75/f1/f0e475694650857d1e0904df7c162a285f38cac56999b62c25b92cecd0fa/unsloth-2026.3.11-py3-none-any.whl",
-    "sha256": "54976106753a581298cf76f9978bf29a74d33d945badc4dc8a50d18688ca5aa2",
-    "size": 62730669
+    "version": "2026.10.2",
+    "filename": "unsloth-2026.10.2-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/72/85/eba493836fe576299e747051a4f99ee43dde09de96809d480ecd19230131/unsloth-2026.10.2-py3-none-any.whl",
+    "sha256": "6aba42395f7519cf7b4098478d17eff85c7009612f3f0701c47a74f76f2a99bb",
+    "size": 28396521
   },
   {
     "name": "unsloth-zoo",
-    "version": "2026.9.9",
-    "filename": "unsloth_zoo-2026.9.9-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/f5/6a/945766cf3ebc32d5c49463d6185a9bace7cb9241616d713ecf7540115fe6/unsloth_zoo-2026.9.9-py3-none-any.whl",
-    "sha256": "4ae0cabb93c8d6755af541767a4243eee511f2ce41e36b56a8c80f15591e0663",
-    "size": 2074458
+    "version": "2026.10.2",
+    "filename": "unsloth_zoo-2026.10.2-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/d6/c6/344c86cdd841a1ea91219fa322ad85428d6912575e1785c8215776658727/unsloth_zoo-2026.10.2-py3-none-any.whl",
+    "sha256": "71e532768808503222b09a6e33c9662768ed1459797fcfe72b67dd61798979a9",
+    "size": 2240205
   },
   {
     "name": "urllib3",
