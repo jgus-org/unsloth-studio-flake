@@ -937,11 +937,11 @@
   },
   {
     "name": "platformdirs",
-    "version": "4.12.3",
-    "filename": "platformdirs-4.12.3-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/c5/9b/6ce1ead737fe496611bda600c263b9a11ae7bd8f41bb13f9bd7e0a2c37a4/platformdirs-4.12.3-py3-none-any.whl",
-    "sha256": "080f3b39423b5abfca9a23d84c4e9795f54d395cd8459867a8ded44084fcd5f8",
-    "size": 32493
+    "version": "4.12.4",
+    "filename": "platformdirs-4.12.4-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/f4/ba/223e00b885e960edd5d4b4d178c88acce019bd5b83786093681b8c393492/platformdirs-4.12.4-py3-none-any.whl",
+    "sha256": "78bfb9db2a8471ed7eebe3c3c932da413911042994e699b384fbb4493fa872d7",
+    "size": 32596
   },
   {
     "name": "primp",
@@ -993,11 +993,11 @@
   },
   {
     "name": "pycparser",
-    "version": "3.0",
-    "filename": "pycparser-3.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/0c/c3/44f3fbbfa403ea2a7c779186dc20772604442dde72947e7d01069cbe98e3/pycparser-3.0-py3-none-any.whl",
-    "sha256": "b727414169a36b7d524c1c3e31839a521725078d7b2ff038656844266160a992",
-    "size": 48172
+    "version": "3.1",
+    "filename": "pycparser-3.1-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/99/ce/b3ae9ee0324d991c860187be2a6ee436d27a3d02397eaddbb101ec901f3d/pycparser-3.1-py3-none-any.whl",
+    "sha256": "f09d358c840bd147b79e55f2bc494f18ea869dc897f5852a8f5766b74f787882",
+    "size": 48709
   },
   {
     "name": "pydantic",
@@ -1465,19 +1465,19 @@
   },
   {
     "name": "unsloth",
-    "version": "2026.10.2",
-    "filename": "unsloth-2026.10.2-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/72/85/eba493836fe576299e747051a4f99ee43dde09de96809d480ecd19230131/unsloth-2026.10.2-py3-none-any.whl",
-    "sha256": "6aba42395f7519cf7b4098478d17eff85c7009612f3f0701c47a74f76f2a99bb",
-    "size": 28396521
+    "version": "2026.10.3",
+    "filename": "unsloth-2026.10.3-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/78/d8/0b43df94d68b5cc3e13e2176906f0ec196f1831fbca6c718f27c83e39c86/unsloth-2026.10.3-py3-none-any.whl",
+    "sha256": "495eeb1d310466a8e1cbe4329e76749452ef97efc6cd0753c57ecc28af635c63",
+    "size": 28433157
   },
   {
     "name": "unsloth-zoo",
-    "version": "2026.10.2",
-    "filename": "unsloth_zoo-2026.10.2-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/d6/c6/344c86cdd841a1ea91219fa322ad85428d6912575e1785c8215776658727/unsloth_zoo-2026.10.2-py3-none-any.whl",
-    "sha256": "71e532768808503222b09a6e33c9662768ed1459797fcfe72b67dd61798979a9",
-    "size": 2240205
+    "version": "2026.10.3",
+    "filename": "unsloth_zoo-2026.10.3-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/d4/69/01c303717847cc26eb6ba91b88a02cd7a7820a6e514e6b46f176d3a84a76/unsloth_zoo-2026.10.3-py3-none-any.whl",
+    "sha256": "3a6e1d2ab6fa04402fd08e72293e53e976922e6f97123cbf382dc8ae6f627f3c",
+    "size": 2277528
   },
   {
     "name": "urllib3",
