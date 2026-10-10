@@ -1,10 +1,10 @@
 # Auto-managed by `nix run .#update-version`. Manual edits will be overwritten by the next bump.
 {
-  version = "0.1.90.5-beta";
-  sourceRev = "d94ca0ee6b54891378c6de65af9eba48f1afae59";
-  sourceHash = "sha256-NZuxHKNI7J1CVN6FjjSkSWZchkqlAsbGmyigHdCIniY=";
-  npmDepsHash = "sha256-T1TTtJKea0xRnE7GC1XbdE5lAtIpYwg6UQYBahYOEtY=";
-  requirementsHash = "a680bfc2bfe75e5e98a138042f9d09e2a7322233e2001a3920fa00fdadfa9ed0";
-  wheelManifestHash = "ea4efc988fd5e4d729394530e06deb8c03d95bd7f2da767e6133c619434e2786";
+  version = "0.1.81.0-beta";
+  sourceRev = "317b702da803c70b332ae5fc695bf37edb2f7a7c";
+  sourceHash = "sha256-vC4AeOxdLDaVwAl78Zstah6GYLm6lYAHv32stht9JH0=";
+  npmDepsHash = "sha256-02mADuBAzc+ykX7MKnN5SHOnMl1D5gyXG39FWTQ6VlU=";
+  requirementsHash = "9bf727ed934fc9bbc2ed51f456ead4fc7d17e9ff532a71f9eb1ddcfaffc44ee5";
+  wheelManifestHash = "8c15aab830ee5beebb2dcef0baabfcbf0c6e39e8b5ca01881ea978f467f85d86";
   artifactFingerprint = "b6e1f18e9aa62684bf6900636b15c78051f86314d694f8f49b40debc708ddf99";
 }
