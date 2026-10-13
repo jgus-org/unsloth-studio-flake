@@ -250,13 +250,13 @@ bitsandbytes==0.50.2 \
     --hash=sha256:c697963c8fda3dcd0d7ebd9b5211ae4067feef7cd06e0350d4e816a434fe683d \
     --hash=sha256:d5772560dd94c4d9c57f50c9b017450a1707f7687bfd4b3dc86f7342aafe721e
     # via unsloth
-boto3==1.43.111 \
-    --hash=sha256:5ae342a16c848909cd42d4be404f69d9082e5705460198d4d3327eca5f6cddcb \
-    --hash=sha256:c79994619c8d89e45f6fd0edc5c5b5a70c9358f00423f4c99cb64931f89ecf37
+boto3==1.43.112 \
+    --hash=sha256:599548a8c8e93cf0223bcb35b615c82f29d30295e992b94863cfbb2405ee33e5 \
+    --hash=sha256:add1216791e16c4f737676a0f5d6d2fa6240eef61619c6c44df9eeeaf88f24ff
     # via -r requirements.in
-botocore==1.43.111 \
-    --hash=sha256:44d5e80962ac6cb9e85af72667b77c9586451e3328ab0ce33195380767e213d8 \
-    --hash=sha256:f1f4c28cb2a096bf246d0bb24cbb1a01c5cb696ef499fa71b155adda7b94c90b
+botocore==1.43.112 \
+    --hash=sha256:1e67a3dcf4a308c695d880b65463a492a971d5b28761b49add92f71e4322130f \
+    --hash=sha256:9ce0d70e09fabbb3a2e1126d3ec79ed67d14c88bb3f064e62ab2881d5eaf3c7b
     # via
     #   boto3
     #   s3transfer
@@ -1909,9 +1909,9 @@ mdurl==0.1.2 \
     --hash=sha256:84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8 \
     --hash=sha256:bb413d29f5eea38f31dd4754dd7377d4465116fb207585f97bf925588687c1ba
     # via markdown-it-py
-more-itertools==11.1.0 \
-    --hash=sha256:48e8f4d9e7e5878571ecf6f2b4e57634f93cd474cc8cfbd2376f2d11b396e30d \
-    --hash=sha256:4b65538ae22f6fed0ce4874efd317463a7489796a0939fa66824dd542125a192
+more-itertools==11.2.0 \
+    --hash=sha256:59960f488835254863a857eb501f69e4ec92fdc8822f098c0f48dba530afd487 \
+    --hash=sha256:e4c522352a24664c974d0be8382944107ae638281a06391a5a538366b5707fe5
     # via
     #   jaraco-classes
     #   jaraco-functools
@@ -3682,9 +3682,9 @@ sse-starlette==3.5.0 \
     # via
     #   -r requirements.in
     #   mcp
-starlette==1.7.0 \
-    --hash=sha256:67f8e99895493dd2911a03f11314af6ceebeae4e704bb9f43dfc6a9db151c93e \
-    --hash=sha256:c79f74ea63cff761804fbbfb182f1e0b440c2d07b164d24700c5a1bab5d6ff5d
+starlette==1.8.0 \
+    --hash=sha256:1565dc0b35d5737a271ed1e0e04e949f4e81198799f216d2667b0a0fb9cf9522 \
+    --hash=sha256:dfdd6b29c26483288088d990eee59631dedadd66ce20d203402a7ca8e3c4656f
     # via
     #   -r requirements.in
     #   fastapi
@@ -3953,9 +3953,9 @@ trl==0.29.1 \
     #   -r requirements.in
     #   unsloth
     #   unsloth-zoo
-truststore==0.10.4 \
-    --hash=sha256:9d91bd436463ad5e4ee4aba766628dd6cd7010cf3e2461756b3303710eebc301 \
-    --hash=sha256:adaeaecf1cbb5f4de3b1959b42d41f6fab57b2b1666adb59e89cb0b53361d981
+truststore==0.10.5 \
+    --hash=sha256:30d36967ccaded5cbb38d602c433f53600036c79d502f4533a49b60a03bbefcd \
+    --hash=sha256:9aaaedaefaf06d8b206278cf8b5012bc897f485a874503501e12d776df78951c
     # via
     #   httpcore2
     #   httpx2
@@ -4014,12 +4014,12 @@ uncalled-for==0.4.1 \
     --hash=sha256:6412b19d1b1e7d431981fee01f8b47be7802f48328a48cbe9603acee757ec553 \
     --hash=sha256:b611b38879d9fe5088297e7bb28f2ddd12d2d73dad933d93da107fb63eb4058e
     # via fastmcp-slim
-unsloth==2026.10.4 \
-    --hash=sha256:555a97c598f934905be679ccdf705b4be323a4080702ad98d98cb86e293f279f
+unsloth==2026.10.5 \
+    --hash=sha256:7802211862fd953db173a86b6be73690f57c876c6ee77329df63fcf3f299c09d
     # via -r requirements.in
-unsloth-zoo==2026.10.4 \
-    --hash=sha256:1427539a0ce8cb98f3ddecdebe72653b798c2971574f914f2200c95e64ed5fd7 \
-    --hash=sha256:82a01718aabbe5e4e50c063ef730c74dbc3336495a8e2f97431d1b03343a9289
+unsloth-zoo==2026.10.5 \
+    --hash=sha256:5ae9a5496ca1a614b720424c79352edb0eea626085cb07a5ea872227e186acf8 \
+    --hash=sha256:824d1ccce45246f07ad0b58caa3aae8d9d8c1dbb9afd5bc8a4c2aa9b104ac92e
     # via
     #   -r requirements.in
     #   unsloth
