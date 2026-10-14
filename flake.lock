@@ -10,16 +10,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1791913510,
-        "narHash": "sha256-64LPsUeCeJGPJ9iMqlkVyB/uxxsgXk0iHlAEgiwkpao=",
+        "lastModified": 1792014218,
+        "narHash": "sha256-12Yh/Jdf8jBg0wwOC2kd5xrNOC+tsU+LnnsPLU8vxuk=",
         "owner": "jgus-org",
         "repo": "flake-lib",
-        "rev": "dc3f1a14f6e8528de6b27685aae49b1a68e1f0db",
+        "rev": "a0ab85c3d25f8344efb98fced89f6620fc4418a7",
         "type": "github"
       },
       "original": {
         "owner": "jgus-org",
-        "ref": "v1",
+        "ref": "agent/wheelhouse-site-tree",
         "repo": "flake-lib",
         "type": "github"
       }

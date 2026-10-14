@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flake-utils.url = "github:numtide/flake-utils";
     flake-lib = {
-      url = "github:jgus-org/flake-lib/v1";
+      url = "github:jgus-org/flake-lib/agent/wheelhouse-site-tree";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
     };
@@ -48,6 +48,23 @@
           unsloth-studio-frontend = final.callPackage ./pkgs/unsloth-studio-frontend {
             inherit src version npmDepsHash;
           };
+          # torch and everything linked against it come from the deployment's own package set,
+          # which is where CUDA lives. The lock resolved them so its dependents resolved against
+          # their metadata; installing a second copy beside a built torch would let PYTHONPATH
+          # order decide which one imports.
+          providedByDeployment =
+            name:
+            final.lib.hasPrefix "nvidia-" name
+            || final.lib.elem name [
+              "bitsandbytes"
+              "cuda-toolkit"
+              "torch"
+              "torchao"
+              "torchaudio"
+              "torchvision"
+              "triton"
+              "xformers"
+            ];
         in
         {
           inherit unsloth-studio-frontend;
@@ -57,6 +74,7 @@
                 inherit version unsloth-studio-frontend;
                 src = patchedSrc;
                 python = pyfinal.python;
+                pkgs = final;
                 wheelhouse =
                   (flake-lib.lib.mkWheelhouse {
                     pkgs = final;
@@ -66,8 +84,9 @@
                         pythonVersion = pyfinal.python.pythonVersion;
                         system = final.stdenv.hostPlatform.system;
                       }).wheelManifest;
+                    noEmit = providedByDeployment;
                   }).wheelhouse;
-                inherit (flake-lib.lib) installWheelhouse;
+                inherit (flake-lib.lib) mkWheelhouseSiteTree;
               };
             })
           ];
