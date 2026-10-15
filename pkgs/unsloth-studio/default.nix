@@ -1,15 +1,13 @@
 { lib
 , makeWrapper
-, stdenv
+, pkgs
 , src
 , version
 , unsloth-studio-frontend
 , writeText
 , python
-, uv
-, zlib
 , wheelhouse
-, installWheelhouse
+, mkWheelhouseSiteTree
 }:
 let
   siteDir = "$out/${python.sitePackages}";
@@ -57,24 +55,32 @@ let
     ]
   '';
 in
-stdenv.mkDerivation {
+mkWheelhouseSiteTree {
+  inherit pkgs python wheelhouse src version;
+
   pname = "unsloth-studio";
-  inherit version;
 
-  inherit src;
-
-  nativeBuildInputs = [
-    makeWrapper
-    python
-    uv
-  ];
-  buildInputs = [
-    stdenv.cc.cc.lib
-    zlib
-  ];
+  nativeBuildInputs = [ makeWrapper ];
 
   dontBuild = true;
-  doInstallCheck = true;
+
+  # The CUDA stack — torch and what is built against it — comes from the deployment's own
+  # package set beside this tree, so these are the native modules this tree ships.
+  checkImports = [
+    "numpy"
+    "scipy"
+    "pandas"
+    "matplotlib"
+    "av"
+    "PIL.Image"
+    "aiohttp"
+    "msgspec"
+    "pydantic_core"
+    "regex"
+    "safetensors"
+    "tokenizers"
+    "tiktoken"
+  ];
 
   postPatch = ''
     # Strip out upstream pieces we don't ship from this derivation:
@@ -102,13 +108,11 @@ stdenv.mkDerivation {
     cp ${pyprojectFile} pyproject.toml
   '';
 
-  installPhase = ''
-    runHook preInstall
+  postInstall = ''
     export HOME="$TMPDIR"
     export PYTHONNOUSERSITE=1
-    mkdir -p "${siteDir}" "$out/bin"
-    ${installWheelhouse { inherit python; target = siteDir; inherit wheelhouse; }}
     export PYTHONPATH="${siteDir}"
+    mkdir -p "$out/bin"
     uv pip install \
       --python ${python.interpreter} \
       --target "${siteDir}" \
@@ -116,19 +120,6 @@ stdenv.mkDerivation {
       --no-deps \
       --no-build-isolation \
       "$PWD"
-    runHook postInstall
-  '';
-
-  postInstall = ''
-    # Optional multi-node transport/bootstrap plugins (MPI, pmix, libfabric, UCX,
-    # IBGDA) whose dependencies nothing in the single-host runtime loads. nvshmem's
-    # default bootstrap and the CUDA transport stay.
-    rm -f \
-      "${siteDir}"/nvidia/nvshmem/lib/nvshmem_bootstrap_mpi.so.3 \
-      "${siteDir}"/nvidia/nvshmem/lib/nvshmem_bootstrap_pmix.so.3 \
-      "${siteDir}"/nvidia/nvshmem/lib/nvshmem_transport_libfabric.so.3 \
-      "${siteDir}"/nvidia/nvshmem/lib/nvshmem_transport_ucx.so.3 \
-      "${siteDir}"/nvidia/nvshmem/lib/nvshmem_transport_ibgda.so.3
   '';
 
   postFixup = ''
@@ -136,17 +127,8 @@ stdenv.mkDerivation {
       name=$(basename "$script")
       makeWrapper "$script" "$out/bin/$name" \
         --set PYTHONNOUSERSITE 1 \
-        --set LD_LIBRARY_PATH "${stdenv.cc.cc.lib}/lib:${zlib}/lib:/run/opengl-driver/lib:${siteDir}/torch/lib" \
         --prefix PYTHONPATH : "${siteDir}"
     done
-  '';
-
-  # The CLI module is a typer app that imports studio.backend at invoke time; importing it eagerly here pulls in ~200MB of torch/transformers init paths for no real verification value.
-  installCheckPhase = ''
-    runHook preInstallCheck
-    export PYTHONPATH="${siteDir}"
-    ${python.interpreter} -c "import unsloth_cli, studio"
-    runHook postInstallCheck
   '';
 
   passthru = {
