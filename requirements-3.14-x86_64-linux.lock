@@ -362,9 +362,9 @@ brotli==1.2.0 \
     --hash=sha256:fc1530af5c3c275b8524f2e24841cbe2599d74462455e9bae5109e9ff42e9361 \
     --hash=sha256:ff09cd8c5eec3b9d02d2408db41be150d8891c5566addce57513bf546e3d6c6d
     # via httpx
-cachetools==7.2.1 \
-    --hash=sha256:63aa53dfe7473c10cccdd5a01dedf76ef2c4b73a58840d9396e7d0752cbdac3b \
-    --hash=sha256:b1a7537025c06abf96fcc1443e496af9a3fb95e774e70e1f0af226f73f7f2dcc
+cachetools==7.2.2 \
+    --hash=sha256:39b6c9291adde28c5de6622d25329375fadf3e8a678226e7872e2e72854e4549 \
+    --hash=sha256:d521dc98d501ba9efd8d2b1663bbf88163509c0c0a090eea6dc154b421ec5410
     # via py-key-value-aio
 caio==0.12.9 \
     --hash=sha256:0a571981c8724f69c34ed4c7619585d552d27fe38bad0daf970dca3e14d6922b \
@@ -934,6 +934,10 @@ docstring-parser==0.18.0 \
     # via
     #   cyclopts
     #   tyro
+einops==0.8.2 \
+    --hash=sha256:54058201ac7087911181bfec4af6091bb59380360f069276601256a76af08193 \
+    --hash=sha256:609da665570e5e265e27283aab09e7f279ade90c4f01bcfca111f3d3e13f2827
+    # via unsloth-zoo
 email-validator==2.3.0 \
     --hash=sha256:80f13f623413e6b197ae73bb10bf4eb0908faf509ad8362c5edeb0be7fd450b4 \
     --hash=sha256:9fc05c37f2f6cf439ff414f8fc46d917929974a82244c20eb10231ba60c54426
@@ -2577,9 +2581,9 @@ pillow==12.3.0 \
     #   matplotlib
     #   torchvision
     #   unsloth-zoo
-platformdirs==4.13.0 \
-    --hash=sha256:1aa0b0d3f224c1f07c295121e312a5a24a180d6ae5a8425ea1784b3e3863e9c0 \
-    --hash=sha256:3dbcf4cd708f21cf876c4eaa90e58412bc4f033d87143f41b1493ff77c25b7e1
+platformdirs==4.13.2 \
+    --hash=sha256:0b220b7e6e71041a02b4aa07b69e575436f8268a669477e3b7fd1e4062587f1b \
+    --hash=sha256:7bea13e899d079e0a59b15ed7e481f8506dd1921df53afe23f4ae48eb3c117af
     # via fastmcp-slim
 primp==2.0.1 \
     --hash=sha256:0440d84854d1f9218277eef2c688a1774408e0d8a3805077eb6db432a4fa7970 \
@@ -4023,12 +4027,12 @@ uncalled-for==0.4.1 \
     --hash=sha256:6412b19d1b1e7d431981fee01f8b47be7802f48328a48cbe9603acee757ec553 \
     --hash=sha256:b611b38879d9fe5088297e7bb28f2ddd12d2d73dad933d93da107fb63eb4058e
     # via fastmcp-slim
-unsloth==2026.10.5 \
-    --hash=sha256:7802211862fd953db173a86b6be73690f57c876c6ee77329df63fcf3f299c09d
+unsloth==2026.10.6 \
+    --hash=sha256:103efac52b090a1070c0083911119e34986a910df1118667ab2a1e8d6ccbab48
     # via -r requirements.in
-unsloth-zoo==2026.10.5 \
-    --hash=sha256:5ae9a5496ca1a614b720424c79352edb0eea626085cb07a5ea872227e186acf8 \
-    --hash=sha256:824d1ccce45246f07ad0b58caa3aae8d9d8c1dbb9afd5bc8a4c2aa9b104ac92e
+unsloth-zoo==2026.10.6 \
+    --hash=sha256:cee2b7e23b1513f13c6f6db22b27f728273ad10d658ae77ff7f18537e1c35a50 \
+    --hash=sha256:f5fa45f17724245c2e4261188be3307384c0d90d6bac2d032332942603e7d4ef
     # via
     #   -r requirements.in
     #   unsloth

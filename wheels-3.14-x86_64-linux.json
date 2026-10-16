@@ -129,11 +129,11 @@
   },
   {
     "name": "cachetools",
-    "version": "7.2.1",
-    "filename": "cachetools-7.2.1-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/f0/c9/2a61d784caf0d869a3326728c57c7203f50cc53f3cca2ee76bf924769eb4/cachetools-7.2.1-py3-none-any.whl",
-    "sha256": "63aa53dfe7473c10cccdd5a01dedf76ef2c4b73a58840d9396e7d0752cbdac3b",
-    "size": 17006
+    "version": "7.2.2",
+    "filename": "cachetools-7.2.2-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/eb/d1/15cc3b3c07cfe11bf6fbe81a4a92ebb9d202d7d903aaa36b713c8f6eabda/cachetools-7.2.2-py3-none-any.whl",
+    "sha256": "39b6c9291adde28c5de6622d25329375fadf3e8a678226e7872e2e72854e4549",
+    "size": 17819
   },
   {
     "name": "caio",
@@ -302,6 +302,14 @@
     "url": "https://files.pythonhosted.org/packages/a7/5f/ed01f9a3cdffbd5a008556fc7b2a08ddb1cc6ace7effa7340604b1d16699/docstring_parser-0.18.0-py3-none-any.whl",
     "sha256": "b3fcbed555c47d8479be0796ef7e19c2670d428d72e96da63f3a40122860374b",
     "size": 22484
+  },
+  {
+    "name": "einops",
+    "version": "0.8.2",
+    "filename": "einops-0.8.2-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/2a/09/f8d8f8f31e4483c10a906437b4ce31bdf3d6d417b73fe33f1a8b59e34228/einops-0.8.2-py3-none-any.whl",
+    "sha256": "54058201ac7087911181bfec4af6091bb59380360f069276601256a76af08193",
+    "size": 65638
   },
   {
     "name": "email-validator",
@@ -937,11 +945,11 @@
   },
   {
     "name": "platformdirs",
-    "version": "4.13.0",
-    "filename": "platformdirs-4.13.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/8d/15/1633010b26e88e872c93b67c0b6c5e174fb74cb6fb5c1472b4d51d4a8f22/platformdirs-4.13.0-py3-none-any.whl",
-    "sha256": "3dbcf4cd708f21cf876c4eaa90e58412bc4f033d87143f41b1493ff77c25b7e1",
-    "size": 32724
+    "version": "4.13.2",
+    "filename": "platformdirs-4.13.2-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/f2/7f/e0090311031e1c101a151c303e06988e217469fef857d0a36b43ac760c1e/platformdirs-4.13.2-py3-none-any.whl",
+    "sha256": "0b220b7e6e71041a02b4aa07b69e575436f8268a669477e3b7fd1e4062587f1b",
+    "size": 32765
   },
   {
     "name": "primp",
@@ -1465,19 +1473,19 @@
   },
   {
     "name": "unsloth",
-    "version": "2026.10.5",
-    "filename": "unsloth-2026.10.5-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/d4/60/b5827ed0c78cb24380154d672de2bf676cd2101a322abf0c11eda7d84183/unsloth-2026.10.5-py3-none-any.whl",
-    "sha256": "7802211862fd953db173a86b6be73690f57c876c6ee77329df63fcf3f299c09d",
-    "size": 30005284
+    "version": "2026.10.6",
+    "filename": "unsloth-2026.10.6-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/fb/55/a6a8fc6a493fb8d3bed1dbc7d80d53ae6c5e3dff82d4579a5600dc36341f/unsloth-2026.10.6-py3-none-any.whl",
+    "sha256": "103efac52b090a1070c0083911119e34986a910df1118667ab2a1e8d6ccbab48",
+    "size": 30375029
   },
   {
     "name": "unsloth-zoo",
-    "version": "2026.10.5",
-    "filename": "unsloth_zoo-2026.10.5-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/26/78/ac2709da7f4247c2c350588349f62238912779380304dc7147afef23adfb/unsloth_zoo-2026.10.5-py3-none-any.whl",
-    "sha256": "5ae9a5496ca1a614b720424c79352edb0eea626085cb07a5ea872227e186acf8",
-    "size": 2415619
+    "version": "2026.10.6",
+    "filename": "unsloth_zoo-2026.10.6-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/1e/f9/e754760d00ca5222981ff44ba64cad7a7047ed8150f3c3f6d3d3633d0499/unsloth_zoo-2026.10.6-py3-none-any.whl",
+    "sha256": "cee2b7e23b1513f13c6f6db22b27f728273ad10d658ae77ff7f18537e1c35a50",
+    "size": 2563378
   },
   {
     "name": "urllib3",
