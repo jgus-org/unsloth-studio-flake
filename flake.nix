@@ -202,6 +202,7 @@
             '';
           };
           update-branches = flake-lib.lib.mkUpdateBranches {
+            minimumTrackingVersion = "0.1.70-beta";
             inherit pkgs source;
             pinSchema = "github-npm";
             extraHashes = [
