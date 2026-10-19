@@ -179,6 +179,7 @@
           updateVersion = flake-lib.lib.mkUpdateVersion {
             inherit pkgs source;
             buildAttr = "unsloth-studio";
+            verification = "build";
             extraHashes = [
               "npmDepsHash"
               "requirementsHash"
