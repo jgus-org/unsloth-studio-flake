@@ -1,0 +1,211 @@
+# Installed and refreshed by `nix run github:jgus-org/flake-lib/v1#update-workflows`: the
+# tool is taken from flake-lib's own flake URL rather than from this repository, because
+# there is nothing producer-specific in it to re-declare. A repository that does not have
+# this file yet installs it with
+# `nix run github:jgus-org/flake-lib/v1#update-workflows -- adopt update-branches.yml`.
+# Edit it in jgus-org/flake-lib's templates/workflows, not here. Binary caching uses the
+# fleet Attic cache whenever the ATTIC_TOKEN secret resolves -- an organization secret
+# covers every repository at once -- and a repository, or a fork pull request, with no
+# token runs on the public cache alone.
+# The workflow below updates
+# itself: a run reads this file when it starts, so the first job refreshes it and
+# commits that revision, and every later job checks out that commit. The scripts it
+# invokes therefore move in the same run as the flake-lib input they come from.
+
+name: Update branches
+
+on:
+  schedule:
+    - cron: '0 7 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  workflows:
+    runs-on: ubuntu-latest
+    outputs:
+      sha: ${{ steps.update.outputs.sha }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: cachix/install-nix-action@v31
+
+      - uses: jgus-org/flake-lib/.github/actions/fleet-nix-cache@v1
+        with:
+          token: ${{ secrets.ATTIC_TOKEN }}
+
+      - name: Update workflows from flake-lib templates
+        id: update
+        env:
+          GIT_PUSH_TOKEN: ${{ secrets.ORG_UPDATE_TOKEN }}
+        run: nix run github:jgus-org/flake-lib/v1#update-workflows
+
+  # A producer whose flake takes inputs from other producers here must not pin them before
+  # their own update has published. The edges are this repository's flake inputs, so nothing
+  # below is producer-specific, and a leaf producer's run reports nothing to wait for. A
+  # dependency that cannot be observed, that ended badly, or that never finishes is reported
+  # and skipped: ordering is worth waiting for, not worth stalling the fleet on.
+  deps:
+    needs: workflows
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ needs.workflows.outputs.sha || github.sha }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: cachix/install-nix-action@v31
+
+      - uses: jgus-org/flake-lib/.github/actions/fleet-nix-cache@v1
+        with:
+          token: ${{ secrets.ATTIC_TOKEN }}
+
+      - name: Wait for dependency updates
+        env:
+          # Reading another repository's runs and starting a dependency's update both need a
+          # token. This organization secret covers every repository, so no producer declares
+          # anything, and with no such secret the gate observes nothing and proceeds.
+          GITHUB_TOKEN: ${{ secrets.ORG_UPDATE_TOKEN }}
+        run: nix run github:jgus-org/flake-lib/v1#wait-for-deps
+
+  discover:
+    needs: [workflows, deps]
+    if: always()
+    runs-on: ubuntu-latest
+    outputs:
+      base_sha: ${{ steps.plan.outputs.base_sha }}
+      versions: ${{ steps.plan.outputs.versions }}
+      newest_stable: ${{ steps.plan.outputs.newest_stable }}
+      maintenance: ${{ steps.plan.outputs.maintenance }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          ref: ${{ needs.workflows.outputs.sha || github.sha }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: cachix/install-nix-action@v31
+
+      - uses: jgus-org/flake-lib/.github/actions/fleet-nix-cache@v1
+        with:
+          token: ${{ secrets.ATTIC_TOKEN }}
+
+      - name: Discover tracked versions and specification base
+        id: plan
+        env:
+          # gh CLI reads GH_TOKEN, not GITHUB_TOKEN; required for github-source flakes.
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: nix run .#update-branches -- list
+
+  newest-stable:
+    needs: [workflows, discover]
+    if: always() && needs.discover.result == 'success' && needs.discover.outputs.newest_stable != 'null'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          ref: ${{ needs.workflows.outputs.sha || github.sha }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: cachix/install-nix-action@v31
+
+      - uses: jgus-org/flake-lib/.github/actions/fleet-nix-cache@v1
+        with:
+          token: ${{ secrets.ATTIC_TOKEN }}
+
+      - name: Refresh newest stable
+        env:
+          BASE_SHA: ${{ needs.discover.outputs.base_sha }}
+          ENTRY: ${{ needs.discover.outputs.newest_stable }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          version=$(jq -r '.version' <<<"${ENTRY}")
+          upstream_version=$(jq -r '.upstreamVersion' <<<"${ENTRY}")
+          nix run .#update-branches -- refresh \
+            --base-sha "${BASE_SHA}" \
+            --version "${version}" \
+            --upstream-version "${upstream_version}"
+
+      - name: Publish newest stable early
+        continue-on-error: true
+        env:
+          BASE_SHA: ${{ needs.discover.outputs.base_sha }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VERSIONS: ${{ needs.discover.outputs.versions }}
+        run: |
+          nix run .#update-branches -- publish \
+            --base-sha "${BASE_SHA}" \
+            --versions-json "${VERSIONS}"
+
+  maintenance:
+    needs: [workflows, discover, newest-stable]
+    if: always() && needs.discover.result == 'success' && needs.discover.outputs.maintenance != '[]'
+    strategy:
+      fail-fast: false
+      # Bound the fan-out: the matrix grows with every tracked release, and unbounded
+      # parallel refreshes contend for the shared Nix cache and for runners.
+      max-parallel: 4
+      matrix:
+        entry: ${{ fromJson(needs.discover.outputs.maintenance) }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          ref: ${{ needs.workflows.outputs.sha || github.sha }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: cachix/install-nix-action@v31
+
+      - uses: jgus-org/flake-lib/.github/actions/fleet-nix-cache@v1
+        with:
+          token: ${{ secrets.ATTIC_TOKEN }}
+
+      - name: Refresh exact version
+        env:
+          BASE_SHA: ${{ needs.discover.outputs.base_sha }}
+          VERSION: ${{ matrix.entry.version }}
+          UPSTREAM_VERSION: ${{ matrix.entry.upstreamVersion }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          nix run .#update-branches -- refresh \
+            --base-sha "${BASE_SHA}" \
+            --version "${VERSION}" \
+            --upstream-version "${UPSTREAM_VERSION}"
+
+  publish:
+    needs: [workflows, discover, newest-stable, maintenance]
+    if: always() && needs.discover.result == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          ref: ${{ needs.workflows.outputs.sha || github.sha }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: cachix/install-nix-action@v31
+
+      - uses: jgus-org/flake-lib/.github/actions/fleet-nix-cache@v1
+        with:
+          token: ${{ secrets.ATTIC_TOKEN }}
+
+      - name: Publish aggregate pointers
+        env:
+          BASE_SHA: ${{ needs.discover.outputs.base_sha }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VERSIONS: ${{ needs.discover.outputs.versions }}
+        run: |
+          nix run .#update-branches -- publish \
+            --base-sha "${BASE_SHA}" \
+            --versions-json "${VERSIONS}"
