@@ -129,11 +129,11 @@
   },
   {
     "name": "cachetools",
-    "version": "7.2.2",
-    "filename": "cachetools-7.2.2-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/eb/d1/15cc3b3c07cfe11bf6fbe81a4a92ebb9d202d7d903aaa36b713c8f6eabda/cachetools-7.2.2-py3-none-any.whl",
-    "sha256": "39b6c9291adde28c5de6622d25329375fadf3e8a678226e7872e2e72854e4549",
-    "size": 17819
+    "version": "7.2.1",
+    "filename": "cachetools-7.2.1-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/f0/c9/2a61d784caf0d869a3326728c57c7203f50cc53f3cca2ee76bf924769eb4/cachetools-7.2.1-py3-none-any.whl",
+    "sha256": "63aa53dfe7473c10cccdd5a01dedf76ef2c4b73a58840d9396e7d0752cbdac3b",
+    "size": 17006
   },
   {
     "name": "caio",
@@ -302,14 +302,6 @@
     "url": "https://files.pythonhosted.org/packages/a7/5f/ed01f9a3cdffbd5a008556fc7b2a08ddb1cc6ace7effa7340604b1d16699/docstring_parser-0.18.0-py3-none-any.whl",
     "sha256": "b3fcbed555c47d8479be0796ef7e19c2670d428d72e96da63f3a40122860374b",
     "size": 22484
-  },
-  {
-    "name": "einops",
-    "version": "0.8.2",
-    "filename": "einops-0.8.2-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/2a/09/f8d8f8f31e4483c10a906437b4ce31bdf3d6d417b73fe33f1a8b59e34228/einops-0.8.2-py3-none-any.whl",
-    "sha256": "54058201ac7087911181bfec4af6091bb59380360f069276601256a76af08193",
-    "size": 65638
   },
   {
     "name": "email-validator",
@@ -945,11 +937,11 @@
   },
   {
     "name": "platformdirs",
-    "version": "4.13.2",
-    "filename": "platformdirs-4.13.2-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/f2/7f/e0090311031e1c101a151c303e06988e217469fef857d0a36b43ac760c1e/platformdirs-4.13.2-py3-none-any.whl",
-    "sha256": "0b220b7e6e71041a02b4aa07b69e575436f8268a669477e3b7fd1e4062587f1b",
-    "size": 32765
+    "version": "4.13.0",
+    "filename": "platformdirs-4.13.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/8d/15/1633010b26e88e872c93b67c0b6c5e174fb74cb6fb5c1472b4d51d4a8f22/platformdirs-4.13.0-py3-none-any.whl",
+    "sha256": "3dbcf4cd708f21cf876c4eaa90e58412bc4f033d87143f41b1493ff77c25b7e1",
+    "size": 32724
   },
   {
     "name": "primp",
@@ -1041,11 +1033,11 @@
   },
   {
     "name": "pyjwt",
-    "version": "2.15.1",
-    "filename": "pyjwt-2.15.1-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/50/ca/44de4e75f8aadc457f0634be3b542815078ded46dca30efb960edeecad6e/pyjwt-2.15.1-py3-none-any.whl",
-    "sha256": "42d59d631f7768a1028a64c7ff581a9bf7519804daf91fc5b6c56e30eec5e193",
-    "size": 33860
+    "version": "2.13.0",
+    "filename": "pyjwt-2.13.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/a3/5e/ecf12fdb62546d64385c158514e9b2b671f7832108ef2ecd2020ce0af2d1/pyjwt-2.13.0-py3-none-any.whl",
+    "sha256": "66adcc2aff09b3f1bbd95fc1e1577df8ac8723c978552fd43304c8a290ac5728",
+    "size": 31274
   },
   {
     "name": "pymupdf",
@@ -1337,11 +1329,11 @@
   },
   {
     "name": "tokenizers",
-    "version": "0.23.3",
-    "filename": "tokenizers-0.23.3-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/15/fc/ae987741829b1cd547668c4c94be732ae3eefd1d74344e64c3d2ca714acd/tokenizers-0.23.3-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
-    "sha256": "ec82e80e65a862275b97c3d90b7a523df8d9519ee48aeb4e9625b2cc909274e0",
-    "size": 3519944
+    "version": "0.22.2",
+    "filename": "tokenizers-0.22.2-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/d6/84/7990e799f1309a8b87af6b948f31edaa12a3ed22d11b352eaf4f4b2e5753/tokenizers-0.22.2-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+    "sha256": "2249487018adec45d6e3554c71d46eb39fa8ea67156c640f7513eb26f318cec7",
+    "size": 3290736
   },
   {
     "name": "torch",
@@ -1385,11 +1377,11 @@
   },
   {
     "name": "transformers",
-    "version": "5.17.0",
-    "filename": "transformers-5.17.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/e8/d0/c502b60d684adbd98a8dc7d5bb866842772b816ac4354e4608be240041ae/transformers-5.17.0-py3-none-any.whl",
-    "sha256": "78ec1ce21579b38dfb83950a0658cd119f87212a2fcfdff478096ce9d6c03801",
-    "size": 12295140
+    "version": "5.5.0",
+    "filename": "transformers-5.5.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/e7/28/35f7411ff80a3640c1f4fc907dcbb6a65061ebb82f66950e38bfc9f7f740/transformers-5.5.0-py3-none-any.whl",
+    "sha256": "821a9ff0961abbb29eb1eb686d78df1c85929fdf213a3fe49dc6bd94f9efa944",
+    "size": 10245591
   },
   {
     "name": "triton",
@@ -1401,11 +1393,11 @@
   },
   {
     "name": "trl",
-    "version": "0.29.1",
-    "filename": "trl-0.29.1-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/c7/3b/33226ae50a36f718e1107ece0c91b016457bb4b956d1cb5bd7078c04de9c/trl-0.29.1-py3-none-any.whl",
-    "sha256": "f9490cd1af93f3dce1cfdfe0fa1de108dbc46a2f6c2f90485cc2b4021c43eef3",
-    "size": 530959
+    "version": "0.24.0",
+    "filename": "trl-0.24.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/87/5f/c647fedde9d59ae35ee189cc49e419da5ac1d9ad9933cb69401a7eac4705/trl-0.24.0-py3-none-any.whl",
+    "sha256": "a9145b7d4a4a33778de117bda48530f0cf5b2ac25acc07db80ad04836f490dfc",
+    "size": 423143
   },
   {
     "name": "truststore",
@@ -1473,19 +1465,19 @@
   },
   {
     "name": "unsloth",
-    "version": "2026.10.6",
-    "filename": "unsloth-2026.10.6-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/fb/55/a6a8fc6a493fb8d3bed1dbc7d80d53ae6c5e3dff82d4579a5600dc36341f/unsloth-2026.10.6-py3-none-any.whl",
-    "sha256": "103efac52b090a1070c0083911119e34986a910df1118667ab2a1e8d6ccbab48",
-    "size": 30375029
+    "version": "2026.10.5",
+    "filename": "unsloth-2026.10.5-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/d4/60/b5827ed0c78cb24380154d672de2bf676cd2101a322abf0c11eda7d84183/unsloth-2026.10.5-py3-none-any.whl",
+    "sha256": "7802211862fd953db173a86b6be73690f57c876c6ee77329df63fcf3f299c09d",
+    "size": 30005284
   },
   {
     "name": "unsloth-zoo",
-    "version": "2026.10.6",
-    "filename": "unsloth_zoo-2026.10.6-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/1e/f9/e754760d00ca5222981ff44ba64cad7a7047ed8150f3c3f6d3d3633d0499/unsloth_zoo-2026.10.6-py3-none-any.whl",
-    "sha256": "cee2b7e23b1513f13c6f6db22b27f728273ad10d658ae77ff7f18537e1c35a50",
-    "size": 2563378
+    "version": "2026.10.5",
+    "filename": "unsloth_zoo-2026.10.5-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/26/78/ac2709da7f4247c2c350588349f62238912779380304dc7147afef23adfb/unsloth_zoo-2026.10.5-py3-none-any.whl",
+    "sha256": "5ae9a5496ca1a614b720424c79352edb0eea626085cb07a5ea872227e186acf8",
+    "size": 2415619
   },
   {
     "name": "urllib3",
