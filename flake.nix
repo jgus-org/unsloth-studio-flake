@@ -165,7 +165,6 @@
         };
         updateVersion = flake-lib.lib.mkUpdateVersion {
           inherit pkgs source;
-          buildAttr = "unsloth-studio";
           extraHashes = [
             "npmDepsHash"
             "requirementsHash"
@@ -192,7 +191,7 @@
           inherit (pkgs) unsloth-studio-frontend;
           inherit (pkgs.python3.pkgs) unsloth-studio;
           dual-stack-regression = dualStackRegression;
-          # flake-lib skips build verification for unchanged pins. Run this focused check after every invocation, including each branch in update-branches, before its commit or publication.
+          # update-branches builds packages.default before each branch's commit or publication; the dual-stack regression is not covered by that build. Run this focused check after every invocation.
           update-version = pkgs.writeShellApplication {
             name = "update-version";
             runtimeInputs = [ pkgs.nix ];
