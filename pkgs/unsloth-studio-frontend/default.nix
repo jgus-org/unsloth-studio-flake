@@ -1,12 +1,11 @@
-{
-  lib,
-  buildNpmPackage,
-  src,
-  version,
-  npmDepsHash,
-  nodejs,
-  python3, # node-gyp builds in @swc/* etc. expect python on PATH
-  ...
+{ lib
+, buildNpmPackage
+, src
+, version
+, npmDepsHash
+, nodejs
+, python3        # node-gyp builds in @swc/* etc. expect python on PATH
+, ...
 }:
 buildNpmPackage {
   pname = "unsloth-studio-frontend";
