@@ -4,7 +4,7 @@
   sourceRev = "e680e303ea5374372aa4d66b1f02b747899740bb";
   sourceHash = "sha256-tKFzWv86VsaoDnRUY1nqz7njtgnccmFaIddCqgkf3fI=";
   npmDepsHash = "sha256-l/KfEQyOTP9qeGKTsBgmyBeQTL0Y82V2BMiRKfSVPQ4=";
-  requirementsHash = "b4a3a2b2ae29e58a615d373690de6124561dc7ab5dfbf08341b010828f0ef1c0";
-  wheelManifestHash = "8054c0d2e6d0d747952d72d61a0bdd09cc2f672b393879ac8f063d2be0dbf5d9";
-  artifactFingerprint = "b27aaae71247d78aae530e81999682da268a88046af6bb435afeed6b277c89ea";
+  requirementsHash = "957f9fbdbd6ce01d72550dad84d7f44415c82cdc04f7ef0b793bd44a76ecbea9";
+  wheelManifestHash = "5608a7e0116f0731165296d0c98f400039f7a2e70bf50633c11fd8fb320aeb69";
+  artifactFingerprint = "0a028db75d5e81464de458b9c458822d32b6609a1f747607ed7a7d29370d587f";
 }

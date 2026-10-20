@@ -1001,11 +1001,11 @@
   },
   {
     "name": "pydantic-settings",
-    "version": "2.16.0",
-    "filename": "pydantic_settings-2.16.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/53/f4/b987bf8c51e5b19a95fa66d1ee596074141e085d9c2ddf97920803c7029b/pydantic_settings-2.16.0-py3-none-any.whl",
-    "sha256": "7e73acf7f61936a15e5a3b6eedaea29f133357faf7272f2607ba479b049dd7f2",
-    "size": 80364
+    "version": "2.16.1",
+    "filename": "pydantic_settings-2.16.1-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/3c/74/fdf926afe145d8629c4b2ff57f4ea1d64ed7abc4d84d97463b2517a2547e/pydantic_settings-2.16.1-py3-none-any.whl",
+    "sha256": "30f5313340da4e8f1b440d1910b92a5bc3ccbb6b4ba70ec2b8395bc921f418f5",
+    "size": 80771
   },
   {
     "name": "pygments",
