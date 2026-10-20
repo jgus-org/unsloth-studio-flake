@@ -14,9 +14,9 @@ trap 'rm -rf "${WORK}"' EXIT
 (
   cd "${WORK}"
   gh api "/repos/${GH_OWNER}/${GH_REPO}/contents/studio/frontend/package.json?ref=${NEW_REV}" \
-    --jq '.content' | base64 -d > package.json
+    --jq '.content' | base64 -d >package.json
   gh api "/repos/${GH_OWNER}/${GH_REPO}/contents/studio/frontend/package-lock.json?ref=${NEW_REV}" \
-    --jq '.content' | base64 -d > package-lock.json
+    --jq '.content' | base64 -d >package-lock.json
   # `react-is` is recharts' peerDependency; rolldown/vite's strict resolver fails to find it via peers, so add it as a direct dep matching the range upstream uses for `react`.
   REACT_RANGE=$(jq -r '.dependencies.react' package.json)
   jq \
