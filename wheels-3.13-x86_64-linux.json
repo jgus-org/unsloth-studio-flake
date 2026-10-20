@@ -105,19 +105,19 @@
   },
   {
     "name": "boto3",
-    "version": "1.43.114",
-    "filename": "boto3-1.43.114-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/c8/f8/0799a101e6f65c8b687f50c218654cef1e44658e946c7d33d362e2572621/boto3-1.43.114-py3-none-any.whl",
-    "sha256": "d9cac2eb921ce674970cef1c9ad750f85ee3a846aedcf188d18368fb9eb6da23",
-    "size": 140043
+    "version": "1.43.115",
+    "filename": "boto3-1.43.115-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/be/bc/40dffae3238ef8d3415393132751fe2c88e8663ef84a31f0950e439ed2d5/boto3-1.43.115-py3-none-any.whl",
+    "sha256": "6667a0c21d48dc125dbba88444bc8a601ce881a99341a0e6169f9333898e620d",
+    "size": 140044
   },
   {
     "name": "botocore",
-    "version": "1.43.114",
-    "filename": "botocore-1.43.114-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/9a/41/7c6fa7ac5fcfd5ea3c6f32aab001942da32b184a210f39042778cb1ad8ed/botocore-1.43.114-py3-none-any.whl",
-    "sha256": "d1c441a22e93e158de5b1e026205f5d6d67a4545d10540c5090c62dccb3a9eca",
-    "size": 16067885
+    "version": "1.43.115",
+    "filename": "botocore-1.43.115-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/77/2d/4b6b6f5704d1ec9b412c1dd9700bda0c315619dbac4a21418180a81a2780/botocore-1.43.115-py3-none-any.whl",
+    "sha256": "9ceda640c868bc15f5399129e8cfdef8cbb4b350e8a99547c9b5f477cfb9619a",
+    "size": 16085101
   },
   {
     "name": "brotli",
@@ -129,11 +129,11 @@
   },
   {
     "name": "cachetools",
-    "version": "7.2.2",
-    "filename": "cachetools-7.2.2-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/eb/d1/15cc3b3c07cfe11bf6fbe81a4a92ebb9d202d7d903aaa36b713c8f6eabda/cachetools-7.2.2-py3-none-any.whl",
-    "sha256": "39b6c9291adde28c5de6622d25329375fadf3e8a678226e7872e2e72854e4549",
-    "size": 17819
+    "version": "7.2.4",
+    "filename": "cachetools-7.2.4-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/5a/4c/694f7d44f2399b3901232d6ded1c88442a02fc8141936396d9289d951848/cachetools-7.2.4-py3-none-any.whl",
+    "sha256": "4cfbebf3eec4040d2073b19c460511ad47eef7b852dbf9a0d385099b4dafa31e",
+    "size": 18571
   },
   {
     "name": "caio",
@@ -145,11 +145,11 @@
   },
   {
     "name": "certifi",
-    "version": "2026.7.22",
-    "filename": "certifi-2026.7.22-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/0b/a7/71ac2cff56fec219ed242bb11b8efb69fcc4bec75db06fb7bfe35de520e6/certifi-2026.7.22-py3-none-any.whl",
-    "sha256": "62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775",
-    "size": 136983
+    "version": "2026.10.19",
+    "filename": "certifi-2026.10.19-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/c4/51/29046e48f693c54e5b7412216d447a1d8362c9653148d98c02cdf65fa733/certifi-2026.10.19-py3-none-any.whl",
+    "sha256": "42d35340cc5b9ba78e818ddbff0c5b1c2b779de448a340fd1b989f5fa8670e1b",
+    "size": 136464
   },
   {
     "name": "cffi",
@@ -345,27 +345,27 @@
   },
   {
     "name": "fastmcp",
-    "version": "4.1.0",
-    "filename": "fastmcp-4.1.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/5c/81/77610de5d79187455ec4a4eafdc17942365f1bc4e5850633e50159e9afdc/fastmcp-4.1.0-py3-none-any.whl",
-    "sha256": "cf19fd603315b48ef1829c8579431e77793feafdcbed51f0dc5607af10a24e9b",
-    "size": 8154
+    "version": "4.1.1",
+    "filename": "fastmcp-4.1.1-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/1d/5d/fc8bf50cb8907b2e9e82c91de81df453fa83d8775670a4775f61f2e0441b/fastmcp-4.1.1-py3-none-any.whl",
+    "sha256": "a82721d40e2a2e49637f4e30ec5b6892d2ccc02d3684ca74429fef995d6d29b2",
+    "size": 8153
   },
   {
     "name": "fastmcp-slim",
-    "version": "4.1.0",
-    "filename": "fastmcp_slim-4.1.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/54/6a/d61e1541f4c65872146a576c1379f6f32013fd8c636bcaf0f8e70a04e533/fastmcp_slim-4.1.0-py3-none-any.whl",
-    "sha256": "6edb48a78e508ef5ac691bf2a68f3e5000403773655d859eceea1068b894df4a",
-    "size": 911585
+    "version": "4.1.1",
+    "filename": "fastmcp_slim-4.1.1-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/94/85/a609dc20e6cb67f11dcef8ef6c707d8f7783c84ff5256cc4c4ccdeb571cd/fastmcp_slim-4.1.1-py3-none-any.whl",
+    "sha256": "64bd63e8222305ab1408d11d3498bcc94dc14629f4d55fe5399ccdb496509122",
+    "size": 912169
   },
   {
     "name": "filelock",
-    "version": "4.2.0",
-    "filename": "filelock-4.2.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/8e/a3/9bc26acff301fe1aaea1cc3d82a1d57e0a34df3e1cadbfa91ac2dbcdde5c/filelock-4.2.0-py3-none-any.whl",
-    "sha256": "2ff5690882e8cdb00ef31fb3d01a3094c29f30985426c59495afb1733f3b7238",
-    "size": 135032
+    "version": "4.2.4",
+    "filename": "filelock-4.2.4-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/e0/1b/5e74289a1878e666bb4b65fe5805a04cafcac2aa5f519ef1ead67ef91c56/filelock-4.2.4-py3-none-any.whl",
+    "sha256": "301241438c57936ef93f4243a94f2559022268bfcf9b375a9a72eb0f8db8358e",
+    "size": 162475
   },
   {
     "name": "fonttools",
@@ -417,11 +417,11 @@
   },
   {
     "name": "griffelib",
-    "version": "2.3.2",
-    "filename": "griffelib-2.3.2-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/04/e5/0ae74c83c1cab2c14daadf28bd0143eb14bb81503834af987b66badc7b61/griffelib-2.3.2-py3-none-any.whl",
-    "sha256": "8e710afededd5607f95bf3c8ccc175ee306e7084459faf27b9f9f44ef2a7a274",
-    "size": 169420
+    "version": "2.4.0",
+    "filename": "griffelib-2.4.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/7e/28/bb989a55ac56dabf30765d2e7ea0710c032d9b67d8a7599f91fdcb2e00b1/griffelib-2.4.0-py3-none-any.whl",
+    "sha256": "0a7db47b0bdf5123a6ceca2f71aa996742a4f04d9048046778f4a9006772d27f",
+    "size": 172791
   },
   {
     "name": "h11",
@@ -473,11 +473,11 @@
   },
   {
     "name": "httpcore2",
-    "version": "2.13.1",
-    "filename": "httpcore2-2.13.1-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/09/ba/a4568248771ce81957bfb7cc600264a40fbcda092391ee1c415c50be4bea/httpcore2-2.13.1-py3-none-any.whl",
-    "sha256": "e1e05d4f25f7d7d496bfb96748f6f4b67657b03da069b3a68c36069f3db73d0a",
-    "size": 83423
+    "version": "2.15.1",
+    "filename": "httpcore2-2.15.1-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/0d/9b/e2b556e26fbc67716ab1dfc18832eb6fe196d88363f7094cb1da3d7c0d3e/httpcore2-2.15.1-py3-none-any.whl",
+    "sha256": "730f603058c260a3288378217b464713350c23e3b8fe8bba753701054032d98a",
+    "size": 85055
   },
   {
     "name": "httpx",
@@ -489,11 +489,11 @@
   },
   {
     "name": "httpx2",
-    "version": "2.13.1",
-    "filename": "httpx2-2.13.1-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/d8/9c/6fe8931fd9f381042a9e4c7d5a7b4cbf7016b252bec0c99a49fce42c3326/httpx2-2.13.1-py3-none-any.whl",
-    "sha256": "6dff50fabc270ee5fd25d845d0b078ed20564579744d6d962850975996d2f9a4",
-    "size": 95597
+    "version": "2.15.1",
+    "filename": "httpx2-2.15.1-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/7a/bf/56068f774620330c8330e4b4915fae889a5b2d4b52667b3b7c8f66c4a9ad/httpx2-2.15.1-py3-none-any.whl",
+    "sha256": "75841cd83d16b417f7d6da8f2089ce8120806efdbf96af37d46c5129c49015be",
+    "size": 96411
   },
   {
     "name": "huggingface-hub",
@@ -585,11 +585,11 @@
   },
   {
     "name": "joserfc",
-    "version": "1.7.5",
-    "filename": "joserfc-1.7.5-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/67/c5/82addfd375e5ee6520644e0553e4aadde92d668c4fc99cc716d337fe7bb3/joserfc-1.7.5-py3-none-any.whl",
-    "sha256": "add2c2c84e8373b084d526a8b53daba5d7a513a118cd2dcd9fc9f979d0922159",
-    "size": 71269
+    "version": "1.7.7",
+    "filename": "joserfc-1.7.7-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/df/9f/934db284aa22f37af59708e382903860d4b81329c137b1b0ed2745daeb65/joserfc-1.7.7-py3-none-any.whl",
+    "sha256": "06979cfbab78bc802f14c0358f32969826cc26720e13cb38926ffdc86bc0cb2c",
+    "size": 71758
   },
   {
     "name": "jsonref",
@@ -937,19 +937,19 @@
   },
   {
     "name": "pillow",
-    "version": "12.3.0",
-    "filename": "pillow-12.3.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
-    "url": "https://files.pythonhosted.org/packages/f7/62/de5bdd77d935331f4f802edc11e4d82950f642caad6cb2f949837b8560e2/pillow-12.3.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
-    "sha256": "0847a763afefb695bc912d7c131e7e0632d4edc1d8698f58ddabec8e46b8b6d3",
-    "size": 6937129
+    "version": "13.0.0",
+    "filename": "pillow-13.0.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "url": "https://files.pythonhosted.org/packages/ef/fe/f5cdaa2d1c4086e757430f368c271a58ee29cfe7378e7ae7b9d964015c25/pillow-13.0.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "5f56499c1a74d2b862beb0c33b8016f99d095858455df9d21583bbbc1c15b582",
+    "size": 7142544
   },
   {
     "name": "platformdirs",
-    "version": "4.13.2",
-    "filename": "platformdirs-4.13.2-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/f2/7f/e0090311031e1c101a151c303e06988e217469fef857d0a36b43ac760c1e/platformdirs-4.13.2-py3-none-any.whl",
-    "sha256": "0b220b7e6e71041a02b4aa07b69e575436f8268a669477e3b7fd1e4062587f1b",
-    "size": 32765
+    "version": "4.13.5",
+    "filename": "platformdirs-4.13.5-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/6c/8a/1d8cb3842909dc193a73835adedf412e32e18f8ffd59f43983949622fe6f/platformdirs-4.13.5-py3-none-any.whl",
+    "sha256": "53d3ec4280b815c1e0b02edad7f9ee8fda1ba9c0865dd9c2e6e63849ce82fc1e",
+    "size": 32779
   },
   {
     "name": "primp",
@@ -1177,11 +1177,11 @@
   },
   {
     "name": "s3transfer",
-    "version": "0.19.2",
-    "filename": "s3transfer-0.19.2-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/bc/e7/5c595c75e9f41a44f30e526eda465ea0b4eec93470e074e4a111b253f13a/s3transfer-0.19.2-py3-none-any.whl",
-    "sha256": "d8168eccca828cbb2cd573675333f3bddd254313a9c42494b84c76b539e8ba25",
-    "size": 90216
+    "version": "0.19.3",
+    "filename": "s3transfer-0.19.3-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/e2/a4/88f9e10498759121060b8050a1554753dfc04df39bbbcc7aad9ecc8d9440/s3transfer-0.19.3-py3-none-any.whl",
+    "sha256": "24eb7535804306355e31c952a90022bf5b2f9d760f9a11062c7493a217c08553",
+    "size": 90252
   },
   {
     "name": "safetensors",
@@ -1233,11 +1233,11 @@
   },
   {
     "name": "setuptools",
-    "version": "84.0.0",
-    "filename": "setuptools-84.0.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/95/9c/c510029fc6ef33a6275cd2c5d3cecd6613dfd6aa401d57c54f1c18852ccf/setuptools-84.0.0-py3-none-any.whl",
-    "sha256": "51a52592b3b99e102b609654876bd65f19f999935166d1352678931132b0c670",
-    "size": 818216
+    "version": "84.2.0",
+    "filename": "setuptools-84.2.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/dd/a2/2e1af99d56c8145aa69496026c7e5fd7b6ec759b500c3ad697e2062832dc/setuptools-84.2.0-py3-none-any.whl",
+    "sha256": "8cc107ac7a403105dc8d6477664171f36135fab26adf8b5e0edaebc313f39b21",
+    "size": 875816
   },
   {
     "name": "shellingham",
@@ -1289,11 +1289,11 @@
   },
   {
     "name": "starlette",
-    "version": "1.8.0",
-    "filename": "starlette-1.8.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/c1/b0/5742e4ac7af5eb58ec3470a537a49d7aa507e5539413e504b3a65ef50ba8/starlette-1.8.0-py3-none-any.whl",
-    "sha256": "dfdd6b29c26483288088d990eee59631dedadd66ce20d203402a7ca8e3c4656f",
-    "size": 79612
+    "version": "1.9.0",
+    "filename": "starlette-1.9.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/f3/93/181df62699d9b5aca1d87e5cfda131dac87e3cdaebf668662f7206ca3470/starlette-1.9.0-py3-none-any.whl",
+    "sha256": "fd3f159936e882d06c1108f84688f7cda2cf85fc6a592a50edbd175e882c2ddc",
+    "size": 80335
   },
   {
     "name": "structlog",
@@ -1473,19 +1473,19 @@
   },
   {
     "name": "unsloth",
-    "version": "2026.10.6",
-    "filename": "unsloth-2026.10.6-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/fb/55/a6a8fc6a493fb8d3bed1dbc7d80d53ae6c5e3dff82d4579a5600dc36341f/unsloth-2026.10.6-py3-none-any.whl",
-    "sha256": "103efac52b090a1070c0083911119e34986a910df1118667ab2a1e8d6ccbab48",
-    "size": 30375029
+    "version": "2026.10.7",
+    "filename": "unsloth-2026.10.7-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/f6/70/c1c3d4e9117946dc6424e119b59fe87035b9ffeac353e0d3658da3231f88/unsloth-2026.10.7-py3-none-any.whl",
+    "sha256": "3ffd1dc001d799eb4ec5a955852f41a3505febb9075504bb2f64a1621c9c7c4e",
+    "size": 30952224
   },
   {
     "name": "unsloth-zoo",
-    "version": "2026.10.6",
-    "filename": "unsloth_zoo-2026.10.6-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/1e/f9/e754760d00ca5222981ff44ba64cad7a7047ed8150f3c3f6d3d3633d0499/unsloth_zoo-2026.10.6-py3-none-any.whl",
-    "sha256": "cee2b7e23b1513f13c6f6db22b27f728273ad10d658ae77ff7f18537e1c35a50",
-    "size": 2563378
+    "version": "2026.10.7",
+    "filename": "unsloth_zoo-2026.10.7-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/1c/4e/ab4d1580417f862d56cb5005af6ead9b0250451a8598e1d5a63190754d14/unsloth_zoo-2026.10.7-py3-none-any.whl",
+    "sha256": "4161df8e5a057df76278b2270341b5b55fe2138c2bf8cc39b271522616d4959c",
+    "size": 2659256
   },
   {
     "name": "urllib3",
@@ -1513,11 +1513,11 @@
   },
   {
     "name": "websockets",
-    "version": "17.2",
-    "filename": "websockets-17.2-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl",
-    "url": "https://files.pythonhosted.org/packages/04/13/95a45eb410019772002d8f53d81396dad4120f7df39ca9962f86f5d7cd01/websockets-17.2-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl",
-    "sha256": "d87091c4347daadbcc0833b65812ff38d7350c67339625d4e4a512cf38e3e8ef",
-    "size": 225361
+    "version": "17.3",
+    "filename": "websockets-17.3-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl",
+    "url": "https://files.pythonhosted.org/packages/1c/8a/8ede659919c0805d1fcc79c2ed16588d3419f1687c5117ba46f0217750ec/websockets-17.3-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl",
+    "sha256": "de2c12555bf05546f3ee75733f2c81de70aab7f530e86d0d2162b0ddcb3c39ae",
+    "size": 225854
   },
   {
     "name": "wheel",
@@ -1537,11 +1537,11 @@
   },
   {
     "name": "xxhash",
-    "version": "4.0.1",
-    "filename": "xxhash-4.0.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
-    "url": "https://files.pythonhosted.org/packages/6f/fb/76580c08e916507859b0f335393cb5fdc59452c4402edbc6bcca6e47e7df/xxhash-4.0.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
-    "sha256": "9a51b061d54cda8b83e62c44458bfbf0dabbef9b975dd9649952ba5076b9f349",
-    "size": 268572
+    "version": "4.0.2",
+    "filename": "xxhash-4.0.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "url": "https://files.pythonhosted.org/packages/7c/0b/223e8d9da7c857f6f906202f3d15337a2dee8db530b88aeec6ae45cc9665/xxhash-4.0.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "61ded7dee4f95da69295c228fc18a65447f5741c45a315aa3f9a3adda6038611",
+    "size": 268559
   },
   {
     "name": "yarl",
