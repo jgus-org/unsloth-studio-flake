@@ -1,8 +1,13 @@
-{ runCommand, python, upstreamSrc, src }:
-runCommand "unsloth-studio-dual-stack-regression"
 {
-  nativeBuildInputs = [ (python.withPackages (p: [ p.structlog ])) ];
-}
+  runCommand,
+  python,
+  upstreamSrc,
+  src,
+}:
+runCommand "unsloth-studio-dual-stack-regression"
+  {
+    nativeBuildInputs = [ (python.withPackages (p: [ p.structlog ])) ];
+  }
   ''
     export HOME="$TMPDIR/home"
     mkdir -p "$HOME"
