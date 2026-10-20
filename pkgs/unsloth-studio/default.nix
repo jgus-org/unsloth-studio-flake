@@ -1,13 +1,14 @@
-{ lib
-, makeWrapper
-, pkgs
-, src
-, version
-, unsloth-studio-frontend
-, writeText
-, python
-, wheelhouse
-, mkWheelhouseSiteTree
+{
+  lib,
+  makeWrapper,
+  pkgs,
+  src,
+  version,
+  unsloth-studio-frontend,
+  writeText,
+  python,
+  wheelhouse,
+  mkWheelhouseSiteTree,
 }:
 let
   siteDir = "$out/${python.sitePackages}";
@@ -56,7 +57,13 @@ let
   '';
 in
 mkWheelhouseSiteTree {
-  inherit pkgs python wheelhouse src version;
+  inherit
+    pkgs
+    python
+    wheelhouse
+    src
+    version
+    ;
 
   pname = "unsloth-studio";
 

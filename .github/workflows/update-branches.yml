@@ -34,7 +34,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.ORG_UPDATE_TOKEN || github.token }}
 
       - uses: cachix/install-nix-action@v31
 
@@ -44,8 +44,6 @@ jobs:
 
       - name: Update workflows from flake-lib templates
         id: update
-        env:
-          GIT_PUSH_TOKEN: ${{ secrets.ORG_UPDATE_TOKEN }}
         run: nix run github:jgus-org/flake-lib/v1#update-workflows
 
   # A producer whose flake takes inputs from other producers here must not pin them before
