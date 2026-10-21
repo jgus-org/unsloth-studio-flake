@@ -2,17 +2,20 @@
   "nodes": {
     "flake-lib": {
       "inputs": {
+        "flake-utils": [
+          "flake-utils"
+        ],
         "nixpkgs": [
           "nixpkgs"
         ],
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1792536328,
-        "narHash": "sha256-kLr9SLuUv/bW9Niq+YAvVLe6Mgv/3E9E9DEXbdkiJNo=",
+        "lastModified": 1792529855,
+        "narHash": "sha256-2Hns9JQzob1p9i2BSSCuJSaEt2oqbTq0TYI5XVNiKwI=",
         "owner": "jgus-org",
         "repo": "flake-lib",
-        "rev": "8e7c5ea93e49f50f431f0b3fd3af36630e6da12e",
+        "rev": "5b55be1c93761ab151f6d7fed0ad7fed808c941e",
         "type": "github"
       },
       "original": {
