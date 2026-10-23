@@ -104,6 +104,22 @@
     "size": 23777467
   },
   {
+    "name": "boto3",
+    "version": "1.43.117",
+    "filename": "boto3-1.43.117-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/f3/3b/22b05a545fb95983733d84681364c6b0a36afb0710d832f77732d1fc4c0b/boto3-1.43.117-py3-none-any.whl",
+    "sha256": "a5b6cd7e67653987fcf0e212187c16f7b58af2ae192e368f7212ddab7c05b25d",
+    "size": 140043
+  },
+  {
+    "name": "botocore",
+    "version": "1.43.117",
+    "filename": "botocore-1.43.117-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/10/94/050e35c9febf6dd2fce4a76be587ae4a323964865700467d9d7b082f7133/botocore-1.43.117-py3-none-any.whl",
+    "sha256": "5920ef9b3002e1361846549078549d9154a6e0004c22853c01ce7b279d05d495",
+    "size": 16061765
+  },
+  {
     "name": "brotli",
     "version": "1.2.0",
     "filename": "brotli-1.2.0-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
@@ -401,11 +417,11 @@
   },
   {
     "name": "griffelib",
-    "version": "2.4.0",
-    "filename": "griffelib-2.4.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/7e/28/bb989a55ac56dabf30765d2e7ea0710c032d9b67d8a7599f91fdcb2e00b1/griffelib-2.4.0-py3-none-any.whl",
-    "sha256": "0a7db47b0bdf5123a6ceca2f71aa996742a4f04d9048046778f4a9006772d27f",
-    "size": 172791
+    "version": "2.4.1",
+    "filename": "griffelib-2.4.1-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/de/02/1156d5f5307f573b901b14373848b84e69ca6cab09169b8cc97d16a181f9/griffelib-2.4.1-py3-none-any.whl",
+    "sha256": "76bc562f936ad1ce198d2cf6d0731bd5c92a7d934b69ef828ef22ee0ffdb62ce",
+    "size": 172983
   },
   {
     "name": "h11",
@@ -550,6 +566,14 @@
     "url": "https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl",
     "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67",
     "size": 134899
+  },
+  {
+    "name": "jmespath",
+    "version": "1.1.0",
+    "filename": "jmespath-1.1.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/14/2f/967ba146e6d58cf6a652da73885f52fc68001525b4197effc174321d70b4/jmespath-1.1.0-py3-none-any.whl",
+    "sha256": "a5663118de4908c91729bea0acadca56526eb2698e83de10cd116ae0f4e97c64",
+    "size": 20419
   },
   {
     "name": "joblib",
@@ -1150,6 +1174,14 @@
     "url": "https://files.pythonhosted.org/packages/bd/b7/497e85768bf4e0d8ddbaa096a4cac31d1509251dee2728a8490aa367e0b5/rpds_py-2026.9.1-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
     "sha256": "457866b85daf5034296666168b84a69e0b2e89dc4f1af102b46f6448a60b9063",
     "size": 372611
+  },
+  {
+    "name": "s3transfer",
+    "version": "0.19.3",
+    "filename": "s3transfer-0.19.3-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/e2/a4/88f9e10498759121060b8050a1554753dfc04df39bbbcc7aad9ecc8d9440/s3transfer-0.19.3-py3-none-any.whl",
+    "sha256": "24eb7535804306355e31c952a90022bf5b2f9d760f9a11062c7493a217c08553",
+    "size": 90252
   },
   {
     "name": "safetensors",
