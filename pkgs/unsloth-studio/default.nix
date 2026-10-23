@@ -1,14 +1,14 @@
 {
   lib,
   makeWrapper,
-  pkgs,
-  src,
-  version,
-  unsloth-studio-frontend,
-  writeText,
-  python,
-  wheelhouse,
   mkWheelhouseSiteTree,
+  pkgs,
+  python,
+  src,
+  unsloth-studio-frontend,
+  version,
+  wheelhouse,
+  writeText,
 }:
 let
   siteDir = "$out/${python.sitePackages}";
@@ -60,17 +60,10 @@ mkWheelhouseSiteTree {
   inherit
     pkgs
     python
-    wheelhouse
     src
     version
+    wheelhouse
     ;
-
-  pname = "unsloth-studio";
-
-  nativeBuildInputs = [ makeWrapper ];
-
-  dontBuild = true;
-
   # The CUDA stack — torch and what is built against it — comes from the deployment's own
   # package set beside this tree, so these are the native modules this tree ships.
   checkImports = [
@@ -88,7 +81,42 @@ mkWheelhouseSiteTree {
     "tokenizers"
     "tiktoken"
   ];
-
+  dontBuild = true;
+  meta = {
+    description = "Unsloth Studio: web UI + CLI for training and running open models locally";
+    homepage = "https://github.com/unslothai/unsloth";
+    license = lib.licenses.agpl3Only;
+    mainProgram = "unsloth";
+    platforms = lib.platforms.linux;
+  };
+  nativeBuildInputs = [ makeWrapper ];
+  passthru = {
+    inherit src;
+    pythonModule = python;
+    sitePackages = python.sitePackages;
+  };
+  pname = "unsloth-studio";
+  postFixup = ''
+    for script in "${siteDir}"/bin/*; do
+      name=$(basename "$script")
+      makeWrapper "$script" "$out/bin/$name" \
+        --set PYTHONNOUSERSITE 1 \
+        --prefix PYTHONPATH : "${siteDir}"
+    done
+  '';
+  postInstall = ''
+    export HOME="$TMPDIR"
+    export PYTHONNOUSERSITE=1
+    export PYTHONPATH="${siteDir}"
+    mkdir -p "$out/bin"
+    uv pip install \
+      --python ${python.interpreter} \
+      --target "${siteDir}" \
+      --no-index \
+      --no-deps \
+      --no-build-isolation \
+      "$PWD"
+  '';
   postPatch = ''
     # Strip out upstream pieces we don't ship from this derivation:
     #   unsloth/        — the PyPI unsloth wheel in the wheelhouse supplies it
@@ -114,41 +142,4 @@ mkWheelhouseSiteTree {
 
     cp ${pyprojectFile} pyproject.toml
   '';
-
-  postInstall = ''
-    export HOME="$TMPDIR"
-    export PYTHONNOUSERSITE=1
-    export PYTHONPATH="${siteDir}"
-    mkdir -p "$out/bin"
-    uv pip install \
-      --python ${python.interpreter} \
-      --target "${siteDir}" \
-      --no-index \
-      --no-deps \
-      --no-build-isolation \
-      "$PWD"
-  '';
-
-  postFixup = ''
-    for script in "${siteDir}"/bin/*; do
-      name=$(basename "$script")
-      makeWrapper "$script" "$out/bin/$name" \
-        --set PYTHONNOUSERSITE 1 \
-        --prefix PYTHONPATH : "${siteDir}"
-    done
-  '';
-
-  passthru = {
-    inherit src;
-    pythonModule = python;
-    sitePackages = python.sitePackages;
-  };
-
-  meta = {
-    description = "Unsloth Studio: web UI + CLI for training and running open models locally";
-    homepage = "https://github.com/unslothai/unsloth";
-    license = lib.licenses.agpl3Only;
-    mainProgram = "unsloth";
-    platforms = lib.platforms.linux;
-  };
 }
