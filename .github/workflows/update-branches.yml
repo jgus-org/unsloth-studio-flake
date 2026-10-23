@@ -16,7 +16,7 @@ name: Update branches
 
 on:
   schedule:
-    - cron: '0 7 * * *'
+    - cron: "0 7 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -124,26 +124,32 @@ jobs:
       - name: Refresh newest stable
         env:
           BASE_SHA: ${{ needs.discover.outputs.base_sha }}
-          ENTRY: ${{ needs.discover.outputs.newest_stable }}
+          NEWEST_STABLE: ${{ needs.discover.outputs.newest_stable }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          version=$(jq -r '.version' <<<"${ENTRY}")
-          upstream_version=$(jq -r '.upstreamVersion' <<<"${ENTRY}")
+          version=$(jq -r '.version' <<<"${NEWEST_STABLE}")
+          upstream_version=$(jq -r '.upstreamVersion' <<<"${NEWEST_STABLE}")
           nix run .#update-branches -- refresh \
             --base-sha "${BASE_SHA}" \
             --version "${version}" \
             --upstream-version "${upstream_version}"
 
+      # The maintenance matrix runs after this job, so no other line has refreshed its exact
+      # branch since discovery captured the specification. This publisher therefore publishes
+      # only the aggregates the newest stable version carries; the final publisher below
+      # publishes every aggregate the version manifest can reach.
       - name: Publish newest stable early
         continue-on-error: true
         env:
           BASE_SHA: ${{ needs.discover.outputs.base_sha }}
+          NEWEST_STABLE: ${{ needs.discover.outputs.newest_stable }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VERSIONS: ${{ needs.discover.outputs.versions }}
         run: |
           nix run .#update-branches -- publish \
             --base-sha "${BASE_SHA}" \
-            --versions-json "${VERSIONS}"
+            --versions-json "${VERSIONS}" \
+            --for-version "$(jq -r '.version' <<<"${NEWEST_STABLE}")"
 
   maintenance:
     needs: [workflows, discover, newest-stable]
