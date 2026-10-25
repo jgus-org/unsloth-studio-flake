@@ -104,6 +104,22 @@
     "size": 23777467
   },
   {
+    "name": "boto3",
+    "version": "1.43.118",
+    "filename": "boto3-1.43.118-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/bb/a3/65bb3d64928f3c2da17640b92044084150317f02adf22442cb0c52af2a8b/boto3-1.43.118-py3-none-any.whl",
+    "sha256": "ab8f3d2c622ef039338b4f228d97ea55f1abd573d84bb9b9a5ee8cb6780c0ccd",
+    "size": 140045
+  },
+  {
+    "name": "botocore",
+    "version": "1.43.118",
+    "filename": "botocore-1.43.118-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/9c/ce/61b39a8e7a69af5ea43c1c3e1b0065a4866b42ccddf107e16686a3143614/botocore-1.43.118-py3-none-any.whl",
+    "sha256": "a45d7ae570674161e4a3542d8c68633bf7503f92d1de781ef7361b79488eda6f",
+    "size": 16122016
+  },
+  {
     "name": "brotli",
     "version": "1.2.1",
     "filename": "brotli-1.2.1-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
@@ -129,11 +145,11 @@
   },
   {
     "name": "certifi",
-    "version": "2026.10.23",
-    "filename": "certifi-2026.10.23-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/32/d1/a3652fe2c19134d0d15922177821d863cbd7e842d53a21bbe7e8e3a1b5ac/certifi-2026.10.23-py3-none-any.whl",
-    "sha256": "e9b54de76e530bb6cf0ccd036787103acb58fd42ba930ea8bf948ddbaa2f61d1",
-    "size": 135082
+    "version": "2026.10.19",
+    "filename": "certifi-2026.10.19-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/c4/51/29046e48f693c54e5b7412216d447a1d8362c9653148d98c02cdf65fa733/certifi-2026.10.19-py3-none-any.whl",
+    "sha256": "42d35340cc5b9ba78e818ddbff0c5b1c2b779de448a340fd1b989f5fa8670e1b",
+    "size": 136464
   },
   {
     "name": "cffi",
@@ -257,11 +273,11 @@
   },
   {
     "name": "diffusers",
-    "version": "0.42.0",
-    "filename": "diffusers-0.42.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/ac/ac/08dca462b503e8c16099af647401c2548cbe2c4fbafd487ff3265fa57385/diffusers-0.42.0-py3-none-any.whl",
-    "sha256": "c409b893156c895dde5b7fe410a014f6b94bf7caa1b96360e43a335c762674f4",
-    "size": 6354874
+    "version": "0.41.0",
+    "filename": "diffusers-0.41.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/fe/c4/5bf8afd1ff3a8d99da7a18b1067ae0b4e2a037c38f3851890a989c511fd3/diffusers-0.41.0-py3-none-any.whl",
+    "sha256": "ea8918b7dfd92ce793b6db689a551b8cd25d52c6c0fcd3ade0706a5fd2a25990",
+    "size": 6063887
   },
   {
     "name": "dill",
@@ -505,11 +521,11 @@
   },
   {
     "name": "importlib-metadata",
-    "version": "10.1.0",
-    "filename": "importlib_metadata-10.1.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/65/b6/495438ad95e0102aff8f6786b5474202f38cd5d4700d03a72b77977dec10/importlib_metadata-10.1.0-py3-none-any.whl",
-    "sha256": "cf45ce66a929c64e994185a809c04840d0501db17e663810d993d0f4829265c7",
-    "size": 32221
+    "version": "9.1.0",
+    "filename": "importlib_metadata-9.1.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/a4/9f/2e33795e8765420ac43de1f29fe3d827ab4eaa45cbcf4a5de83555a3f9dd/importlib_metadata-9.1.0-py3-none-any.whl",
+    "sha256": "626c65eddcd23c0ee0ffb17567aa882f8cfce0e552c424f2fa37c8b679374078",
+    "size": 28434
   },
   {
     "name": "jaraco-classes",
@@ -550,6 +566,14 @@
     "url": "https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl",
     "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67",
     "size": 134899
+  },
+  {
+    "name": "jmespath",
+    "version": "1.1.0",
+    "filename": "jmespath-1.1.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/14/2f/967ba146e6d58cf6a652da73885f52fc68001525b4197effc174321d70b4/jmespath-1.1.0-py3-none-any.whl",
+    "sha256": "a5663118de4908c91729bea0acadca56526eb2698e83de10cd116ae0f4e97c64",
+    "size": 20419
   },
   {
     "name": "joblib",
@@ -1057,11 +1081,11 @@
   },
   {
     "name": "python-dateutil",
-    "version": "3.0.0",
-    "filename": "python_dateutil-3.0.0-py2.py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/5a/17/cebee01d1c0c1441174cf0456ddc91b280d79acb65340c05e41d77866ee8/python_dateutil-3.0.0-py2.py3-none-any.whl",
-    "sha256": "3c79630202e4152c6add678446984236efe4f57e84d8e892aab0637bab82e9fd",
-    "size": 94659
+    "version": "2.9.0.post0",
+    "filename": "python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+    "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+    "size": 229892
   },
   {
     "name": "python-docx",
@@ -1150,6 +1174,14 @@
     "url": "https://files.pythonhosted.org/packages/72/e2/5873bc4643c250db9e05d48dc0c93763d4aa68bc3b81164cb1af3b45b284/rpds_py-2026.9.1-cp314-cp314-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
     "sha256": "07deecbfce94c78473018bc7d10b337cc651d12df87a1eb2cb3e4024bc9c33d0",
     "size": 373963
+  },
+  {
+    "name": "s3transfer",
+    "version": "0.19.3",
+    "filename": "s3transfer-0.19.3-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/e2/a4/88f9e10498759121060b8050a1554753dfc04df39bbbcc7aad9ecc8d9440/s3transfer-0.19.3-py3-none-any.whl",
+    "sha256": "24eb7535804306355e31c952a90022bf5b2f9d760f9a11062c7493a217c08553",
+    "size": 90252
   },
   {
     "name": "safetensors",
@@ -1441,19 +1473,19 @@
   },
   {
     "name": "unsloth",
-    "version": "2026.10.8",
-    "filename": "unsloth-2026.10.8-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/a8/17/4534fde4319bb4e075bf3e8b985d9a2924ae832586a7c49cd7bb39095289/unsloth-2026.10.8-py3-none-any.whl",
-    "sha256": "12c5d8fb7ba7a9092d880f309d350a3491773e9a86bd8ecedf9056b7676e2ac1",
-    "size": 29357506
+    "version": "2026.10.7",
+    "filename": "unsloth-2026.10.7-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/f6/70/c1c3d4e9117946dc6424e119b59fe87035b9ffeac353e0d3658da3231f88/unsloth-2026.10.7-py3-none-any.whl",
+    "sha256": "3ffd1dc001d799eb4ec5a955852f41a3505febb9075504bb2f64a1621c9c7c4e",
+    "size": 30952224
   },
   {
     "name": "unsloth-zoo",
-    "version": "2026.10.8",
-    "filename": "unsloth_zoo-2026.10.8-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/ba/63/0c9ceca8cb612c019287c92759fd6a76f37d49f3ec3cb33b39e7934bf765/unsloth_zoo-2026.10.8-py3-none-any.whl",
-    "sha256": "db8c283bfab4c250e429cab35047bbde20687a445ccd592e1fcf7887b544d82a",
-    "size": 2797654
+    "version": "2026.10.7",
+    "filename": "unsloth_zoo-2026.10.7-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/1c/4e/ab4d1580417f862d56cb5005af6ead9b0250451a8598e1d5a63190754d14/unsloth_zoo-2026.10.7-py3-none-any.whl",
+    "sha256": "4161df8e5a057df76278b2270341b5b55fe2138c2bf8cc39b271522616d4959c",
+    "size": 2659256
   },
   {
     "name": "urllib3",
