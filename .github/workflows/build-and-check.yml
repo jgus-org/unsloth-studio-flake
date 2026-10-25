@@ -1,0 +1,61 @@
+# The gate a pull request has to pass: build every package this flake publishes for the
+# runner's system, then `nix flake check`. The check alone is not the gate -- it looks at
+# the shape of `packages` without building them -- and the updater's build is not either,
+# running on the publication path after the merge. A package a hosted runner cannot build
+# sets `passthru.ciBuildSkip = true` with the reason beside it, and the run names every
+# package it skipped.
+#
+# Nothing here is producer-specific, so `nix run
+# github:jgus-org/flake-lib/v1#update-workflows` replaces this file wholesale; a repository
+# that does not have it installs it with `-- adopt build-and-check.yml`. Edit it in
+# jgus-org/flake-lib's templates/workflows. Binary caching uses the fleet Attic cache
+# whenever ATTIC_TOKEN resolves -- an organization secret covers every repository at once --
+# and a repository or fork pull request with no token runs on the public cache alone. Nix
+# fetches a github input anonymously, so a flake that locks a private repository needs
+# BUILD_TOKEN, and a repository without it runs on the public inputs it can fetch.
+
+name: Build and Check
+
+on:
+  pull_request: {}
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-and-check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: cachix/install-nix-action@v31
+
+      # An input in a private repository is invisible until a token says otherwise, and the
+      # setting is client-side: the process that resolves the lock reads it, so the daemon
+      # never needs it. A step cannot test a secret in its own condition, so the test is here.
+      - name: Authenticate flake inputs a runner cannot fetch anonymously
+        env:
+          BUILD_TOKEN: ${{ secrets.BUILD_TOKEN }}
+        run: |
+          if [ -n "${BUILD_TOKEN:-}" ]; then
+            mkdir -p ~/.config/nix
+            printf 'access-tokens = github.com=%s\n' "$BUILD_TOKEN" >> ~/.config/nix/nix.conf
+          fi
+
+      - uses: jgus-org/flake-lib/.github/actions/fleet-nix-cache@v1
+        with:
+          token: ${{ secrets.ATTIC_TOKEN }}
+
+      - name: Build every package this flake publishes for this runner
+        run: nix run github:jgus-org/flake-lib/v1#build-packages
+
+      # A package that stopped building is the failure this step exists to catch too, and a
+      # run that stops at the first one reports one problem where the tree has two.
+      - name: Check the flake
+        if: always()
+        run: nix flake check --no-write-lock-file
