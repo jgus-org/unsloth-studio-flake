@@ -697,11 +697,11 @@
   },
   {
     "name": "multidict",
-    "version": "7.1.0",
-    "filename": "multidict-7.1.0-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
-    "url": "https://files.pythonhosted.org/packages/87/58/de62e27b09dd15756265765945f68f1c0d1e23eaba09e2e109fbb4112425/multidict-7.1.0-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
-    "sha256": "33389fe084e5426d9fd85d7d9ca91a29cd0d88a83c7c96e411aca49a3f9967bc",
-    "size": 474883
+    "version": "7.2.1",
+    "filename": "multidict-7.2.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "url": "https://files.pythonhosted.org/packages/3b/8f/bff861e3bd5a7cc13bd1f040d22aee8aa32b4f2755bba29b0c31a1d2ae25/multidict-7.2.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "sha256": "822a7fcd33f6922b650e1b26594f09d53c5d011fe655fea7ded27b2728ce2a1b",
+    "size": 506944
   },
   {
     "name": "multiprocess",
@@ -1249,19 +1249,19 @@
   },
   {
     "name": "sse-starlette",
-    "version": "3.5.0",
-    "filename": "sse_starlette-3.5.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/be/e4/cdda14023c316d71493bc54fdffc3dd006631b88866145c9d3cc33e0f1df/sse_starlette-3.5.0-py3-none-any.whl",
-    "sha256": "3e6e1070df3f0f5d9cea81496de92dbb72f6721871d99748ece67441dd8b7997",
-    "size": 17407
+    "version": "3.5.1",
+    "filename": "sse_starlette-3.5.1-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/61/98/658d1681bc6dc0b0f7f695aee4337de79decd0ccaec6d000a76b5cbdca6d/sse_starlette-3.5.1-py3-none-any.whl",
+    "sha256": "a6cdcfec47b952911b1d99a7b8056429b5984039b875bf6575174220364b551f",
+    "size": 17538
   },
   {
     "name": "starlette",
-    "version": "1.9.0",
-    "filename": "starlette-1.9.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/f3/93/181df62699d9b5aca1d87e5cfda131dac87e3cdaebf668662f7206ca3470/starlette-1.9.0-py3-none-any.whl",
-    "sha256": "fd3f159936e882d06c1108f84688f7cda2cf85fc6a592a50edbd175e882c2ddc",
-    "size": 80335
+    "version": "1.10.0",
+    "filename": "starlette-1.10.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/88/2e/947cfe02def9371c07cd5bf5b6b61c829e9aecb9904db02a66cfafbc1eec/starlette-1.10.0-py3-none-any.whl",
+    "sha256": "478c0ab3b4ced6e82719849c118fa406f0278a3499c1a898cd15cd31bdc38ce4",
+    "size": 80571
   },
   {
     "name": "structlog",
