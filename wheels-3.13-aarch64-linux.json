@@ -104,6 +104,22 @@
     "size": 23777467
   },
   {
+    "name": "boto3",
+    "version": "1.43.118",
+    "filename": "boto3-1.43.118-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/bb/a3/65bb3d64928f3c2da17640b92044084150317f02adf22442cb0c52af2a8b/boto3-1.43.118-py3-none-any.whl",
+    "sha256": "ab8f3d2c622ef039338b4f228d97ea55f1abd573d84bb9b9a5ee8cb6780c0ccd",
+    "size": 140045
+  },
+  {
+    "name": "botocore",
+    "version": "1.43.118",
+    "filename": "botocore-1.43.118-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/9c/ce/61b39a8e7a69af5ea43c1c3e1b0065a4866b42ccddf107e16686a3143614/botocore-1.43.118-py3-none-any.whl",
+    "sha256": "a45d7ae570674161e4a3542d8c68633bf7503f92d1de781ef7361b79488eda6f",
+    "size": 16122016
+  },
+  {
     "name": "brotli",
     "version": "1.2.1",
     "filename": "brotli-1.2.1-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
@@ -550,6 +566,14 @@
     "url": "https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl",
     "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67",
     "size": 134899
+  },
+  {
+    "name": "jmespath",
+    "version": "1.1.0",
+    "filename": "jmespath-1.1.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/14/2f/967ba146e6d58cf6a652da73885f52fc68001525b4197effc174321d70b4/jmespath-1.1.0-py3-none-any.whl",
+    "sha256": "a5663118de4908c91729bea0acadca56526eb2698e83de10cd116ae0f4e97c64",
+    "size": 20419
   },
   {
     "name": "joblib",
@@ -1017,11 +1041,11 @@
   },
   {
     "name": "pyjwt",
-    "version": "2.15.1",
-    "filename": "pyjwt-2.15.1-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/50/ca/44de4e75f8aadc457f0634be3b542815078ded46dca30efb960edeecad6e/pyjwt-2.15.1-py3-none-any.whl",
-    "sha256": "42d59d631f7768a1028a64c7ff581a9bf7519804daf91fc5b6c56e30eec5e193",
-    "size": 33860
+    "version": "2.13.0",
+    "filename": "pyjwt-2.13.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/a3/5e/ecf12fdb62546d64385c158514e9b2b671f7832108ef2ecd2020ce0af2d1/pyjwt-2.13.0-py3-none-any.whl",
+    "sha256": "66adcc2aff09b3f1bbd95fc1e1577df8ac8723c978552fd43304c8a290ac5728",
+    "size": 31274
   },
   {
     "name": "pymupdf",
@@ -1057,11 +1081,11 @@
   },
   {
     "name": "python-dateutil",
-    "version": "3.0.0",
-    "filename": "python_dateutil-3.0.0-py2.py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/5a/17/cebee01d1c0c1441174cf0456ddc91b280d79acb65340c05e41d77866ee8/python_dateutil-3.0.0-py2.py3-none-any.whl",
-    "sha256": "3c79630202e4152c6add678446984236efe4f57e84d8e892aab0637bab82e9fd",
-    "size": 94659
+    "version": "2.9.0.post0",
+    "filename": "python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+    "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+    "size": 229892
   },
   {
     "name": "python-docx",
@@ -1150,6 +1174,14 @@
     "url": "https://files.pythonhosted.org/packages/bd/b7/497e85768bf4e0d8ddbaa096a4cac31d1509251dee2728a8490aa367e0b5/rpds_py-2026.9.1-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
     "sha256": "457866b85daf5034296666168b84a69e0b2e89dc4f1af102b46f6448a60b9063",
     "size": 372611
+  },
+  {
+    "name": "s3transfer",
+    "version": "0.19.3",
+    "filename": "s3transfer-0.19.3-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/e2/a4/88f9e10498759121060b8050a1554753dfc04df39bbbcc7aad9ecc8d9440/s3transfer-0.19.3-py3-none-any.whl",
+    "sha256": "24eb7535804306355e31c952a90022bf5b2f9d760f9a11062c7493a217c08553",
+    "size": 90252
   },
   {
     "name": "safetensors",
@@ -1305,11 +1337,11 @@
   },
   {
     "name": "tokenizers",
-    "version": "0.23.3",
-    "filename": "tokenizers-0.23.3-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/15/fc/ae987741829b1cd547668c4c94be732ae3eefd1d74344e64c3d2ca714acd/tokenizers-0.23.3-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
-    "sha256": "ec82e80e65a862275b97c3d90b7a523df8d9519ee48aeb4e9625b2cc909274e0",
-    "size": 3519944
+    "version": "0.22.2",
+    "filename": "tokenizers-0.22.2-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/d6/84/7990e799f1309a8b87af6b948f31edaa12a3ed22d11b352eaf4f4b2e5753/tokenizers-0.22.2-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+    "sha256": "2249487018adec45d6e3554c71d46eb39fa8ea67156c640f7513eb26f318cec7",
+    "size": 3290736
   },
   {
     "name": "torch",
@@ -1353,11 +1385,11 @@
   },
   {
     "name": "transformers",
-    "version": "5.17.0",
-    "filename": "transformers-5.17.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/e8/d0/c502b60d684adbd98a8dc7d5bb866842772b816ac4354e4608be240041ae/transformers-5.17.0-py3-none-any.whl",
-    "sha256": "78ec1ce21579b38dfb83950a0658cd119f87212a2fcfdff478096ce9d6c03801",
-    "size": 12295140
+    "version": "5.5.0",
+    "filename": "transformers-5.5.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/e7/28/35f7411ff80a3640c1f4fc907dcbb6a65061ebb82f66950e38bfc9f7f740/transformers-5.5.0-py3-none-any.whl",
+    "sha256": "821a9ff0961abbb29eb1eb686d78df1c85929fdf213a3fe49dc6bd94f9efa944",
+    "size": 10245591
   },
   {
     "name": "triton",
@@ -1369,11 +1401,11 @@
   },
   {
     "name": "trl",
-    "version": "0.29.1",
-    "filename": "trl-0.29.1-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/c7/3b/33226ae50a36f718e1107ece0c91b016457bb4b956d1cb5bd7078c04de9c/trl-0.29.1-py3-none-any.whl",
-    "sha256": "f9490cd1af93f3dce1cfdfe0fa1de108dbc46a2f6c2f90485cc2b4021c43eef3",
-    "size": 530959
+    "version": "0.24.0",
+    "filename": "trl-0.24.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/87/5f/c647fedde9d59ae35ee189cc49e419da5ac1d9ad9933cb69401a7eac4705/trl-0.24.0-py3-none-any.whl",
+    "sha256": "a9145b7d4a4a33778de117bda48530f0cf5b2ac25acc07db80ad04836f490dfc",
+    "size": 423143
   },
   {
     "name": "truststore",
