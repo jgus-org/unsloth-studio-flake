@@ -11,6 +11,9 @@
 # itself: a run reads this file when it starts, so the first job refreshes it and
 # commits that revision, and every later job checks out that commit. The scripts it
 # invokes therefore move in the same run as the flake-lib input they come from.
+#
+# An update runs on a hosted runner unless the repository sets the `RUNNER` variable to a
+# label one of its own runners carries.
 
 name: Update branches
 
@@ -28,7 +31,7 @@ concurrency:
 
 jobs:
   workflows:
-    runs-on: ubuntu-latest
+    runs-on: ${{ vars.RUNNER || 'ubuntu-latest' }}
     outputs:
       sha: ${{ steps.update.outputs.sha }}
     steps:
@@ -36,9 +39,7 @@ jobs:
         with:
           token: ${{ secrets.ORG_UPDATE_TOKEN || github.token }}
 
-      - uses: cachix/install-nix-action@v31
-
-      - uses: jgus-org/flake-lib/.github/actions/fleet-nix-cache@v1
+      - uses: jgus-org/flake-lib/.github/actions/nix@v1
         with:
           token: ${{ secrets.ATTIC_TOKEN }}
 
@@ -54,16 +55,14 @@ jobs:
   deps:
     needs: workflows
     if: always()
-    runs-on: ubuntu-latest
+    runs-on: ${{ vars.RUNNER || 'ubuntu-latest' }}
     steps:
       - uses: actions/checkout@v7
         with:
           ref: ${{ needs.workflows.outputs.sha || github.sha }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: cachix/install-nix-action@v31
-
-      - uses: jgus-org/flake-lib/.github/actions/fleet-nix-cache@v1
+      - uses: jgus-org/flake-lib/.github/actions/nix@v1
         with:
           token: ${{ secrets.ATTIC_TOKEN }}
 
@@ -78,7 +77,7 @@ jobs:
   discover:
     needs: [workflows, deps]
     if: always()
-    runs-on: ubuntu-latest
+    runs-on: ${{ vars.RUNNER || 'ubuntu-latest' }}
     outputs:
       base_sha: ${{ steps.plan.outputs.base_sha }}
       versions: ${{ steps.plan.outputs.versions }}
@@ -91,9 +90,7 @@ jobs:
           ref: ${{ needs.workflows.outputs.sha || github.sha }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: cachix/install-nix-action@v31
-
-      - uses: jgus-org/flake-lib/.github/actions/fleet-nix-cache@v1
+      - uses: jgus-org/flake-lib/.github/actions/nix@v1
         with:
           token: ${{ secrets.ATTIC_TOKEN }}
 
@@ -107,7 +104,7 @@ jobs:
   newest-stable:
     needs: [workflows, discover]
     if: always() && needs.discover.result == 'success' && needs.discover.outputs.newest_stable != 'null'
-    runs-on: ubuntu-latest
+    runs-on: ${{ vars.RUNNER || 'ubuntu-latest' }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -115,9 +112,7 @@ jobs:
           ref: ${{ needs.workflows.outputs.sha || github.sha }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: cachix/install-nix-action@v31
-
-      - uses: jgus-org/flake-lib/.github/actions/fleet-nix-cache@v1
+      - uses: jgus-org/flake-lib/.github/actions/nix@v1
         with:
           token: ${{ secrets.ATTIC_TOKEN }}
 
@@ -161,7 +156,7 @@ jobs:
       max-parallel: 4
       matrix:
         entry: ${{ fromJson(needs.discover.outputs.maintenance) }}
-    runs-on: ubuntu-latest
+    runs-on: ${{ vars.RUNNER || 'ubuntu-latest' }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -169,9 +164,7 @@ jobs:
           ref: ${{ needs.workflows.outputs.sha || github.sha }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: cachix/install-nix-action@v31
-
-      - uses: jgus-org/flake-lib/.github/actions/fleet-nix-cache@v1
+      - uses: jgus-org/flake-lib/.github/actions/nix@v1
         with:
           token: ${{ secrets.ATTIC_TOKEN }}
 
@@ -190,7 +183,7 @@ jobs:
   publish:
     needs: [workflows, discover, newest-stable, maintenance]
     if: always() && needs.discover.result == 'success'
-    runs-on: ubuntu-latest
+    runs-on: ${{ vars.RUNNER || 'ubuntu-latest' }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -198,9 +191,7 @@ jobs:
           ref: ${{ needs.workflows.outputs.sha || github.sha }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: cachix/install-nix-action@v31
-
-      - uses: jgus-org/flake-lib/.github/actions/fleet-nix-cache@v1
+      - uses: jgus-org/flake-lib/.github/actions/nix@v1
         with:
           token: ${{ secrets.ATTIC_TOKEN }}
 
