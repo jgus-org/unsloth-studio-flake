@@ -1,0 +1,42 @@
+# The only workflow that writes a templated workflow file; edit it in jgus-org/flake-lib's
+# templates/workflows, not here. Its schedule runs ahead of the update workflows' 07:00 so the
+# day's templates are committed before an update run reads its workflow file, and a workflow is
+# read when its run starts, so a refresh lands on the run after the one that wrote it.
+#
+# The `update` concurrency group is what keeps this commit and an update run's commit apart:
+# that run pushes with an ordinary push, and a refresh committed beside it would cost it its
+# commit. A group holds one pending run, so a refresh that arrives while the group is busy is
+# dropped -- a lost day, not a lost state.
+#
+# Pushing a workflow file needs a credential that may write workflows. A run's own token cannot
+# unless the workflow grants `workflows: write`, so without ORG_UPDATE_TOKEN this run advances
+# its input and fails to commit it.
+
+name: Update workflows
+
+on:
+  schedule:
+    - cron: "30 6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  workflows:
+    runs-on: ${{ vars.RUNNER || 'ubuntu-latest' }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.ORG_UPDATE_TOKEN || github.token }}
+
+      - uses: jgus-org/flake-lib/.github/actions/nix@v1
+        with:
+          token: ${{ secrets.ATTIC_TOKEN }}
+
+      - name: Update workflows from flake-lib templates
+        run: nix run github:jgus-org/flake-lib/v1#update-workflows
