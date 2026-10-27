@@ -7,10 +7,11 @@
 # fleet Attic cache whenever the ATTIC_TOKEN secret resolves -- an organization secret
 # covers every repository at once -- and a repository, or a fork pull request, with no
 # token runs on the public cache alone.
-# The workflow below updates
-# itself: a run reads this file when it starts, so the first job refreshes it and
-# commits that revision, and every later job checks out that commit. The scripts it
-# invokes therefore move in the same run as the flake-lib input they come from.
+# The refresh that keeps this file current is a workflow of its own,
+# templates/workflows/update-workflows.yml, so this run reads the workflow file it is
+# already running and never executes a file its own job has just written. The flake-lib
+# input and the templates that revision ships arrive in one commit, so the scripts this
+# run invokes are always the scripts its workflow file was written against.
 #
 # An update runs on a hosted runner unless the repository sets the `RUNNER` variable to a
 # label one of its own runners carries.
@@ -30,36 +31,16 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  workflows:
-    runs-on: ${{ vars.RUNNER || 'ubuntu-latest' }}
-    outputs:
-      sha: ${{ steps.update.outputs.sha }}
-    steps:
-      - uses: actions/checkout@v7
-        with:
-          token: ${{ secrets.ORG_UPDATE_TOKEN || github.token }}
-
-      - uses: jgus-org/flake-lib/.github/actions/nix@v1
-        with:
-          token: ${{ secrets.ATTIC_TOKEN }}
-
-      - name: Update workflows from flake-lib templates
-        id: update
-        run: nix run github:jgus-org/flake-lib/v1#update-workflows
-
   # A producer whose flake takes inputs from other producers here must not pin them before
   # their own update has published. The edges are this repository's flake inputs, so nothing
   # below is producer-specific, and a leaf producer's run reports nothing to wait for. A
   # dependency that cannot be observed, that ended badly, or that never finishes is reported
   # and skipped: ordering is worth waiting for, not worth stalling the fleet on.
   deps:
-    needs: workflows
-    if: always()
     runs-on: ${{ vars.RUNNER || 'ubuntu-latest' }}
     steps:
       - uses: actions/checkout@v7
         with:
-          ref: ${{ needs.workflows.outputs.sha || github.sha }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: jgus-org/flake-lib/.github/actions/nix@v1
@@ -75,7 +56,7 @@ jobs:
         run: nix run github:jgus-org/flake-lib/v1#wait-for-deps
 
   discover:
-    needs: [workflows, deps]
+    needs: deps
     if: always()
     runs-on: ${{ vars.RUNNER || 'ubuntu-latest' }}
     outputs:
@@ -87,7 +68,6 @@ jobs:
       - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-          ref: ${{ needs.workflows.outputs.sha || github.sha }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: jgus-org/flake-lib/.github/actions/nix@v1
@@ -102,14 +82,13 @@ jobs:
         run: nix run .#update-branches -- list
 
   newest-stable:
-    needs: [workflows, discover]
+    needs: discover
     if: always() && needs.discover.result == 'success' && needs.discover.outputs.newest_stable != 'null'
     runs-on: ${{ vars.RUNNER || 'ubuntu-latest' }}
     steps:
       - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-          ref: ${{ needs.workflows.outputs.sha || github.sha }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: jgus-org/flake-lib/.github/actions/nix@v1
@@ -146,7 +125,7 @@ jobs:
             --for-version "${VERSION}"
 
   maintenance:
-    needs: [workflows, discover, newest-stable]
+    needs: [discover, newest-stable]
     if: always() && needs.discover.result == 'success' && needs.discover.outputs.maintenance != '[]'
     strategy:
       fail-fast: false
@@ -160,7 +139,6 @@ jobs:
       - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-          ref: ${{ needs.workflows.outputs.sha || github.sha }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: jgus-org/flake-lib/.github/actions/nix@v1
@@ -180,14 +158,13 @@ jobs:
             --upstream-version "${UPSTREAM_VERSION}"
 
   publish:
-    needs: [workflows, discover, newest-stable, maintenance]
+    needs: [discover, newest-stable, maintenance]
     if: always() && needs.discover.result == 'success'
     runs-on: ${{ vars.RUNNER || 'ubuntu-latest' }}
     steps:
       - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-          ref: ${{ needs.workflows.outputs.sha || github.sha }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: jgus-org/flake-lib/.github/actions/nix@v1
