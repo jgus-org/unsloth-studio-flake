@@ -119,15 +119,14 @@ jobs:
       - name: Refresh newest stable
         env:
           BASE_SHA: ${{ needs.discover.outputs.base_sha }}
-          NEWEST_STABLE: ${{ needs.discover.outputs.newest_stable }}
+          VERSION: ${{ fromJSON(needs.discover.outputs.newest_stable).version }}
+          UPSTREAM_VERSION: ${{ fromJSON(needs.discover.outputs.newest_stable).upstreamVersion }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          version=$(jq -r '.version' <<<"${NEWEST_STABLE}")
-          upstream_version=$(jq -r '.upstreamVersion' <<<"${NEWEST_STABLE}")
           nix run .#update-branches -- refresh \
             --base-sha "${BASE_SHA}" \
-            --version "${version}" \
-            --upstream-version "${upstream_version}"
+            --version "${VERSION}" \
+            --upstream-version "${UPSTREAM_VERSION}"
 
       # The maintenance matrix runs after this job, so no other line has refreshed its exact
       # branch since discovery captured the specification. This publisher therefore publishes
@@ -137,14 +136,14 @@ jobs:
         continue-on-error: true
         env:
           BASE_SHA: ${{ needs.discover.outputs.base_sha }}
-          NEWEST_STABLE: ${{ needs.discover.outputs.newest_stable }}
+          VERSION: ${{ fromJSON(needs.discover.outputs.newest_stable).version }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VERSIONS: ${{ needs.discover.outputs.versions }}
         run: |
           nix run .#update-branches -- publish \
             --base-sha "${BASE_SHA}" \
             --versions-json "${VERSIONS}" \
-            --for-version "$(jq -r '.version' <<<"${NEWEST_STABLE}")"
+            --for-version "${VERSION}"
 
   maintenance:
     needs: [workflows, discover, newest-stable]
