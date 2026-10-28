@@ -92,7 +92,6 @@
       let
         pkgs = import nixpkgs {
           inherit system;
-          config.allowUnfree = true;
           overlays = [ overlay ];
         };
         orgFormatting = flake-lib.lib.mkFormatting {
