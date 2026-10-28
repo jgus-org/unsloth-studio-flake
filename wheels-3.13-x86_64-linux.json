@@ -104,6 +104,22 @@
     "size": 43139553
   },
   {
+    "name": "boto3",
+    "version": "1.43.120",
+    "filename": "boto3-1.43.120-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/7a/42/04025133386d7881ca2235044c2ed9ffa33c8f80c91453b2114567463b9c/boto3-1.43.120-py3-none-any.whl",
+    "sha256": "86978245a7b911549a44df3f805ae4ce94a8154f4ebe4a166631b8a6d7af2697",
+    "size": 140041
+  },
+  {
+    "name": "botocore",
+    "version": "1.43.120",
+    "filename": "botocore-1.43.120-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/a1/d4/ea06db5d3dd35b5782faaa7a4ef68b8e7f51e35e62bd4f92758dc73ca01e/botocore-1.43.120-py3-none-any.whl",
+    "sha256": "7f54674f26f0d9a500bf44a1f858e88b70b03c82b2aca385ddf51f6e968bfd01",
+    "size": 16164042
+  },
+  {
     "name": "brotli",
     "version": "1.2.1",
     "filename": "brotli-1.2.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
@@ -518,6 +534,14 @@
     "url": "https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl",
     "sha256": "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67",
     "size": 134899
+  },
+  {
+    "name": "jmespath",
+    "version": "1.1.0",
+    "filename": "jmespath-1.1.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/14/2f/967ba146e6d58cf6a652da73885f52fc68001525b4197effc174321d70b4/jmespath-1.1.0-py3-none-any.whl",
+    "sha256": "a5663118de4908c91729bea0acadca56526eb2698e83de10cd116ae0f4e97c64",
+    "size": 20419
   },
   {
     "name": "joblib",
@@ -1017,11 +1041,11 @@
   },
   {
     "name": "python-dateutil",
-    "version": "3.0.0",
-    "filename": "python_dateutil-3.0.0-py2.py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/5a/17/cebee01d1c0c1441174cf0456ddc91b280d79acb65340c05e41d77866ee8/python_dateutil-3.0.0-py2.py3-none-any.whl",
-    "sha256": "3c79630202e4152c6add678446984236efe4f57e84d8e892aab0637bab82e9fd",
-    "size": 94659
+    "version": "2.9.0.post0",
+    "filename": "python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+    "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+    "size": 229892
   },
   {
     "name": "python-docx",
@@ -1110,6 +1134,14 @@
     "url": "https://files.pythonhosted.org/packages/a0/36/76fab39973ee11e7f9f357c55138197bb01c86f6502cb76487e3b4f42db0/rpds_py-2026.9.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
     "sha256": "7868b85224291c6cb6759f9b5adb9745f486d226f62b16a614dd5a2a5ab2b35b",
     "size": 370794
+  },
+  {
+    "name": "s3transfer",
+    "version": "0.19.3",
+    "filename": "s3transfer-0.19.3-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/e2/a4/88f9e10498759121060b8050a1554753dfc04df39bbbcc7aad9ecc8d9440/s3transfer-0.19.3-py3-none-any.whl",
+    "sha256": "24eb7535804306355e31c952a90022bf5b2f9d760f9a11062c7493a217c08553",
+    "size": 90252
   },
   {
     "name": "safetensors",
