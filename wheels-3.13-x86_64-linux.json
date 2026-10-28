@@ -433,11 +433,11 @@
   },
   {
     "name": "hf-xet",
-    "version": "1.7.0",
-    "filename": "hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
-    "url": "https://files.pythonhosted.org/packages/a3/4c/2bf3b66c215d409655f28de1622393dde04c9461280d48c7924bb3b2decd/hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
-    "sha256": "2814a6e999d13464c4d679b788cc5d784eb5a4edfc638a31f10e9a11ab531ef8",
-    "size": 4212180
+    "version": "1.7.1",
+    "filename": "hf_xet-1.7.1-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "url": "https://files.pythonhosted.org/packages/91/99/105c23da56161acdc4e5b3022ae6d225ab54269a44eb7303f41e3a7be09e/hf_xet-1.7.1-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "sha256": "f26bfd4a6e31b4e37e749a07e8642589406e8537be05eccfd633a92b95e2fb51",
+    "size": 4219728
   },
   {
     "name": "hpack",
@@ -881,11 +881,11 @@
   },
   {
     "name": "platformdirs",
-    "version": "4.13.7",
-    "filename": "platformdirs-4.13.7-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/46/ff/8ed4a836cbf7de39708a2d305d6b67575990908d072bc3565dd8ad71748e/platformdirs-4.13.7-py3-none-any.whl",
-    "sha256": "47664602fbecad0a6efa561fb690d20dbc26875fe8aedf65ba362935df619bbb",
-    "size": 33111
+    "version": "4.14.0",
+    "filename": "platformdirs-4.14.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/69/2b/887969ef4bb53e0cb271dc7c3f4a73d50c5d58bb88aeaae311e3340cd57e/platformdirs-4.14.0-py3-none-any.whl",
+    "sha256": "1dadfc59a8a5d7565b3d9270ae8fa71c065595352c4277b41c11ee6c222c4b91",
+    "size": 35259
   },
   {
     "name": "primp",
@@ -961,11 +961,11 @@
   },
   {
     "name": "pydantic-settings",
-    "version": "2.16.1",
-    "filename": "pydantic_settings-2.16.1-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/3c/74/fdf926afe145d8629c4b2ff57f4ea1d64ed7abc4d84d97463b2517a2547e/pydantic_settings-2.16.1-py3-none-any.whl",
-    "sha256": "30f5313340da4e8f1b440d1910b92a5bc3ccbb6b4ba70ec2b8395bc921f418f5",
-    "size": 80771
+    "version": "2.16.2",
+    "filename": "pydantic_settings-2.16.2-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/39/88/4131c51ff87b7cd7f82a1194d0c0a2b7ca68c72d9da04c3b7e69ab91a79f/pydantic_settings-2.16.2-py3-none-any.whl",
+    "sha256": "8d523e5c129b097686bde019bd6109bff53f4c8c3f63f1ddf9933ffa42e5ab4f",
+    "size": 81994
   },
   {
     "name": "pygments",
@@ -1281,19 +1281,19 @@
   },
   {
     "name": "torchaudio",
-    "version": "2.11.0",
-    "filename": "torchaudio-2.11.0-cp313-cp313-manylinux_2_28_x86_64.whl",
-    "url": "https://files.pythonhosted.org/packages/4f/98/be13fe35d9aa5c26381c0e453c828a789d15c007f8f7d08c95341d19974d/torchaudio-2.11.0-cp313-cp313-manylinux_2_28_x86_64.whl",
-    "sha256": "1c1101c1243ef0e4063ec63298977e2d3655c15cf88d9eb0a1bd4fe2db9f47ea",
-    "size": 1771992
+    "version": "2.11.1",
+    "filename": "torchaudio-2.11.1-py3-none-manylinux_2_28_x86_64.whl",
+    "url": "https://files.pythonhosted.org/packages/e6/ad/b0bf9bfa9db80acf0ce660e01a67b3b735343ab51ce1410b18d2aaed254c/torchaudio-2.11.1-py3-none-manylinux_2_28_x86_64.whl",
+    "sha256": "0173b5b51e1368aa88de3cbe4e98508b5e9df4d8d59356c4e1fbc830c96191ef",
+    "size": 1816417
   },
   {
     "name": "torchvision",
-    "version": "0.29.1",
-    "filename": "torchvision-0.29.1-cp313-cp313-manylinux_2_28_x86_64.whl",
-    "url": "https://files.pythonhosted.org/packages/f6/b5/915c431a48d7f91cc31bf825aee98e663440386758131668da9b9862aafd/torchvision-0.29.1-cp313-cp313-manylinux_2_28_x86_64.whl",
-    "sha256": "c1b7f92604791dd0daa566f6fcc1eea0801753a34430c3ebdf79cfab2d96904c",
-    "size": 7430677
+    "version": "0.29.2",
+    "filename": "torchvision-0.29.2-py3-none-manylinux_2_28_x86_64.whl",
+    "url": "https://files.pythonhosted.org/packages/92/74/699d28bed7453dbe40b09d37aab8f6cd75f19a77a77d5ab4588a4f3239e7/torchvision-0.29.2-py3-none-manylinux_2_28_x86_64.whl",
+    "sha256": "0875f7a23bd298813240f716c56df44ce72ddb45146589442a38edd0e1f59637",
+    "size": 7585493
   },
   {
     "name": "tqdm",
@@ -1377,11 +1377,11 @@
   },
   {
     "name": "tzdata",
-    "version": "2026.5",
-    "filename": "tzdata-2026.5-py2.py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/94/21/1e5995a1c920cce14e4bffae20c665ec10e7ed03ab25e006cd741092b718/tzdata-2026.5-py2.py3-none-any.whl",
-    "sha256": "b683bd1b6659ddcd810ff02ad09ba821d4bf1065072805063eb35c49617905ac",
-    "size": 347996
+    "version": "2026.6",
+    "filename": "tzdata-2026.6-py2.py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/0a/66/9a06c2227fedfd4919f0eaaa8b94377d9730882a7e4f95823c9a331ab5e1/tzdata-2026.6-py2.py3-none-any.whl",
+    "sha256": "0a10eec6e13ef16b627fabed9a5f2ba61a62b1c67f327305f4e7e412a70b4aec",
+    "size": 348210
   },
   {
     "name": "uncalled-for",
@@ -1393,19 +1393,19 @@
   },
   {
     "name": "unsloth",
-    "version": "2026.10.9",
-    "filename": "unsloth-2026.10.9-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/c4/1b/c8d6f64fb4b45625cb2842bd4fad7e7c8fb4c54afc16e0a9ef444ef10079/unsloth-2026.10.9-py3-none-any.whl",
-    "sha256": "feb40b99bc4f8c543a36cbd0fe6e1410d6e4ac16bd4d0c731f607adce3d63bb0",
-    "size": 28648521
+    "version": "2026.10.10",
+    "filename": "unsloth-2026.10.10-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/45/1e/6bc2275efbf65085a5b0b853c40b20a56f4e1bd30cabe324f9b2f50d9513/unsloth-2026.10.10-py3-none-any.whl",
+    "sha256": "e0c0cd8f48d8880b6b76af2e7224c80e14b4be93ab8ff4dc140d93c282c73af0",
+    "size": 29041258
   },
   {
     "name": "unsloth-zoo",
-    "version": "2026.10.9",
-    "filename": "unsloth_zoo-2026.10.9-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/d2/19/9ef6283f40056d44dd0bed2bb08d3b59fba70bb007cda9e872d66888af33/unsloth_zoo-2026.10.9-py3-none-any.whl",
-    "sha256": "f68e0576b0e9bd2ef85f19bf665132c576b52ee4df923fbb16c81538a3cde676",
-    "size": 2912210
+    "version": "2026.10.10",
+    "filename": "unsloth_zoo-2026.10.10-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/b8/be/ebfbe13da09354bcd966d87955aa9ed990545756140f976770444c0ecc3c/unsloth_zoo-2026.10.10-py3-none-any.whl",
+    "sha256": "e72aff6494d64add34cd09bd305641e6d94d1d4e0f580bb421e79e4f9fb42ddb",
+    "size": 2964029
   },
   {
     "name": "urllib3",
