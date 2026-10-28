@@ -105,19 +105,19 @@
   },
   {
     "name": "boto3",
-    "version": "1.43.118",
-    "filename": "boto3-1.43.118-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/bb/a3/65bb3d64928f3c2da17640b92044084150317f02adf22442cb0c52af2a8b/boto3-1.43.118-py3-none-any.whl",
-    "sha256": "ab8f3d2c622ef039338b4f228d97ea55f1abd573d84bb9b9a5ee8cb6780c0ccd",
-    "size": 140045
+    "version": "1.43.120",
+    "filename": "boto3-1.43.120-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/7a/42/04025133386d7881ca2235044c2ed9ffa33c8f80c91453b2114567463b9c/boto3-1.43.120-py3-none-any.whl",
+    "sha256": "86978245a7b911549a44df3f805ae4ce94a8154f4ebe4a166631b8a6d7af2697",
+    "size": 140041
   },
   {
     "name": "botocore",
-    "version": "1.43.118",
-    "filename": "botocore-1.43.118-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/9c/ce/61b39a8e7a69af5ea43c1c3e1b0065a4866b42ccddf107e16686a3143614/botocore-1.43.118-py3-none-any.whl",
-    "sha256": "a45d7ae570674161e4a3542d8c68633bf7503f92d1de781ef7361b79488eda6f",
-    "size": 16122016
+    "version": "1.43.120",
+    "filename": "botocore-1.43.120-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/a1/d4/ea06db5d3dd35b5782faaa7a4ef68b8e7f51e35e62bd4f92758dc73ca01e/botocore-1.43.120-py3-none-any.whl",
+    "sha256": "7f54674f26f0d9a500bf44a1f858e88b70b03c82b2aca385ddf51f6e968bfd01",
+    "size": 16164042
   },
   {
     "name": "brotli",
@@ -129,11 +129,11 @@
   },
   {
     "name": "cachetools",
-    "version": "7.2.5",
-    "filename": "cachetools-7.2.5-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/4f/bd/bd8f45fbdf05ce06dbadda61bf0a09844bb0cf0a048d7f5c4a368d437e24/cachetools-7.2.5-py3-none-any.whl",
-    "sha256": "9033308cc26b678784a27b096aab1541b9e698d785c3e9918b691ccd458d88df",
-    "size": 19132
+    "version": "7.2.6",
+    "filename": "cachetools-7.2.6-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/53/98/c8201d54b354857a3050a52751ca482eb143c404b387ab2c41a0f981b610/cachetools-7.2.6-py3-none-any.whl",
+    "sha256": "8722e08fc36ae0838a9a0a2ab9935554720de3343a62dad7aae7c595854c8623",
+    "size": 19523
   },
   {
     "name": "caio",
@@ -241,11 +241,11 @@
   },
   {
     "name": "cyclopts",
-    "version": "5.3.0",
-    "filename": "cyclopts-5.3.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/e7/99/00ce1a4e8b131b0e0a59a882311bcb9f771e7e39004bd19d988f1dddf303/cyclopts-5.3.0-py3-none-any.whl",
-    "sha256": "479f92942ea286b6c132f64262d82f12b4c71d003f3d3691f572cd6ad4528bb2",
-    "size": 296696
+    "version": "5.3.2",
+    "filename": "cyclopts-5.3.2-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/a2/82/fbb7d04cfd2afaf3e8eb9715f71b2899313cea9a205e5099959e8296ba43/cyclopts-5.3.2-py3-none-any.whl",
+    "sha256": "0e1a1615b42da7af1c9cebd285578fa003f4d6bef8b65de9e77c2faf645c2df7",
+    "size": 297090
   },
   {
     "name": "datasets",
@@ -273,11 +273,11 @@
   },
   {
     "name": "diffusers",
-    "version": "0.42.0",
-    "filename": "diffusers-0.42.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/ac/ac/08dca462b503e8c16099af647401c2548cbe2c4fbafd487ff3265fa57385/diffusers-0.42.0-py3-none-any.whl",
-    "sha256": "c409b893156c895dde5b7fe410a014f6b94bf7caa1b96360e43a335c762674f4",
-    "size": 6354874
+    "version": "0.42.1",
+    "filename": "diffusers-0.42.1-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/e1/e9/4328c781bc64f8b74363f66674c00e65021e9a857fb9cb4882ed447956cd/diffusers-0.42.1-py3-none-any.whl",
+    "sha256": "9154faa704ce00e0b77f568e0d64786064368528aab5fc14eeea92f87d788014",
+    "size": 6355908
   },
   {
     "name": "dill",
@@ -345,19 +345,19 @@
   },
   {
     "name": "fastmcp",
-    "version": "4.1.3",
-    "filename": "fastmcp-4.1.3-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/97/7f/27c501d98b5681ca4f6c21a7d741b3e732e962c5e4c3b4db6dd1ffdf4fd8/fastmcp-4.1.3-py3-none-any.whl",
-    "sha256": "b983d8acc44ab1143e0c86fd6da843f25043ee0aeb64ab983b36c527bd1d33e9",
-    "size": 8153
+    "version": "4.1.4",
+    "filename": "fastmcp-4.1.4-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/88/1d/eaa514b648db51fc31ef002519c9d406beaaba4a7c53716610e1f886f5a9/fastmcp-4.1.4-py3-none-any.whl",
+    "sha256": "047c1c1842f42e4ffe2e153568a25851d442cb7739a41a56352b7a2852ff8738",
+    "size": 8232
   },
   {
     "name": "fastmcp-slim",
-    "version": "4.1.3",
-    "filename": "fastmcp_slim-4.1.3-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/4e/ff/a7feaeb130a2003700789ce32e933b4c2ae00fc7c264642e57ab12e4684f/fastmcp_slim-4.1.3-py3-none-any.whl",
-    "sha256": "81af8699331c33d438caf85b6947f36df6e2f04118e6f318ca00374fd9afea9a",
-    "size": 931046
+    "version": "4.1.4",
+    "filename": "fastmcp_slim-4.1.4-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/4a/d2/bbbf9cb1a92e7f98c34845c8f06f21516fd38efdcd579ecbc0131bb6d4d5/fastmcp_slim-4.1.4-py3-none-any.whl",
+    "sha256": "0f611b246504ff0d0ee7ab77123f529b5c9aed68670eaee9c6f960a59bb024da",
+    "size": 935728
   },
   {
     "name": "filelock",
@@ -369,11 +369,11 @@
   },
   {
     "name": "fonttools",
-    "version": "4.67.0",
-    "filename": "fonttools-4.67.0-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/1f/2c/b7f33fa3bd1e4afdf9bf93b760f22486350eda487ce76c47f5931f868957/fonttools-4.67.0-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
-    "sha256": "e2b5d511ea012dce7bd6df12b279b7d7a5b01b019865717d03ae679f4b944fa5",
-    "size": 5385200
+    "version": "4.68.0",
+    "filename": "fonttools-4.68.0-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/0c/ad/da985167af1988b82112cf133e826cf075cecb28d120778589265cb3125d/fonttools-4.68.0-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+    "sha256": "a6837def5de49772b82683dadd836df214def04b307cb98d0e7723d49e7e15bb",
+    "size": 5420416
   },
   {
     "name": "frozenlist",
@@ -528,38 +528,6 @@
     "size": 32221
   },
   {
-    "name": "jaraco-classes",
-    "version": "3.4.0",
-    "filename": "jaraco.classes-3.4.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/7f/66/b15ce62552d84bbfcec9a4873ab79d993a1dd4edb922cbfccae192bd5b5f/jaraco.classes-3.4.0-py3-none-any.whl",
-    "sha256": "f662826b6bed8cace05e7ff873ce0f9283b5c924470fe664fff1c2f00f581790",
-    "size": 6777
-  },
-  {
-    "name": "jaraco-context",
-    "version": "6.1.2",
-    "filename": "jaraco_context-6.1.2-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/f2/58/bc8954bda5fcda97bd7c19be11b85f91973d67a706ed4a3aec33e7de22db/jaraco_context-6.1.2-py3-none-any.whl",
-    "sha256": "bf8150b79a2d5d91ae48629d8b427a8f7ba0e1097dd6202a9059f29a36379535",
-    "size": 7871
-  },
-  {
-    "name": "jaraco-functools",
-    "version": "4.6.0",
-    "filename": "jaraco_functools-4.6.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/02/36/ecc85bc96c273dc8a11273ed4782272975e6338d4a3e9228621175edf0e3/jaraco_functools-4.6.0-py3-none-any.whl",
-    "sha256": "99e3dc0060c5cbe8fcd1cdb36258e2a65ca40f1566b2033b12abb1bb44dd3c30",
-    "size": 11677
-  },
-  {
-    "name": "jeepney",
-    "version": "0.9.0",
-    "filename": "jeepney-0.9.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/b2/a3/e137168c9c44d18eff0376253da9f1e9234d0239e0ee230d2fee6cea8e55/jeepney-0.9.0-py3-none-any.whl",
-    "sha256": "97e5714520c16fc0a45695e5365a2e11b81ea79bba796e26f9f1d178cb182683",
-    "size": 49010
-  },
-  {
     "name": "jinja2",
     "version": "3.1.6",
     "filename": "jinja2-3.1.6-py3-none-any.whl",
@@ -592,6 +560,14 @@
     "size": 71758
   },
   {
+    "name": "json5",
+    "version": "0.17.3",
+    "filename": "json5-0.17.3-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/ae/39/e689b616c4279a821d5842a8a85c1874540f8d58e35028df93f2182120c2/json5-0.17.3-py3-none-any.whl",
+    "sha256": "2c8b22a893c35cd6a3c5ccbf1dd1c7d02c25dc1b5897fea658f9bf08c2e05f9a",
+    "size": 34809
+  },
+  {
     "name": "jsonref",
     "version": "1.1.0",
     "filename": "jsonref-1.1.0-py3-none-any.whl",
@@ -622,14 +598,6 @@
     "url": "https://files.pythonhosted.org/packages/41/45/1a4ed80516f02155c51f51e8cedb3c1902296743db0bbc66608a0db2814f/jsonschema_specifications-2025.9.1-py3-none-any.whl",
     "sha256": "98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe",
     "size": 18437
-  },
-  {
-    "name": "keyring",
-    "version": "25.7.0",
-    "filename": "keyring-25.7.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/81/db/e655086b7f3a705df045bf0933bdd9c2f79bb3c97bfef1384598bb79a217/keyring-25.7.0-py3-none-any.whl",
-    "sha256": "be4a0b195f149690c166e850609a477c532ddbfbaed96a404d4e43f8d5e2689f",
-    "size": 39160
   },
   {
     "name": "kiwisolver",
@@ -696,14 +664,6 @@
     "size": 9979
   },
   {
-    "name": "more-itertools",
-    "version": "11.2.1",
-    "filename": "more_itertools-11.2.1-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/5d/57/3c4b1c6f2e0cc29ba023802458ea3d2a996f87085559e4a5f2192d549532/more_itertools-11.2.1-py3-none-any.whl",
-    "sha256": "35a7377edd1dd6608dcb2cdf534ded55ea32d49448875ad042cd3f879fb1ded0",
-    "size": 74405
-  },
-  {
     "name": "mpmath",
     "version": "1.3.0",
     "filename": "mpmath-1.3.0-py3-none-any.whl",
@@ -737,11 +697,11 @@
   },
   {
     "name": "narwhals",
-    "version": "2.27.1",
-    "filename": "narwhals-2.27.1-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/d1/89/5d4c86da1130d9059681e5b6cd7645df5c10279a6a079c5c37dcb2cc6f3f/narwhals-2.27.1-py3-none-any.whl",
-    "sha256": "d057df13f5852b8e157596e82eb5e955fad267425df5e420e0ee9863da483b31",
-    "size": 483211
+    "version": "2.28.0",
+    "filename": "narwhals-2.28.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/cf/82/8ef9c7e0f50493307a49c09cfa7f00c5a778b6d1921f7b2dabe1d3a5809e/narwhals-2.28.0-py3-none-any.whl",
+    "sha256": "1f69d6385ec30e2fa6e1fdeb37c562ecabd0f713f6f3e3b58a668c5c9df9567f",
+    "size": 490591
   },
   {
     "name": "nest-asyncio",
@@ -945,11 +905,11 @@
   },
   {
     "name": "platformdirs",
-    "version": "4.13.5",
-    "filename": "platformdirs-4.13.5-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/6c/8a/1d8cb3842909dc193a73835adedf412e32e18f8ffd59f43983949622fe6f/platformdirs-4.13.5-py3-none-any.whl",
-    "sha256": "53d3ec4280b815c1e0b02edad7f9ee8fda1ba9c0865dd9c2e6e63849ce82fc1e",
-    "size": 32779
+    "version": "4.13.7",
+    "filename": "platformdirs-4.13.7-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/46/ff/8ed4a836cbf7de39708a2d305d6b67575990908d072bc3565dd8ad71748e/platformdirs-4.13.7-py3-none-any.whl",
+    "sha256": "47664602fbecad0a6efa561fb690d20dbc26875fe8aedf65ba362935df619bbb",
+    "size": 33111
   },
   {
     "name": "primp",
@@ -1208,14 +1168,6 @@
     "size": 34053851
   },
   {
-    "name": "secretstorage",
-    "version": "3.5.0",
-    "filename": "secretstorage-3.5.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/b7/46/f5af3402b579fd5e11573ce652019a67074317e18c1935cc0b4ba9b35552/secretstorage-3.5.0-py3-none-any.whl",
-    "sha256": "0ce65888c0725fcb2c5bc0fdb8e5438eece02c523557ea40ce0703c266248137",
-    "size": 15554
-  },
-  {
     "name": "sentence-transformers",
     "version": "6.2.0",
     "filename": "sentence_transformers-6.2.0-py3-none-any.whl",
@@ -1281,11 +1233,11 @@
   },
   {
     "name": "sse-starlette",
-    "version": "3.5.1",
-    "filename": "sse_starlette-3.5.1-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/61/98/658d1681bc6dc0b0f7f695aee4337de79decd0ccaec6d000a76b5cbdca6d/sse_starlette-3.5.1-py3-none-any.whl",
-    "sha256": "a6cdcfec47b952911b1d99a7b8056429b5984039b875bf6575174220364b551f",
-    "size": 17538
+    "version": "3.6.0",
+    "filename": "sse_starlette-3.6.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/cf/49/35053078cdfcf639237e8bee6dc6f34f1b3a3cc8d01800a1e213e1660ff6/sse_starlette-3.6.0-py3-none-any.whl",
+    "sha256": "e4dfa4d237d2712cb2b4d4918eda9b457cd6b44bbecdc838af75de836565bafd",
+    "size": 17985
   },
   {
     "name": "starlette",
@@ -1473,19 +1425,19 @@
   },
   {
     "name": "unsloth",
-    "version": "2026.10.8",
-    "filename": "unsloth-2026.10.8-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/a8/17/4534fde4319bb4e075bf3e8b985d9a2924ae832586a7c49cd7bb39095289/unsloth-2026.10.8-py3-none-any.whl",
-    "sha256": "12c5d8fb7ba7a9092d880f309d350a3491773e9a86bd8ecedf9056b7676e2ac1",
-    "size": 29357506
+    "version": "2026.10.9",
+    "filename": "unsloth-2026.10.9-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/c4/1b/c8d6f64fb4b45625cb2842bd4fad7e7c8fb4c54afc16e0a9ef444ef10079/unsloth-2026.10.9-py3-none-any.whl",
+    "sha256": "feb40b99bc4f8c543a36cbd0fe6e1410d6e4ac16bd4d0c731f607adce3d63bb0",
+    "size": 28648521
   },
   {
     "name": "unsloth-zoo",
-    "version": "2026.10.8",
-    "filename": "unsloth_zoo-2026.10.8-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/ba/63/0c9ceca8cb612c019287c92759fd6a76f37d49f3ec3cb33b39e7934bf765/unsloth_zoo-2026.10.8-py3-none-any.whl",
-    "sha256": "db8c283bfab4c250e429cab35047bbde20687a445ccd592e1fcf7887b544d82a",
-    "size": 2797654
+    "version": "2026.10.9",
+    "filename": "unsloth_zoo-2026.10.9-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/d2/19/9ef6283f40056d44dd0bed2bb08d3b59fba70bb007cda9e872d66888af33/unsloth_zoo-2026.10.9-py3-none-any.whl",
+    "sha256": "f68e0576b0e9bd2ef85f19bf665132c576b52ee4df923fbb16c81538a3cde676",
+    "size": 2912210
   },
   {
     "name": "urllib3",
