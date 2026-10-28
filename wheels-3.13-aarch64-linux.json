@@ -113,11 +113,11 @@
   },
   {
     "name": "cachetools",
-    "version": "7.2.5",
-    "filename": "cachetools-7.2.5-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/4f/bd/bd8f45fbdf05ce06dbadda61bf0a09844bb0cf0a048d7f5c4a368d437e24/cachetools-7.2.5-py3-none-any.whl",
-    "sha256": "9033308cc26b678784a27b096aab1541b9e698d785c3e9918b691ccd458d88df",
-    "size": 19132
+    "version": "7.2.6",
+    "filename": "cachetools-7.2.6-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/53/98/c8201d54b354857a3050a52751ca482eb143c404b387ab2c41a0f981b610/cachetools-7.2.6-py3-none-any.whl",
+    "sha256": "8722e08fc36ae0838a9a0a2ab9935554720de3343a62dad7aae7c595854c8623",
+    "size": 19523
   },
   {
     "name": "caio",
@@ -225,11 +225,11 @@
   },
   {
     "name": "cyclopts",
-    "version": "5.3.1",
-    "filename": "cyclopts-5.3.1-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/ce/e9/d6ba476630734cd9b69645b4d7ce8008f7e2188c92c7ab19b2e23342bf42/cyclopts-5.3.1-py3-none-any.whl",
-    "sha256": "818258c6d55f8c928f6c3b85fdc94121825f98f6f625c43ae6faabfb121412e1",
-    "size": 297065
+    "version": "5.3.2",
+    "filename": "cyclopts-5.3.2-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/a2/82/fbb7d04cfd2afaf3e8eb9715f71b2899313cea9a205e5099959e8296ba43/cyclopts-5.3.2-py3-none-any.whl",
+    "sha256": "0e1a1615b42da7af1c9cebd285578fa003f4d6bef8b65de9e77c2faf645c2df7",
+    "size": 297090
   },
   {
     "name": "datasets",
@@ -257,11 +257,11 @@
   },
   {
     "name": "diffusers",
-    "version": "0.42.0",
-    "filename": "diffusers-0.42.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/ac/ac/08dca462b503e8c16099af647401c2548cbe2c4fbafd487ff3265fa57385/diffusers-0.42.0-py3-none-any.whl",
-    "sha256": "c409b893156c895dde5b7fe410a014f6b94bf7caa1b96360e43a335c762674f4",
-    "size": 6354874
+    "version": "0.42.1",
+    "filename": "diffusers-0.42.1-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/e1/e9/4328c781bc64f8b74363f66674c00e65021e9a857fb9cb4882ed447956cd/diffusers-0.42.1-py3-none-any.whl",
+    "sha256": "9154faa704ce00e0b77f568e0d64786064368528aab5fc14eeea92f87d788014",
+    "size": 6355908
   },
   {
     "name": "dill",
@@ -353,11 +353,11 @@
   },
   {
     "name": "fonttools",
-    "version": "4.67.0",
-    "filename": "fonttools-4.67.0-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/ed/e6/b0cbdedb363a49043d704d8c7903543fdd317596409fb8ac2cb604c1e73c/fonttools-4.67.0-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
-    "sha256": "ad8b4f7c754a627e91908fa1a1ccc90b489cd2810c0ba16acd26ea2ff5273db7",
-    "size": 5400755
+    "version": "4.68.0",
+    "filename": "fonttools-4.68.0-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/36/29/16501aa69a586b8e8f810d7be19584aa026a0bca46c598ac516cfdd2a31a/fonttools-4.68.0-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+    "sha256": "04a4868dcfcc23f00bb033147d5afc1a118a992842644c3eb9da55467ab4fd74",
+    "size": 5435968
   },
   {
     "name": "frozenlist",
@@ -673,11 +673,11 @@
   },
   {
     "name": "narwhals",
-    "version": "2.27.1",
-    "filename": "narwhals-2.27.1-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/d1/89/5d4c86da1130d9059681e5b6cd7645df5c10279a6a079c5c37dcb2cc6f3f/narwhals-2.27.1-py3-none-any.whl",
-    "sha256": "d057df13f5852b8e157596e82eb5e955fad267425df5e420e0ee9863da483b31",
-    "size": 483211
+    "version": "2.28.0",
+    "filename": "narwhals-2.28.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/cf/82/8ef9c7e0f50493307a49c09cfa7f00c5a778b6d1921f7b2dabe1d3a5809e/narwhals-2.28.0-py3-none-any.whl",
+    "sha256": "1f69d6385ec30e2fa6e1fdeb37c562ecabd0f713f6f3e3b58a668c5c9df9567f",
+    "size": 490591
   },
   {
     "name": "nest-asyncio",
@@ -881,11 +881,11 @@
   },
   {
     "name": "platformdirs",
-    "version": "4.13.5",
-    "filename": "platformdirs-4.13.5-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/6c/8a/1d8cb3842909dc193a73835adedf412e32e18f8ffd59f43983949622fe6f/platformdirs-4.13.5-py3-none-any.whl",
-    "sha256": "53d3ec4280b815c1e0b02edad7f9ee8fda1ba9c0865dd9c2e6e63849ce82fc1e",
-    "size": 32779
+    "version": "4.13.7",
+    "filename": "platformdirs-4.13.7-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/46/ff/8ed4a836cbf7de39708a2d305d6b67575990908d072bc3565dd8ad71748e/platformdirs-4.13.7-py3-none-any.whl",
+    "sha256": "47664602fbecad0a6efa561fb690d20dbc26875fe8aedf65ba362935df619bbb",
+    "size": 33111
   },
   {
     "name": "primp",
