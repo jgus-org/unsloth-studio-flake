@@ -46,6 +46,7 @@ jobs:
       - uses: jgus-org/flake-lib/.github/actions/nix@v1
         with:
           token: ${{ secrets.ATTIC_TOKEN }}
+          github-token: ${{ secrets.BUILD_TOKEN }}
 
       - name: Wait for dependency updates
         env:
@@ -73,6 +74,7 @@ jobs:
       - uses: jgus-org/flake-lib/.github/actions/nix@v1
         with:
           token: ${{ secrets.ATTIC_TOKEN }}
+          github-token: ${{ secrets.BUILD_TOKEN }}
 
       - name: Discover tracked versions and specification base
         id: plan
@@ -94,6 +96,7 @@ jobs:
       - uses: jgus-org/flake-lib/.github/actions/nix@v1
         with:
           token: ${{ secrets.ATTIC_TOKEN }}
+          github-token: ${{ secrets.BUILD_TOKEN }}
 
       - name: Refresh newest stable
         env:
@@ -144,6 +147,7 @@ jobs:
       - uses: jgus-org/flake-lib/.github/actions/nix@v1
         with:
           token: ${{ secrets.ATTIC_TOKEN }}
+          github-token: ${{ secrets.BUILD_TOKEN }}
 
       - name: Refresh exact version
         env:
@@ -170,6 +174,7 @@ jobs:
       - uses: jgus-org/flake-lib/.github/actions/nix@v1
         with:
           token: ${{ secrets.ATTIC_TOKEN }}
+          github-token: ${{ secrets.BUILD_TOKEN }}
 
       - name: Publish aggregate pointers
         env:
