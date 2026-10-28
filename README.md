@@ -1,6 +1,6 @@
 # Unsloth Studio flake
 
-A Nix flake that packages [Unsloth Studio](https://github.com/unslothai/unsloth), the AGPL-licensed CLI and
+A Nix flake that packages [Unsloth Studio](https://github.com/unslothai/unsloth), the CLI and
 web UI for training and running open models, as a Nix-built Python environment with its upstream web console.
 
 ## Outputs
@@ -59,7 +59,4 @@ application or a library it loads opens in the same process.
 service arguments and the `setsockopt` behaviour, and exchanges data over IPv6 and IPv4 loopback. It does
 not load the GPU application, build the frontend, or validate inference.
 
-## Licence
-
-Unsloth Studio and its bundled frontend assets are AGPL-3.0-only; shipping the service carries those
-obligations. The vendored Python dependencies keep their own licences.
+See [LICENSE.md](LICENSE.md) for licensing and copyright, and [NOTICE.md](NOTICE.md) for the terms of upstream and distributed artifacts.
