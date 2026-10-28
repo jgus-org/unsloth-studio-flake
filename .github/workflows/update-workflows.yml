@@ -10,7 +10,8 @@
 #
 # Pushing a workflow file needs a credential that may write workflows. A run's own token cannot
 # unless the workflow grants `workflows: write`, so without ORG_UPDATE_TOKEN this run advances
-# its input and fails to commit it.
+# its input and fails to commit it. Advancing the input reads the whole input graph, so a flake
+# that locks a private repository needs BUILD_TOKEN, which the nix action hands over.
 
 name: Update workflows
 
@@ -37,6 +38,7 @@ jobs:
       - uses: jgus-org/flake-lib/.github/actions/nix@v1
         with:
           token: ${{ secrets.ATTIC_TOKEN }}
+          github-token: ${{ secrets.BUILD_TOKEN }}
 
       - name: Update workflows from flake-lib templates
         run: nix run github:jgus-org/flake-lib/v1#update-workflows
