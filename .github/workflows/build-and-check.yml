@@ -39,18 +39,7 @@ jobs:
       - uses: jgus-org/flake-lib/.github/actions/nix@v1
         with:
           token: ${{ secrets.ATTIC_TOKEN }}
-
-      # An input in a private repository is invisible until a token says otherwise, and the
-      # setting is client-side: the process that resolves the lock reads it, so the daemon
-      # never needs it. A step cannot test a secret in its own condition, so the test is here.
-      - name: Authenticate flake inputs a runner cannot fetch anonymously
-        env:
-          BUILD_TOKEN: ${{ secrets.BUILD_TOKEN }}
-        run: |
-          if [ -n "${BUILD_TOKEN:-}" ]; then
-            mkdir -p ~/.config/nix
-            printf 'access-tokens = github.com=%s\n' "$BUILD_TOKEN" >> ~/.config/nix/nix.conf
-          fi
+          github-token: ${{ secrets.BUILD_TOKEN }}
 
       - name: Build every package this flake publishes for this runner
         run: nix run github:jgus-org/flake-lib/v1#build-packages
