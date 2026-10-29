@@ -1,9 +1,9 @@
-# The gate a pull request has to pass: build every package this flake publishes for the
-# runner's system, then `nix flake check`. The check alone is not the gate -- it looks at
-# the shape of `packages` without building them -- and the updater's build is not either,
-# running on the publication path after the merge. A package the runner cannot build
-# sets `passthru.ciBuildSkip = true` with the reason beside it, and the run names every
-# package it skipped.
+# The gate a pull request has to pass: `nix run github:jgus-org/flake-lib/v1#build-and-check`,
+# which builds every package this flake publishes for the runner's system and then runs
+# `nix flake check`. The check alone is not the gate -- it looks at the shape of `packages`
+# without building them -- and the updater's build is not either, running on the publication path
+# after the merge. A package the runner cannot build sets `passthru.ciBuildSkip = true` with the
+# reason beside it, and the run names every package it skipped.
 #
 # Nothing here is producer-specific, so `nix run
 # github:jgus-org/flake-lib/v1#update-workflows` replaces this file wholesale; a repository
@@ -41,11 +41,8 @@ jobs:
           token: ${{ secrets.ATTIC_TOKEN }}
           github-token: ${{ secrets.BUILD_TOKEN }}
 
-      - name: Build every package this flake publishes for this runner
-        run: nix run github:jgus-org/flake-lib/v1#build-packages
-
-      # A package that stopped building is the failure this step exists to catch too, and a
-      # run that stops at the first one reports one problem where the tree has two.
-      - name: Check the flake
-        if: always()
-        run: nix flake check --no-write-lock-file
+      # The gate is one published command so this path and the publication path run one
+      # definition. Both of its halves run even when the first fails: a tree with two problems
+      # and a gate that stops at the first reports one.
+      - name: Run the gate
+        run: nix run github:jgus-org/flake-lib/v1#build-and-check
