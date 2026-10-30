@@ -56,6 +56,10 @@ let
     ]
   '';
 in
+# The named gap for the vendored wheels is a native stack — the CUDA configuration — that the
+# deployment owns rather than this producer. It retires when the interpreter set the deployment
+# selects already carries every name in requirements.in compatible with the torch it builds; the
+# wheelhouse, the exclusion and the joined trees then go away together.
 mkWheelhouseSiteTree {
   inherit
     pkgs
