@@ -113,11 +113,11 @@
   },
   {
     "name": "cachetools",
-    "version": "7.2.6",
-    "filename": "cachetools-7.2.6-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/53/98/c8201d54b354857a3050a52751ca482eb143c404b387ab2c41a0f981b610/cachetools-7.2.6-py3-none-any.whl",
-    "sha256": "8722e08fc36ae0838a9a0a2ab9935554720de3343a62dad7aae7c595854c8623",
-    "size": 19523
+    "version": "7.2.7",
+    "filename": "cachetools-7.2.7-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/dc/68/211287b89b122a6842b3f078ffecc5a2abd3c0e4362748586f765e2fb3c5/cachetools-7.2.7-py3-none-any.whl",
+    "sha256": "88e6b53373a96786d20894fed9ce623ae5b73cbc07421b7a73098db088be69ae",
+    "size": 19654
   },
   {
     "name": "caio",
@@ -193,19 +193,19 @@
   },
   {
     "name": "cuda-pathfinder",
-    "version": "1.8.4",
-    "filename": "cuda_pathfinder-1.8.4-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/8e/93/f0904fa7d954ecc4c0db17c8d63d185d442dd59fc6757f1d1f448c59c256/cuda_pathfinder-1.8.4-py3-none-any.whl",
-    "sha256": "85a4e708c725d603f576042ef32781a3d1737c51e84c35fe361d2680191af65a",
-    "size": 62594
+    "version": "1.8.5",
+    "filename": "cuda_pathfinder-1.8.5-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/3d/b1/88f9aa5052f6d69afc4507763517b84872a76d3f7644edddca8bb4e3729a/cuda_pathfinder-1.8.5-py3-none-any.whl",
+    "sha256": "16d1026fdd78ac0222b966441de53dec3f0dbe6b1e2c43d19d92eb29bfd81e67",
+    "size": 62595
   },
   {
     "name": "cuda-toolkit",
-    "version": "13.0.3.0",
-    "filename": "cuda_toolkit-13.0.3.0-py2.py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/d1/c7/a79086a62c98befcdb8349656c6f114e2db3b8b2422f6e25c97a7f2a9a3c/cuda_toolkit-13.0.3.0-py2.py3-none-any.whl",
-    "sha256": "d693caaa261214ddd7dbb60d68e71cbed884e68c2be7509778f3051da0b91c3f",
-    "size": 2512
+    "version": "13.2.2",
+    "filename": "cuda_toolkit-13.2.2-py2.py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/3d/62/854e4a141f5e87e5425513bad2a742a6260acfe06ef148001b5362148f31/cuda_toolkit-13.2.2-py2.py3-none-any.whl",
+    "sha256": "d12edc1aad1356236a2ee10c0d794b1aff5d3e79bfeca54867c3bb8e5afd87b0",
+    "size": 2607
   },
   {
     "name": "cut-cross-entropy",
@@ -273,11 +273,11 @@
   },
   {
     "name": "dnspython",
-    "version": "2.9.0",
-    "filename": "dnspython-2.9.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/10/02/cdcc9b7c051786a103c3b09e1003a82fa0c66bcb91ffbdabcfbf7b4163b9/dnspython-2.9.0-py3-none-any.whl",
-    "sha256": "9a4aedb833c3c1b49214d04d44d3032ab7a9135f7c1d29a549b4ff78fd82fda9",
-    "size": 354822
+    "version": "2.9.1",
+    "filename": "dnspython-2.9.1-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/61/55/f90405bbbbd3dd8f788e92cec2d39964f5c09783f0570fc35f3bb3381485/dnspython-2.9.1-py3-none-any.whl",
+    "sha256": "7c81caf8de1ed57b8cfc7e0ad4f528a0b8ceace473c7eb946df195dc9def751f",
+    "size": 360364
   },
   {
     "name": "docstring-parser",
@@ -345,11 +345,11 @@
   },
   {
     "name": "filelock",
-    "version": "4.2.4",
-    "filename": "filelock-4.2.4-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/e0/1b/5e74289a1878e666bb4b65fe5805a04cafcac2aa5f519ef1ead67ef91c56/filelock-4.2.4-py3-none-any.whl",
-    "sha256": "301241438c57936ef93f4243a94f2559022268bfcf9b375a9a72eb0f8db8358e",
-    "size": 162475
+    "version": "4.2.5",
+    "filename": "filelock-4.2.5-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/14/2d/2cf36eca330b7a97c0e9076e8fc4272127c29398fa2bb7b24d4321b8b476/filelock-4.2.5-py3-none-any.whl",
+    "sha256": "46ce42d27e5cdde09ee7197349663e97cb106679bd9e75db3a09679fbc7aa1a8",
+    "size": 163877
   },
   {
     "name": "fonttools",
@@ -433,11 +433,11 @@
   },
   {
     "name": "hf-xet",
-    "version": "1.7.1",
-    "filename": "hf_xet-1.7.1-cp38-abi3-manylinux_2_28_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/5b/de/861af7b14825974ea3c787c224f08758046ed17615d7c79c7571e7f26353/hf_xet-1.7.1-cp38-abi3-manylinux_2_28_aarch64.whl",
-    "sha256": "b7fe4b5c4cc912a2c7b36538c6696d3312bd1471835ee814c3dd3dfc5509c3b9",
-    "size": 4000405
+    "version": "1.8.0",
+    "filename": "hf_xet-1.8.0-cp38-abi3-manylinux_2_28_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/35/c4/127a1548df019ea4c80f06e685f263e146075143335a02e78a3c41dbc4eb/hf_xet-1.8.0-cp38-abi3-manylinux_2_28_aarch64.whl",
+    "sha256": "8800e3444770f2c630b361bc6d5c6ebb770b7830646cf632fbb79d0e5bbc9e7f",
+    "size": 4069340
   },
   {
     "name": "hpack",
@@ -705,83 +705,83 @@
   },
   {
     "name": "nvidia-cublas",
-    "version": "13.1.1.3",
-    "filename": "nvidia_cublas-13.1.1.3-py3-none-manylinux_2_27_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/a7/a1/0bd24ee8c8d03adac032fd2909426a00c88f8c57961b1277ded97f91119f/nvidia_cublas-13.1.1.3-py3-none-manylinux_2_27_aarch64.whl",
-    "sha256": "b7a210458267ac818974c53038fbec2e969d5c99f305ab15c72522fa9f001dd5",
-    "size": 542848918
+    "version": "13.4.1.3",
+    "filename": "nvidia_cublas-13.4.1.3-py3-none-manylinux_2_27_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/d0/a0/5cd9d4b08a8320f7ca150ee0d66c97e98092922e338336cb4b62da7500c3/nvidia_cublas-13.4.1.3-py3-none-manylinux_2_27_aarch64.whl",
+    "sha256": "4eb1472bf92b741e7cf24da7978dde251b58ddec2092d9f6a04f3623eb4e9a15",
+    "size": 513048232
+  },
+  {
+    "name": "nvidia-cuda-cccl",
+    "version": "13.3.4.3.1",
+    "filename": "nvidia_cuda_cccl-13.3.4.3.1-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/c8/21/d49f8fdb03bb4108b12291e8ff2b86491d42cd158d33c7a3a55870384114/nvidia_cuda_cccl-13.3.4.3.1-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+    "sha256": "cd47e7823e3ab369a3e3df3a4c6dbb4cb02176cb85b251eec5f7c9cdfa528ec4",
+    "size": 3930674
   },
   {
     "name": "nvidia-cuda-cupti",
-    "version": "13.0.85",
-    "filename": "nvidia_cuda_cupti-13.0.85-py3-none-manylinux_2_25_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/2a/2a/80353b103fc20ce05ef51e928daed4b6015db4aaa9162ed0997090fe2250/nvidia_cuda_cupti-13.0.85-py3-none-manylinux_2_25_aarch64.whl",
-    "sha256": "796bd679890ee55fb14a94629b698b6db54bcfd833d391d5e94017dd9d7d3151",
-    "size": 10310827
+    "version": "13.2.86",
+    "filename": "nvidia_cuda_cupti-13.2.86-py3-none-manylinux_2_25_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/e1/ab/52414925ea803a5f86b994ae97d951e5943ed27a6f1da4a5c4ac09e308af/nvidia_cuda_cupti-13.2.86-py3-none-manylinux_2_25_aarch64.whl",
+    "sha256": "d9a5c133f73fcb9013f3ada0da6fb54d4117618d81f3f5a0419417ea6ee829d4",
+    "size": 11760263
   },
   {
     "name": "nvidia-cuda-nvrtc",
-    "version": "13.0.88",
-    "filename": "nvidia_cuda_nvrtc-13.0.88-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/b7/dc/6bb80850e0b7edd6588d560758f17e0550893a1feaf436807d64d2da040f/nvidia_cuda_nvrtc-13.0.88-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
-    "sha256": "d27f20a0ca67a4bb34268a5e951033496c5b74870b868bacd046b1b8e0c3267b",
-    "size": 43015449
+    "version": "13.2.86",
+    "filename": "nvidia_cuda_nvrtc-13.2.86-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/13/95/029e91026e1d378cba9fb2cdb62394bb15d06de7586bab73d76397df6b7f/nvidia_cuda_nvrtc-13.2.86-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+    "sha256": "1e5d7b411a2eb83f5c71c98d58133a763fc9fa86a4241ee320c5c4782d9ad1fd",
+    "size": 44755454
   },
   {
     "name": "nvidia-cuda-runtime",
-    "version": "13.0.96",
-    "filename": "nvidia_cuda_runtime-13.0.96-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/87/4f/17d7b9b8e285199c58ce28e31b5c5bbaa4d8271af06a89b6405258245de2/nvidia_cuda_runtime-13.0.96-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
-    "sha256": "ef9bcbe90493a2b9d810e43d249adb3d02e98dd30200d86607d8d02687c43f55",
-    "size": 2261060
+    "version": "13.2.86",
+    "filename": "nvidia_cuda_runtime-13.2.86-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/89/d4/fa981071e3d9f29158ca16c69ee617831cd6df4dd47024149c16eec717f8/nvidia_cuda_runtime-13.2.86-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+    "sha256": "37844957894bfdecf90243568d21a2cb251b66106915b71459a23c8e6ef2da69",
+    "size": 2341433
   },
   {
     "name": "nvidia-cudnn-cu13",
-    "version": "9.24.0.43",
-    "filename": "nvidia_cudnn_cu13-9.24.0.43-py3-none-manylinux_2_27_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/ca/30/7c257e3d5cb4fecb147b93895c66e29c93f8e76d74b45bb418ff0587c4ec/nvidia_cudnn_cu13-9.24.0.43-py3-none-manylinux_2_27_aarch64.whl",
-    "sha256": "a6812a554a1ff0413e9c52b84c26c050380649ab9615f9c16bded368ce9f421f",
-    "size": 650976863
+    "version": "9.26.0.51",
+    "filename": "nvidia_cudnn_cu13-9.26.0.51-py3-none-manylinux_2_27_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/c5/1c/01e1dd3dec6ffe0baaff7e722b8946d867353d05a01301f128f1730fde0b/nvidia_cudnn_cu13-9.26.0.51-py3-none-manylinux_2_27_aarch64.whl",
+    "sha256": "8e5b4f5eccff721416f70ecf4353172fc4d5cdd8ca869fe6f983a4a5b0147b20",
+    "size": 595329497
   },
   {
     "name": "nvidia-cufft",
-    "version": "12.0.0.61",
-    "filename": "nvidia_cufft-12.0.0.61-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/8b/ae/f417a75c0259e85c1d2f83ca4e960289a5f814ed0cea74d18c353d3e989d/nvidia_cufft-12.0.0.61-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
-    "sha256": "2708c852ef8cd89d1d2068bdbece0aa188813a0c934db3779b9b1faa8442e5f5",
-    "size": 214053554
+    "version": "12.2.0.57",
+    "filename": "nvidia_cufft-12.2.0.57-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/07/8d/f650e6d527f9d22b5ded906c000eaebb037721c06d4ecd906df62f300979/nvidia_cufft-12.2.0.57-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+    "sha256": "1ed438568ae1088ba2c25789d10205d4104b8b140b7bd942e39a787947a0fb74",
+    "size": 218244742
   },
   {
     "name": "nvidia-cufile",
-    "version": "1.15.1.6",
-    "filename": "nvidia_cufile-1.15.1.6-py3-none-manylinux_2_27_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/ab/73/cc4a14c9813a8a0d509417cf5f4bdaba76e924d58beb9864f5a7baceefbf/nvidia_cufile-1.15.1.6-py3-none-manylinux_2_27_aarch64.whl",
-    "sha256": "bdc0deedc61f548bddf7733bdc216456c2fdb101d020e1ab4b88d232d5e2f6d1",
-    "size": 1136992
-  },
-  {
-    "name": "nvidia-curand",
-    "version": "10.4.0.35",
-    "filename": "nvidia_curand-10.4.0.35-py3-none-manylinux_2_27_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/1e/72/7c2ae24fb6b63a32e6ae5d241cc65263ea18d08802aaae087d9f013335a2/nvidia_curand-10.4.0.35-py3-none-manylinux_2_27_aarch64.whl",
-    "sha256": "133df5a7509c3e292aaa2b477afd0194f06ce4ea24d714d616ff36439cee349a",
-    "size": 61962106
+    "version": "1.17.1.22",
+    "filename": "nvidia_cufile-1.17.1.22-py3-none-manylinux_2_27_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/fe/fd/4b4157512a131a51e1514d40d0199b1c5b7b10c6856db274ff22e5fe15be/nvidia_cufile-1.17.1.22-py3-none-manylinux_2_27_aarch64.whl",
+    "sha256": "bec33d7f1f12691dce330275246587569c2ed90b1ce43b0f94b3e1ce9268744b",
+    "size": 1226736
   },
   {
     "name": "nvidia-cusolver",
-    "version": "12.0.4.66",
-    "filename": "nvidia_cusolver-12.0.4.66-py3-none-manylinux_2_27_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/c8/c3/b30c9e935fc01e3da443ec0116ed1b2a009bb867f5324d3f2d7e533e776b/nvidia_cusolver-12.0.4.66-py3-none-manylinux_2_27_aarch64.whl",
-    "sha256": "02c2457eaa9e39de20f880f4bd8820e6a1cfb9f9a34f820eb12a155aa5bc92d2",
-    "size": 223467760
+    "version": "12.2.0.11",
+    "filename": "nvidia_cusolver-12.2.0.11-py3-none-manylinux_2_27_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/60/df/9e6b603f1d64040ce3e076e9bce1b78e2d588d0aabc9783f351cecd861ab/nvidia_cusolver-12.2.0.11-py3-none-manylinux_2_27_aarch64.whl",
+    "sha256": "8be097fca28de6be0990ab216ee9b804dd51077e1d1d83acf6c9850650bdc64d",
+    "size": 250383075
   },
   {
     "name": "nvidia-cusparse",
-    "version": "12.6.3.3",
-    "filename": "nvidia_cusparse-12.6.3.3-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/f8/94/5c26f33738ae35276672f12615a64bd008ed5be6d1ebcb23579285d960a9/nvidia_cusparse-12.6.3.3-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
-    "sha256": "80bcc4662f23f1054ee334a15c72b8940402975e0eab63178fc7e670aa59472c",
-    "size": 162155568
+    "version": "12.7.10.12",
+    "filename": "nvidia_cusparse-12.7.10.12-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/60/35/abbd278fb6d039fcfb5175efa10a21007a11878bec59920d84854b47d766/nvidia_cusparse-12.7.10.12-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+    "sha256": "597eff2cd83e3ab1d1e3a0dce9c9c879d77cf64ec2659bfdb5af6a5d02e7aaa9",
+    "size": 169043093
   },
   {
     "name": "nvidia-cusparselt-cu13",
@@ -809,19 +809,19 @@
   },
   {
     "name": "nvidia-nvshmem-cu13",
-    "version": "3.4.5",
-    "filename": "nvidia_nvshmem_cu13-3.4.5-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/dc/0f/05cc9c720236dcd2db9c1ab97fff629e96821be2e63103569da0c9b72f19/nvidia_nvshmem_cu13-3.4.5-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
-    "sha256": "6dc2a197f38e5d0376ad52cd1a2a3617d3cdc150fd5966f4aee9bcebb1d68fe9",
-    "size": 60215947
+    "version": "3.7.2",
+    "filename": "nvidia_nvshmem_cu13-3.7.2-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/81/11/1767ef120299972822a43aceffbc81ac813aad2089d817e36e4e12aa4c9c/nvidia_nvshmem_cu13-3.7.2-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+    "sha256": "0e748308b9e0a8a8d81859353f3e6c98fbe85a85f652a915a2ba60149a0bd124",
+    "size": 135174619
   },
   {
     "name": "nvidia-nvtx",
-    "version": "13.0.85",
-    "filename": "nvidia_nvtx-13.0.85-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/a8/64/3708a90d1ebe202ffdeb7185f878a3c84d15c2b2c31858da2ce0583e2def/nvidia_nvtx-13.0.85-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
-    "sha256": "cb7780edb6b14107373c835bf8b72e7a178bac7367e23da7acb108f973f157a6",
-    "size": 148878
+    "version": "13.2.86",
+    "filename": "nvidia_nvtx-13.2.86-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/52/5f/74e2d29240de30a971d59ca20f4a3c4f2720cd49752809eeb4177d385c2c/nvidia_nvtx-13.2.86-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+    "sha256": "1c6ae1be92fba569dd271f7b9b3056f99f5642726dc6c53d1b93ae4110c398fb",
+    "size": 154292
   },
   {
     "name": "openapi-pydantic",
@@ -833,11 +833,11 @@
   },
   {
     "name": "opentelemetry-api",
-    "version": "1.45.1",
-    "filename": "opentelemetry_api-1.45.1-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/1e/41/f7dcf80b81ee8e71c1a2b59f14208bc723edbd89ed027a73b175abf6348e/opentelemetry_api-1.45.1-py3-none-any.whl",
-    "sha256": "b31553efa588ae44bc306f863c785c5333a9ecc091248c6ee68b4b6c87fdedfb",
-    "size": 60256
+    "version": "1.45.2",
+    "filename": "opentelemetry_api-1.45.2-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/a9/2d/610db864d7513158cebb8f36cc88e67e73bd6c7aa1905ef18d89e1281c81/opentelemetry_api-1.45.2-py3-none-any.whl",
+    "sha256": "2cbd737377e710ee740d261c94e93fa0f08e6d037c18f17513cc0a2d94479a34",
+    "size": 60335
   },
   {
     "name": "packaging",
@@ -1049,11 +1049,11 @@
   },
   {
     "name": "pytz",
-    "version": "2026.5",
-    "filename": "pytz-2026.5-py2.py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/4f/ef/c66110d46fb800dda0bf33164182dfadabe26a90e4476844d502a23dca8e/pytz-2026.5-py2.py3-none-any.whl",
-    "sha256": "e658af3757f9e26a9d25dd2aff38335acd92bc9104f890a894b2c1ba28311b03",
-    "size": 506342
+    "version": "2026.6",
+    "filename": "pytz-2026.6-py2.py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/b6/25/564f3fc5b70c1398d706c51f2b1470d0ea0b1b2f96fee67877b6f5bdf3b6/pytz-2026.6-py2.py3-none-any.whl",
+    "sha256": "7fed3fee8fd6bd4a2b7b75a8d56021d0624127bf69bd5691f115db929ac570b3",
+    "size": 506321
   },
   {
     "name": "pyyaml",
@@ -1257,19 +1257,19 @@
   },
   {
     "name": "tokenizers",
-    "version": "0.23.3",
-    "filename": "tokenizers-0.23.3-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/15/fc/ae987741829b1cd547668c4c94be732ae3eefd1d74344e64c3d2ca714acd/tokenizers-0.23.3-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
-    "sha256": "ec82e80e65a862275b97c3d90b7a523df8d9519ee48aeb4e9625b2cc909274e0",
-    "size": 3519944
+    "version": "0.22.2",
+    "filename": "tokenizers-0.22.2-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/d6/84/7990e799f1309a8b87af6b948f31edaa12a3ed22d11b352eaf4f4b2e5753/tokenizers-0.22.2-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+    "sha256": "2249487018adec45d6e3554c71d46eb39fa8ea67156c640f7513eb26f318cec7",
+    "size": 3290736
   },
   {
     "name": "torch",
-    "version": "2.14.1",
-    "filename": "torch-2.14.1-cp313-cp313-manylinux_2_28_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/60/1f/0330275c705b846882531c64e80d32b13fb572eeb9b995e87e84154b0712/torch-2.14.1-cp313-cp313-manylinux_2_28_aarch64.whl",
-    "sha256": "6d530bd11479fb574567af3a1f384af9a77bf5bb9550cde8080b356ca7220d5a",
-    "size": 453999200
+    "version": "2.15.0",
+    "filename": "torch-2.15.0-cp313-cp313-manylinux_2_28_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/16/e7/4d67a9c8aef527423510e21ecf6f6a6ce45946b0891c54b04bc5edc5a9e2/torch-2.15.0-cp313-cp313-manylinux_2_28_aarch64.whl",
+    "sha256": "a46cf67c6b574311ecdc24364a5c3a694c60dd3619043f594cfebb8f0b283ea4",
+    "size": 483665057
   },
   {
     "name": "torchao",
@@ -1305,27 +1305,27 @@
   },
   {
     "name": "transformers",
-    "version": "5.17.0",
-    "filename": "transformers-5.17.0-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/e8/d0/c502b60d684adbd98a8dc7d5bb866842772b816ac4354e4608be240041ae/transformers-5.17.0-py3-none-any.whl",
-    "sha256": "78ec1ce21579b38dfb83950a0658cd119f87212a2fcfdff478096ce9d6c03801",
-    "size": 12295140
+    "version": "5.3.0",
+    "filename": "transformers-5.3.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/b8/88/ae8320064e32679a5429a2c9ebbc05c2bf32cefb6e076f9b07f6d685a9b4/transformers-5.3.0-py3-none-any.whl",
+    "sha256": "50ac8c89c3c7033444fb3f9f53138096b997ebb70d4b5e50a2e810bf12d3d29a",
+    "size": 10661827
   },
   {
     "name": "triton",
-    "version": "3.8.0",
-    "filename": "triton-3.8.0-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/87/4d/4c564374bcdadb166fccbf3e45aee0d4a473f88d341761bd2fefe3b8e8c1/triton-3.8.0-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
-    "sha256": "b7004666652f500ed854a86988e4b3d69d247188b5d2092b5df1e44f4a954099",
-    "size": 226476793
+    "version": "3.9.0",
+    "filename": "triton-3.9.0-cp312-abi3-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/c2/7f/79490a3e16cbda1817f00ad6d05694020f1decb1e063f96e83d1cfd2558d/triton-3.9.0-cp312-abi3-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+    "sha256": "5542f4328472fd827dbb1ec43873364c2894682cc3f5d1c74a643762900e243e",
+    "size": 263270508
   },
   {
     "name": "trl",
-    "version": "0.29.1",
-    "filename": "trl-0.29.1-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/c7/3b/33226ae50a36f718e1107ece0c91b016457bb4b956d1cb5bd7078c04de9c/trl-0.29.1-py3-none-any.whl",
-    "sha256": "f9490cd1af93f3dce1cfdfe0fa1de108dbc46a2f6c2f90485cc2b4021c43eef3",
-    "size": 530959
+    "version": "0.24.0",
+    "filename": "trl-0.24.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/87/5f/c647fedde9d59ae35ee189cc49e419da5ac1d9ad9933cb69401a7eac4705/trl-0.24.0-py3-none-any.whl",
+    "sha256": "a9145b7d4a4a33778de117bda48530f0cf5b2ac25acc07db80ad04836f490dfc",
+    "size": 423143
   },
   {
     "name": "truststore",
@@ -1393,19 +1393,19 @@
   },
   {
     "name": "unsloth",
-    "version": "2026.10.10",
-    "filename": "unsloth-2026.10.10-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/45/1e/6bc2275efbf65085a5b0b853c40b20a56f4e1bd30cabe324f9b2f50d9513/unsloth-2026.10.10-py3-none-any.whl",
-    "sha256": "e0c0cd8f48d8880b6b76af2e7224c80e14b4be93ab8ff4dc140d93c282c73af0",
-    "size": 29041258
+    "version": "2026.3.11",
+    "filename": "unsloth-2026.3.11-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/75/f1/f0e475694650857d1e0904df7c162a285f38cac56999b62c25b92cecd0fa/unsloth-2026.3.11-py3-none-any.whl",
+    "sha256": "54976106753a581298cf76f9978bf29a74d33d945badc4dc8a50d18688ca5aa2",
+    "size": 62730669
   },
   {
     "name": "unsloth-zoo",
-    "version": "2026.10.10",
-    "filename": "unsloth_zoo-2026.10.10-py3-none-any.whl",
-    "url": "https://files.pythonhosted.org/packages/b8/be/ebfbe13da09354bcd966d87955aa9ed990545756140f976770444c0ecc3c/unsloth_zoo-2026.10.10-py3-none-any.whl",
-    "sha256": "e72aff6494d64add34cd09bd305641e6d94d1d4e0f580bb421e79e4f9fb42ddb",
-    "size": 2964029
+    "version": "2026.10.11",
+    "filename": "unsloth_zoo-2026.10.11-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/7c/9f/0df6bb6a0d55556b801721d24ffe904a483622327409166b89b9e85ff723/unsloth_zoo-2026.10.11-py3-none-any.whl",
+    "sha256": "8e638f8e41ab153430a478f744bb10cdc5aff2c9bde381dd557ee2331df658c7",
+    "size": 2909920
   },
   {
     "name": "urllib3",
@@ -1433,11 +1433,11 @@
   },
   {
     "name": "websockets",
-    "version": "17.3",
-    "filename": "websockets-17.3-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
-    "url": "https://files.pythonhosted.org/packages/a6/6a/e75d10e3896edc61320062890f71cdc0767dc4a54e2a26a943b703042d13/websockets-17.3-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
-    "sha256": "c95d25b5382ee0e6191ecafdeabefdc1f7bff8dfee29239b9b79e760ef3b04bd",
-    "size": 227091
+    "version": "17.4",
+    "filename": "websockets-17.4-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/80/b0/b0d9427dde0609e2727a9a966fb5fc5c6ef6aa7eba4cfc98791f8b7f1b75/websockets-17.4-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+    "sha256": "c74954409ea5789f7a60daa5f94580c00ad0b60b20751c47b35c4784877b5057",
+    "size": 227617
   },
   {
     "name": "wheel",
